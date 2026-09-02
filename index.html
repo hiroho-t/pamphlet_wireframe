@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>pamphlet-wireframe｜レイアウト一覧</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+  :root{
+    --bg:#fafafa; --ink:#2f2725; --sub:#8b8583; --line:#e2dfdd;
+    --field:#f1f1f1; --link:#0062db; --r:6px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;
+    color:var(--ink);-webkit-font-smoothing:antialiased}
+  header{padding:40px 40px 30px;border-bottom:1px solid var(--line);
+    display:flex;justify-content:space-between;align-items:flex-start;gap:48px;flex-wrap:wrap}
+  h1{font-size:22px;font-weight:800;letter-spacing:.06em}
+  header p{font-size:12px;color:var(--sub);margin-top:10px;line-height:1.9;letter-spacing:.04em}
+
+  .get{flex:1 1 340px;min-width:0;max-width:400px;padding:16px 18px;
+    background:#fff;border:1px solid var(--line);border-radius:8px}
+  .btns{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{flex:1 1 140px;display:flex;align-items:center;justify-content:center;gap:8px;height:38px;
+    font-size:12px;font-weight:700;letter-spacing:.06em;text-decoration:none;border-radius:var(--r);
+    border:1px solid var(--ink);background:var(--ink);color:#fff}
+  .btn.sub{background:transparent;color:var(--ink)}
+  .btn:hover{opacity:.75}
+  .btn.sub:hover{background:var(--field);opacity:1}
+  .btn svg{width:15px;height:15px;fill:currentColor;flex:none}
+  .cmd{display:flex;align-items:stretch;margin-top:10px;background:var(--field);border-radius:8px;overflow:hidden}
+  .cmd code{flex:1;min-width:0;padding:11px 12px 10px;font-size:10px;line-height:1.5;color:#555;background:none;
+    font-family:ui-monospace,SFMono-Regular,Menlo,monospace;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .cmd button{flex:none;width:62px;border:0;border-left:1px solid #e2e2e2;background:none;
+    font-size:10px;font-weight:700;letter-spacing:.06em;color:var(--ink);cursor:pointer;font-family:inherit}
+  .cmd button:hover{background:#e7e7e7}
+
+  .catbar{display:flex;flex-wrap:wrap;gap:8px;padding:13px 40px 15px;border-bottom:1px solid var(--line)}
+  .catbar a{display:inline-flex;align-items:baseline;gap:7px;padding:7px 12px 6px;
+    border:1px solid var(--line);border-radius:var(--r);background:#fff;
+    font-size:12px;letter-spacing:.06em;color:var(--ink);text-decoration:none}
+  .catbar a:hover{border-color:var(--ink)}
+  .catbar a span{font-size:10px;color:var(--sub);letter-spacing:0}
+
+  .menubtn{position:fixed;right:24px;bottom:24px;z-index:40;width:52px;height:52px;padding:0;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;
+    border:1px solid var(--ink);border-radius:var(--r);background:var(--ink);cursor:pointer}
+  .menubtn i{display:block;width:20px;height:1.5px;background:#fff}
+  .menubtn[aria-expanded="true"] i:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+  .menubtn[aria-expanded="true"] i:nth-child(2){opacity:0}
+  .menubtn[aria-expanded="true"] i:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+  .mask{position:fixed;inset:0;z-index:30;background:none}
+  .mask[hidden],.catnav[hidden]{display:none}
+  .catnav{position:fixed;right:24px;bottom:88px;z-index:40;width:272px;
+    max-height:calc(100vh - 136px);overflow-y:auto;padding:8px;
+    background:#fff;border:1px solid var(--line);border-radius:8px;
+    box-shadow:0 8px 28px rgba(47,39,37,.10)}
+  .catnav a{display:flex;justify-content:space-between;align-items:baseline;gap:12px;
+    padding:9px 11px;border-radius:var(--r);
+    font-size:12px;letter-spacing:.06em;color:var(--ink);text-decoration:none}
+  .catnav a:hover{background:var(--field)}
+  .catnav a span{font-size:10px;color:var(--sub);letter-spacing:0}
+
+  main{padding:0 40px 64px}
+  section{padding-top:44px;scroll-margin-top:24px}
+  h2{font-size:15px;font-weight:800;letter-spacing:.1em;padding-bottom:14px;border-bottom:1px solid var(--line)}
+  h2 span{font-size:11px;font-weight:400;color:var(--sub);margin-left:12px;letter-spacing:.04em}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(var(--w,232px),1fr));gap:26px;margin-top:24px}
+  .card{display:block}
+  .thumb{position:relative;display:block;width:100%;aspect-ratio:var(--ar,794/1123);background:#fff;
+    border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+  .thumb iframe{width:100%;height:100%;border:0;pointer-events:none;display:block}
+  .thumb::after{content:"";position:absolute;inset:0}
+  .thumb:hover{border-color:var(--ink)}
+  .cap{display:flex;justify-content:space-between;align-items:baseline;margin-top:10px;gap:12px}
+  .id{display:inline-flex;align-items:baseline;gap:6px;flex:none;
+    font:inherit;font-size:12px;font-weight:700;letter-spacing:.06em;color:var(--ink);
+    background:none;border:0;padding:0;cursor:pointer}
+  .id i{font-size:9px;color:#b5b0ad;transform:translateY(-1px)}
+  .id:hover{text-decoration:underline;text-underline-offset:3px}
+  .id:hover i{color:var(--ink)}
+  .id.done{color:var(--sub)}
+  .id.done i{color:var(--sub)}
+  .dl{font-size:10px;font-weight:700;letter-spacing:.04em;color:var(--link);
+    text-decoration:none;white-space:nowrap}
+  .dl:hover{text-decoration:underline;text-underline-offset:2px}
+
+  @media (max-width:900px){
+    header{padding:30px 24px 24px;gap:24px}
+    .get{flex:1 1 100%;max-width:none}
+    main{padding:0 24px 48px}
+    .catbar{padding:11px 24px 13px}
+    .menubtn{right:16px;bottom:16px}
+    .catnav{right:16px;bottom:80px;width:auto;left:16px;max-width:280px;margin-left:auto}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>pamphlet-wireframe｜レイアウト一覧</h1>
+    <p>学校案内パンフレット（A4縦・見開き）のワイヤーフレーム 133種。Claude Codeのテンプレートとして、GitHubからダウンロードしてご利用いただけます。</p>
+  </div>
+
+  <div class="get">
+    <div class="btns">
+      <a class="btn" href="https://github.com/hiroho-t/pamphlet_wireframe" target="_blank" rel="noopener">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+        GitHub リポジトリ
+      </a>
+      <a class="btn sub" href="https://github.com/hiroho-t/pamphlet_wireframe/archive/refs/heads/main.zip">
+        ZIP ダウンロード
+      </a>
+    </div>
+    <div class="cmd">
+      <code id="cmd">git clone https://github.com/hiroho-t/pamphlet_wireframe.git ~/.claude/skills/pamphlet-wireframe</code>
+      <button type="button" id="copy">コピー</button>
+    </div>
+  </div>
+</header>
+<nav class="catbar" id="catbar"></nav>
+<div class="mask" id="mask" hidden></div>
+<button type="button" class="menubtn" id="menubtn"
+        aria-expanded="false" aria-controls="catnav" aria-label="カテゴリーメニュー">
+  <i></i><i></i><i></i>
+</button>
+<nav class="catnav" id="catnav" hidden></nav>
+<main id="app"></main>
+
+<script>
+document.getElementById('copy').addEventListener('click', async (e) => {
+  const btn = e.currentTarget, text = document.getElementById('cmd').textContent;
+  try { await navigator.clipboard.writeText(text); btn.textContent = 'コピー済'; }
+  catch { const r = document.createRange(); r.selectNodeContents(document.getElementById('cmd'));
+          getSelection().removeAllRanges(); getSelection().addRange(r); btn.textContent = '選択'; }
+  setTimeout(() => btn.textContent = 'コピー', 1600);
+});
+
+const REPO = 'https://github.com/hiroho-t/pamphlet_wireframe';
+
+const DATA = [
+ [
+  "表紙",
+  "cover",
+  "794/1123",
+  [
+   "cover-001",
+   "cover-002",
+   "cover-003",
+   "cover-004",
+   "cover-005",
+   "cover-006",
+   "cover-007",
+   "cover-008"
+  ]
+ ],
+ [
+  "目次",
+  "toc",
+  "794/1123",
+  [
+   "toc-001",
+   "toc-002",
+   "toc-003",
+   "toc-004",
+   "toc-005",
+   "toc-006"
+  ]
+ ],
+ [
+  "中扉",
+  "section",
+  "794/1123",
+  [
+   "section-001",
+   "section-002",
+   "section-003",
+   "section-004",
+   "section-005",
+   "section-006"
+  ]
+ ],
+ [
+  "学長メッセージ",
+  "message",
+  "794/1123",
+  [
+   "message-001",
+   "message-002",
+   "message-003",
+   "message-004",
+   "message-005",
+   "message-006"
+  ]
+ ],
+ [
+  "学校紹介・特色",
+  "about",
+  "794/1123",
+  [
+   "about-001",
+   "about-002",
+   "about-003",
+   "about-004",
+   "about-005",
+   "about-006",
+   "about-007",
+   "about-008"
+  ]
+ ],
+ [
+  "学科・コース紹介",
+  "department",
+  "794/1123",
+  [
+   "department-001",
+   "department-002",
+   "department-003",
+   "department-004",
+   "department-005",
+   "department-006",
+   "department-007",
+   "department-008",
+   "department-009",
+   "department-010"
+  ]
+ ],
+ [
+  "カリキュラム",
+  "curriculum",
+  "794/1123",
+  [
+   "curriculum-001",
+   "curriculum-002",
+   "curriculum-003",
+   "curriculum-004",
+   "curriculum-005",
+   "curriculum-006",
+   "curriculum-007"
+  ]
+ ],
+ [
+  "授業・実習・教員",
+  "class",
+  "794/1123",
+  [
+   "class-001",
+   "class-002",
+   "class-003",
+   "class-004",
+   "class-005",
+   "class-006",
+   "class-007"
+  ]
+ ],
+ [
+  "在学生インタビュー",
+  "student",
+  "794/1123",
+  [
+   "student-001",
+   "student-002",
+   "student-003",
+   "student-004",
+   "student-005",
+   "student-006",
+   "student-007",
+   "student-008"
+  ]
+ ],
+ [
+  "キャンパスライフ",
+  "campuslife",
+  "794/1123",
+  [
+   "campuslife-001",
+   "campuslife-002",
+   "campuslife-003",
+   "campuslife-004",
+   "campuslife-005",
+   "campuslife-006",
+   "campuslife-007"
+  ]
+ ],
+ [
+  "施設・キャンパス",
+  "facility",
+  "794/1123",
+  [
+   "facility-001",
+   "facility-002",
+   "facility-003",
+   "facility-004",
+   "facility-005",
+   "facility-006"
+  ]
+ ],
+ [
+  "進路・就職",
+  "career",
+  "794/1123",
+  [
+   "career-001",
+   "career-002",
+   "career-003",
+   "career-004",
+   "career-005",
+   "career-006",
+   "career-007",
+   "career-008"
+  ]
+ ],
+ [
+  "卒業生",
+  "og",
+  "794/1123",
+  [
+   "og-001",
+   "og-002",
+   "og-003",
+   "og-004",
+   "og-005",
+   "og-006"
+  ]
+ ],
+ [
+  "資格・免許",
+  "license",
+  "794/1123",
+  [
+   "license-001",
+   "license-002",
+   "license-003",
+   "license-004",
+   "license-005"
+  ]
+ ],
+ [
+  "学費・奨学金",
+  "support",
+  "794/1123",
+  [
+   "support-001",
+   "support-002",
+   "support-003",
+   "support-004",
+   "support-005",
+   "support-006"
+  ]
+ ],
+ [
+  "入試",
+  "admission",
+  "794/1123",
+  [
+   "admission-001",
+   "admission-002",
+   "admission-003",
+   "admission-004",
+   "admission-005",
+   "admission-006"
+  ]
+ ],
+ [
+  "オープンキャンパス",
+  "opencampus",
+  "794/1123",
+  [
+   "opencampus-001",
+   "opencampus-002",
+   "opencampus-003",
+   "opencampus-004",
+   "opencampus-005"
+  ]
+ ],
+ [
+  "アクセス・学校概要",
+  "access",
+  "794/1123",
+  [
+   "access-001",
+   "access-002",
+   "access-003",
+   "access-004",
+   "access-005"
+  ]
+ ],
+ [
+  "裏表紙",
+  "backcover",
+  "794/1123",
+  [
+   "backcover-001",
+   "backcover-002",
+   "backcover-003",
+   "backcover-004",
+   "backcover-005"
+  ]
+ ],
+ [
+  "見開き",
+  "spread",
+  "1588/1123",
+  [
+   "spread-001",
+   "spread-002",
+   "spread-003",
+   "spread-004",
+   "spread-005",
+   "spread-006",
+   "spread-007",
+   "spread-008"
+  ]
+ ]
+];
+
+document.getElementById('app').innerHTML = DATA.map(([label, dir, ar, items]) => {
+  const wide = ar.split('/')[0] > 1000;
+  return `
+  <section id="${dir}" style="--ar:${ar};--w:${wide ? '400px' : '232px'}">
+    <h2>${label}<span>${dir}/ ・ ${items.length}種</span></h2>
+    <div class="grid">
+      ${items.map(id => `
+        <div class="card">
+          <a class="thumb" href="${dir}/${id}.html" target="_blank" rel="noopener"><iframe src="${dir}/${id}.html" loading="lazy" scrolling="no" title="${id}"></iframe></a>
+          <div class="cap">
+            <button type="button" class="id" data-id="${id}" title="IDをコピー">${id}<i class="fa-regular fa-copy"></i></button>
+            <a class="dl" href="${REPO}/blob/main/${dir}/${id}.html" target="_blank" rel="noopener">コードを見る</a>
+          </div>
+        </div>`).join('')}
+    </div>
+  </section>`;
+}).join('');
+
+const LINKS = DATA.map(([label, dir, ar, items]) =>
+  `<a href="#${dir}">${label}<span>${items.length}</span></a>`).join('');
+const nav = document.getElementById('catnav');
+nav.innerHTML = LINKS;
+document.getElementById('catbar').innerHTML = LINKS;
+
+const menubtn = document.getElementById('menubtn'), mask = document.getElementById('mask');
+const setOpen = (open) => {
+  menubtn.setAttribute('aria-expanded', open);
+  nav.hidden = !open; mask.hidden = !open;
+};
+menubtn.addEventListener('click', () => setOpen(menubtn.getAttribute('aria-expanded') !== 'true'));
+mask.addEventListener('click', () => setOpen(false));
+nav.addEventListener('click', (e) => { if (e.target.closest('a')) setOpen(false); });
+addEventListener('keydown', (e) => { if (e.key === 'Escape') setOpen(false); });
+
+document.getElementById('app').addEventListener('click', async (e) => {
+  const btn = e.target.closest('.id');
+  if (!btn) return;
+  const id = btn.dataset.id;
+  try { await navigator.clipboard.writeText(id); }
+  catch { const r = document.createRange(); r.selectNodeContents(btn);
+          getSelection().removeAllRanges(); getSelection().addRange(r); }
+  btn.classList.add('done');
+  btn.innerHTML = 'コピーしました<i class="fa-solid fa-check"></i>';
+  setTimeout(() => { btn.classList.remove('done');
+    btn.innerHTML = id + '<i class="fa-regular fa-copy"></i>'; }, 1200);
+});
+</script>
+</body>
+</html>
+<!-- build: 20260902120407 -->

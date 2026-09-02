@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>career-005</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .page{position:relative;width:794px;height:1123px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+  .ph{position:absolute;background:#dcdcdc;display:grid;place-items:center;font-size:12px;letter-spacing:.2em;color:#8c8c8c}
+  .pn{position:absolute;font-size:11px;letter-spacing:.1em;color:#8c8c8c}
+  .en{position:absolute;left:0;width:794px;top:76px;text-align:center;font-size:11px;letter-spacing:.3em;color:#8c8c8c}
+  .h1{position:absolute;left:0;width:794px;top:102px;text-align:center;font-size:30px;font-weight:800;letter-spacing:.1em;color:#1a1a1a}
+  .don{position:absolute;left:56px;top:180px;width:330px;height:330px;border-radius:50%;background:#dcdcdc;display:grid;place-items:center;font-size:12px;letter-spacing:.2em;color:#8c8c8c}
+  .lg{position:absolute;left:420px;top:200px;width:318px}
+  .lg .r{display:flex;align-items:center;gap:12px;padding:11px 0;border-bottom:1px solid #e6e6e6}
+  .lg .r i{flex:none;width:14px;height:14px;display:block}
+  .lg .r .n{flex:1;font-size:12px;color:#1a1a1a}
+  .lg .r .v{font-size:12px;font-weight:700;color:#1a1a1a}
+  .t{position:absolute;left:56px;font-size:13px;font-weight:800;letter-spacing:.06em;color:#1a1a1a;padding-bottom:9px;border-bottom:1px solid #1a1a1a;width:682px}
+  .g4{position:absolute;left:56px;width:682px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  .g4 .b{border:1px solid #d5d5d5;padding:16px 14px;text-align:center}
+  .g4 .b .l{font-size:10.5px;color:#8c8c8c}
+  .g4 .b .v{margin-top:6px;font-size:26px;font-weight:800;color:#1a1a1a}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="page">
+    <div class="en">CAREER DATA</div>
+    <div class="h1">卒業後の進路</div>
+    <div class="don">GRAPH</div>
+    <div class="lg">
+      <div class="r"><i style="background:#1a1a1a"></i><div class="n">ダミーの進路</div><div class="v">42.0%</div></div>
+      <div class="r"><i style="background:#6b6b6b"></i><div class="n">ダミーの進路</div><div class="v">26.5%</div></div>
+      <div class="r"><i style="background:#a0a0a0"></i><div class="n">ダミーの進路</div><div class="v">15.2%</div></div>
+      <div class="r"><i style="background:#c9c9c9"></i><div class="n">ダミーの進路</div><div class="v">10.8%</div></div>
+      <div class="r"><i style="background:#e6e6e6"></i><div class="n">その他</div><div class="v">5.5%</div></div>
+    </div>
+    <div class="t" style="top:570px">数字で見る進路</div>
+    <div class="g4" style="top:620px">
+      <div class="b"><div class="l">ダミー項目</div><div class="v">98.5%</div></div>
+      <div class="b"><div class="l">ダミー項目</div><div class="v">1,200</div></div>
+      <div class="b"><div class="l">ダミー項目</div><div class="v">12%</div></div>
+      <div class="b"><div class="l">ダミー項目</div><div class="v">86%</div></div>
+    </div>
+    <div class="ph" style="left:56px;top:780px;width:682px;height:240px">IMAGE</div>
+    <div class="pn" style="left:0;width:794px;text-align:center;top:1060px">52</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/794,innerHeight/1123));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>

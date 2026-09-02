@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>support-003</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .page{position:relative;width:794px;height:1123px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+  .ph{position:absolute;background:#dcdcdc;display:grid;place-items:center;font-size:12px;letter-spacing:.2em;color:#8c8c8c}
+  .pn{position:absolute;font-size:11px;letter-spacing:.1em;color:#8c8c8c}
+  .en{position:absolute;left:56px;top:76px;font-size:11px;letter-spacing:.3em;color:#8c8c8c}
+  .h1{position:absolute;left:56px;top:102px;font-size:30px;font-weight:800;letter-spacing:.08em;color:#1a1a1a}
+  .tb{position:absolute;left:56px;top:180px;width:682px;border-collapse:collapse;font-size:11.5px}
+  .tb th{background:#6b6b6b;color:#fff;padding:11px 12px;text-align:left;font-size:11px;font-weight:700;border:1px solid #6b6b6b}
+  .tb td{padding:13px 12px;border:1px solid #e6e6e6;color:#4d4d4d;vertical-align:top;line-height:1.8}
+  .tb td.n{font-weight:700;color:#1a1a1a}
+  .nt{position:absolute;left:56px;top:610px;font-size:11px;line-height:1.9;color:#8c8c8c}
+  .bx{position:absolute;left:56px;top:680px;width:682px;background:#f0f0f0;padding:24px 28px}
+  .bx .t{font-size:13px;font-weight:800;color:#1a1a1a}
+  .bx .x{margin-top:12px;font-size:11.5px;line-height:2.05;color:#4d4d4d}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="page">
+    <div class="en">SCHOLARSHIP</div>
+    <div class="h1">奨学金一覧</div>
+    <table class="tb"><thead><tr><th style="width:200px">制度名</th><th style="width:100px">種別</th><th style="width:140px">金額</th><th>対象・条件</th></tr></thead><tbody>
+      <tr><td class="n">ダミーの奨学金</td><td>給付</td><td>年額000,000円</td><td>ダミーテキストダミーテキストダミーテキスト</td></tr>
+      <tr><td class="n">ダミーの奨学金</td><td>給付</td><td>年額000,000円</td><td>ダミーテキストダミーテキストダミーテキスト</td></tr>
+      <tr><td class="n">ダミーの奨学金</td><td>貸与</td><td>月額00,000円</td><td>ダミーテキストダミーテキストダミーテキスト</td></tr>
+      <tr><td class="n">ダミーの奨学金</td><td>減免</td><td>授業料半額</td><td>ダミーテキストダミーテキストダミーテキスト</td></tr>
+      <tr><td class="n">ダミーの奨学金</td><td>給付</td><td>一時金000,000円</td><td>ダミーテキストダミーテキストダミーテキスト</td></tr>
+    </tbody></table>
+    <div class="nt">※ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div>
+    <div class="bx"><div class="t">学費に関するご相談</div><div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div></div>
+    <div class="ph" style="left:56px;top:830px;width:682px;height:190px">IMAGE</div>
+    <div class="pn" style="left:56px;top:1060px">62</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/794,innerHeight/1123));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>

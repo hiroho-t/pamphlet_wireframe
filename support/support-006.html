@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>support-006</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .page{position:relative;width:794px;height:1123px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+  .ph{position:absolute;background:#dcdcdc;display:grid;place-items:center;font-size:12px;letter-spacing:.2em;color:#8c8c8c}
+  .pn{position:absolute;font-size:11px;letter-spacing:.1em;color:#8c8c8c}
+  .hd{position:absolute;left:0;top:0;width:794px;height:200px;background:#6b6b6b}
+  .en{position:absolute;left:56px;top:70px;font-size:11px;letter-spacing:.3em;color:#e0e0e0}
+  .h1{position:absolute;left:56px;top:98px;font-size:28px;font-weight:800;letter-spacing:.08em;color:#fff}
+  .lead{position:absolute;left:56px;width:500px;top:146px;font-size:11.5px;line-height:1.95;color:#e6e6e6}
+  .mo{position:absolute;left:56px;top:250px;width:682px}
+  .mo .r{display:flex;align-items:center;gap:16px;padding:14px 0;border-bottom:1px solid #e6e6e6}
+  .mo .r .l{flex:none;width:200px;font-size:12.5px;font-weight:700;color:#1a1a1a}
+  .mo .r .b{flex:1;height:18px;background:#f0f0f0;position:relative}
+  .mo .r .b i{position:absolute;left:0;top:0;height:18px;background:#6b6b6b}
+  .mo .r .v{flex:none;width:110px;text-align:right;font-size:12px;font-weight:700;color:#1a1a1a}
+  .bx{position:absolute;left:56px;top:600px;width:682px;border:1px solid #d5d5d5;padding:24px 28px}
+  .bx .t{font-size:13px;font-weight:800;color:#1a1a1a}
+  .bx .g{margin-top:16px;display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+  .bx .g div{font-size:11.5px;line-height:1.9;color:#4d4d4d}
+  .bx .g b{display:block;font-size:12.5px;color:#1a1a1a}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="page">
+    <div class="hd"></div>
+    <div class="en">COST SIMULATION</div>
+    <div class="h1">学費シミュレーション</div>
+    <div class="lead">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div>
+    <div class="mo">
+      <div class="r"><div class="l">1年次</div><div class="b"><i style="width:100%"></i></div><div class="v">0,000,000円</div></div>
+      <div class="r"><div class="l">2年次</div><div class="b"><i style="width:72%"></i></div><div class="v">0,000,000円</div></div>
+      <div class="r"><div class="l">3年次</div><div class="b"><i style="width:72%"></i></div><div class="v">0,000,000円</div></div>
+      <div class="r"><div class="l">4年次</div><div class="b"><i style="width:70%"></i></div><div class="v">0,000,000円</div></div>
+      <div class="r"><div class="l">4年間合計</div><div class="b"><i style="width:100%;background:#1a1a1a"></i></div><div class="v">00,000,000円</div></div>
+    </div>
+    <div class="bx"><div class="t">利用できる制度</div><div class="g"><div><b>ダミーの制度名</b>ダミーテキストダミーテキストダミーテキスト</div><div><b>ダミーの制度名</b>ダミーテキストダミーテキストダミーテキスト</div><div><b>ダミーの制度名</b>ダミーテキストダミーテキストダミーテキスト</div><div><b>ダミーの制度名</b>ダミーテキストダミーテキストダミーテキスト</div></div></div>
+    <div class="ph" style="left:56px;top:830px;width:682px;height:190px">IMAGE</div>
+    <div class="pn" style="right:56px;top:1060px">60</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/794,innerHeight/1123));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>

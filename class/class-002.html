@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>class-002</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .page{position:relative;width:794px;height:1123px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+  .ph{position:absolute;background:#dcdcdc;display:grid;place-items:center;font-size:12px;letter-spacing:.2em;color:#8c8c8c}
+  .pn{position:absolute;font-size:11px;letter-spacing:.1em;color:#8c8c8c}
+  .en{position:absolute;left:56px;top:440px;font-size:11px;letter-spacing:.3em;color:#8c8c8c}
+  .h1{position:absolute;left:56px;top:466px;font-size:28px;font-weight:800;letter-spacing:.06em;color:#1a1a1a}
+  .mt{position:absolute;left:56px;top:512px;font-size:11px;color:#8c8c8c}
+  .bd{position:absolute;left:56px;width:420px;top:552px;font-size:12px;line-height:2.15;color:#4d4d4d}
+  .box{position:absolute;left:508px;top:440px;width:230px;border:1px solid #d5d5d5;padding:20px}
+  .box .t{font-size:11px;letter-spacing:.14em;color:#8c8c8c;padding-bottom:10px;border-bottom:1px solid #d5d5d5}
+  .box li{list-style:none;padding:9px 0;border-bottom:1px solid #e6e6e6;font-size:11.5px;color:#4d4d4d}
+  .box li b{display:block;font-size:11px;color:#1a1a1a}
+  .flow{position:absolute;left:56px;top:740px;width:682px}
+  .flow .t{font-size:12px;font-weight:800;letter-spacing:.06em;color:#1a1a1a;padding-bottom:10px;border-bottom:1px solid #1a1a1a}
+  .flow .g{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:16px}
+  .flow .s{border:1px solid #d5d5d5;padding:14px}
+  .flow .s .n{font-size:10px;letter-spacing:.16em;color:#8c8c8c}
+  .flow .s .h{margin-top:6px;font-size:12.5px;font-weight:700;color:#1a1a1a}
+  .flow .s .x{margin-top:6px;font-size:10.5px;line-height:1.8;color:#4d4d4d}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="page">
+    <div class="ph" style="left:0;top:0;width:794px;height:390px">MAIN IMAGE</div>
+    <div class="en">CLASS REPORT</div>
+    <div class="h1">ダミーの授業名</div>
+    <div class="mt">ダミー学科 2年次／90分×15回／担当：ダミー 太郎</div>
+    <div class="bd">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div>
+    <div class="box"><div class="t">この授業で身につく力</div><ul><li><b>ダミーの力</b>ダミーテキストダミーテキスト</li><li><b>ダミーの力</b>ダミーテキストダミーテキスト</li><li><b>ダミーの力</b>ダミーテキストダミーテキスト</li></ul></div>
+    <div class="flow"><div class="t">90分の流れ</div><div class="g">
+      <div class="s"><div class="n">STEP 01</div><div class="h">ダミーの見出し</div><div class="x">ダミーテキストダミーテキスト。</div></div>
+      <div class="s"><div class="n">STEP 02</div><div class="h">ダミーの見出し</div><div class="x">ダミーテキストダミーテキスト。</div></div>
+      <div class="s"><div class="n">STEP 03</div><div class="h">ダミーの見出し</div><div class="x">ダミーテキストダミーテキスト。</div></div>
+      <div class="s"><div class="n">STEP 04</div><div class="h">ダミーの見出し</div><div class="x">ダミーテキストダミーテキスト。</div></div>
+    </div></div>
+    <div class="pn" style="right:56px;top:1060px">22</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/794,innerHeight/1123));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>

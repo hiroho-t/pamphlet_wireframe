@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>department-005</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .page{position:relative;width:794px;height:1123px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+  .ph{position:absolute;background:#dcdcdc;display:grid;place-items:center;font-size:12px;letter-spacing:.2em;color:#8c8c8c}
+  .pn{position:absolute;font-size:11px;letter-spacing:.1em;color:#8c8c8c}
+  .hd{position:absolute;left:0;top:0;width:794px;height:150px;background:#6b6b6b}
+  .en{position:absolute;left:56px;top:48px;font-size:11px;letter-spacing:.3em;color:#e0e0e0}
+  .h1{position:absolute;left:56px;top:74px;font-size:28px;font-weight:800;letter-spacing:.08em;color:#fff}
+  .tree{position:absolute;left:56px;top:210px;width:682px}
+  .lv{position:absolute;left:0;width:130px;font-size:11px;letter-spacing:.16em;color:#8c8c8c}
+  .bx{position:absolute;border:1px solid #1a1a1a;display:grid;place-items:center;font-size:13px;font-weight:700;color:#1a1a1a;text-align:center;line-height:1.5}
+  .bx.sub{border-color:#d5d5d5;font-weight:400;font-size:12px}
+  .ln{position:absolute;background:#d5d5d5}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="page">
+    <div class="hd"></div>
+    <div class="en">ACADEMIC STRUCTURE</div>
+    <div class="h1">学部・学科の構成</div>
+    <div class="tree" style="height:700px">
+      <div class="lv" style="top:16px">学部</div>
+      <div class="bx" style="left:150px;top:0;width:532px;height:56px;background:#f0f0f0">ダミー学部</div>
+      <div class="ln" style="left:416px;top:56px;width:1px;height:34px"></div>
+      <div class="ln" style="left:200px;top:90px;width:432px;height:1px"></div>
+      <div class="ln" style="left:200px;top:90px;width:1px;height:30px"></div>
+      <div class="ln" style="left:416px;top:90px;width:1px;height:30px"></div>
+      <div class="ln" style="left:632px;top:90px;width:1px;height:30px"></div>
+      <div class="lv" style="top:136px">学科</div>
+      <div class="bx" style="left:150px;top:120px;width:100px;height:52px">ダミー<br>学科</div>
+      <div class="bx" style="left:366px;top:120px;width:100px;height:52px">ダミー<br>学科</div>
+      <div class="bx" style="left:582px;top:120px;width:100px;height:52px">ダミー<br>学科</div>
+      <div class="ln" style="left:200px;top:172px;width:1px;height:28px"></div>
+      <div class="ln" style="left:416px;top:172px;width:1px;height:28px"></div>
+      <div class="ln" style="left:632px;top:172px;width:1px;height:28px"></div>
+      <div class="lv" style="top:230px">コース</div>
+      <div class="bx sub" style="left:150px;top:200px;width:100px;height:44px">ダミーコース</div>
+      <div class="bx sub" style="left:150px;top:254px;width:100px;height:44px">ダミーコース</div>
+      <div class="bx sub" style="left:150px;top:308px;width:100px;height:44px">ダミーコース</div>
+      <div class="bx sub" style="left:366px;top:200px;width:100px;height:44px">ダミーコース</div>
+      <div class="bx sub" style="left:366px;top:254px;width:100px;height:44px">ダミーコース</div>
+      <div class="bx sub" style="left:582px;top:200px;width:100px;height:44px">ダミーコース</div>
+      <div class="bx sub" style="left:582px;top:254px;width:100px;height:44px">ダミーコース</div>
+      <div class="bx sub" style="left:582px;top:308px;width:100px;height:44px">ダミーコース</div>
+    </div>
+    <div class="ph" style="left:56px;top:640px;width:682px;height:340px">IMAGE</div>
+    <div class="pn" style="left:56px;top:1050px">10</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/794,innerHeight/1123));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>

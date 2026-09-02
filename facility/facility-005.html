@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>facility-005</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .page{position:relative;width:794px;height:1123px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+  .ph{position:absolute;background:#dcdcdc;display:grid;place-items:center;font-size:12px;letter-spacing:.2em;color:#8c8c8c}
+  .pn{position:absolute;font-size:11px;letter-spacing:.1em;color:#8c8c8c}
+  .en{position:absolute;left:56px;top:76px;font-size:11px;letter-spacing:.3em;color:#8c8c8c}
+  .h1{position:absolute;left:56px;top:102px;font-size:30px;font-weight:800;letter-spacing:.08em;color:#1a1a1a}
+  .cap{position:absolute;font-size:11px;line-height:1.7;color:#8c8c8c}
+  .cap b{display:block;font-size:13px;font-weight:800;color:#1a1a1a}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="page">
+    <div class="en">FACILITY GALLERY</div>
+    <div class="h1">施設ギャラリー</div>
+    <div class="ph" style="left:56px;top:180px;width:682px;height:280px">MAIN IMAGE</div>
+    <div class="cap" style="left:56px;top:472px;width:682px"><b>ダミーの施設名</b>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div>
+    <div class="ph" style="left:56px;top:540px;width:222px;height:160px">IMAGE</div>
+    <div class="cap" style="left:56px;top:710px;width:222px"><b>ダミーの施設名</b>ダミーテキストダミーテキスト。</div>
+    <div class="ph" style="left:286px;top:540px;width:222px;height:160px">IMAGE</div>
+    <div class="cap" style="left:286px;top:710px;width:222px"><b>ダミーの施設名</b>ダミーテキストダミーテキスト。</div>
+    <div class="ph" style="left:516px;top:540px;width:222px;height:160px">IMAGE</div>
+    <div class="cap" style="left:516px;top:710px;width:222px"><b>ダミーの施設名</b>ダミーテキストダミーテキスト。</div>
+    <div class="ph" style="left:56px;top:790px;width:222px;height:160px">IMAGE</div>
+    <div class="cap" style="left:56px;top:960px;width:222px"><b>ダミーの施設名</b>ダミーテキストダミーテキスト。</div>
+    <div class="ph" style="left:286px;top:790px;width:222px;height:160px">IMAGE</div>
+    <div class="cap" style="left:286px;top:960px;width:222px"><b>ダミーの施設名</b>ダミーテキストダミーテキスト。</div>
+    <div class="ph" style="left:516px;top:790px;width:222px;height:160px">IMAGE</div>
+    <div class="cap" style="left:516px;top:960px;width:222px"><b>ダミーの施設名</b>ダミーテキストダミーテキスト。</div>
+    <div class="pn" style="left:56px;top:1070px">46</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/794,innerHeight/1123));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>
