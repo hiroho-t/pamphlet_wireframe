@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>curriculum-023</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .page{position:relative;width:794px;height:1123px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+  .ph{position:absolute;background:#dcdcdc;display:grid;place-items:center;font-size:12px;letter-spacing:.2em;color:#8c8c8c}
+  .pn{position:absolute;font-size:11px;letter-spacing:.1em;color:#8c8c8c}
+  .eye{position:absolute;left:56px;top:76px;font-size:11px;letter-spacing:.3em;color:#8c8c8c}
+  .h1{position:absolute;left:56px;top:100px;font-size:29px;font-weight:800;letter-spacing:.07em;color:#1a1a1a}
+  .h1{position:absolute;left:0;width:794px;top:100px;text-align:center;font-size:29px;font-weight:800;letter-spacing:.1em;color:#1a1a1a}
+  .eye{position:absolute;left:0;width:794px;top:76px;text-align:center;font-size:11px;letter-spacing:.3em;color:#8c8c8c}
+  .fl{position:absolute;left:56px;top:200px;width:682px}
+  .fl .row{display:flex;align-items:stretch;gap:0;margin-bottom:14px}
+  .fl .row .y{flex:none;width:90px;background:#6b6b6b;color:#fff;display:grid;place-items:center;font-size:12px;font-weight:800}
+  .fl .row .b{flex:1;border:1px solid #d5d5d5;border-left:0;padding:16px 20px}
+  .fl .row .b .t{font-size:14px;font-weight:800;color:#1a1a1a}
+  .fl .row .b .x{margin-top:6px;font-size:11px;line-height:1.85;color:#4d4d4d}
+  .fl .row .b .g{margin-top:8px;display:flex;flex-wrap:wrap;gap:6px}
+  .fl .row .b .g span{padding:4px 10px;background:#f0f0f0;font-size:10px;color:#4d4d4d}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="page">
+    <div class="eye">STEP BY STEP</div>
+    <div class="h1">積み上がる学び</div>
+    <div class="fl">
+      <div class="row"><div class="y">1年次</div><div class="b"><div class="t">ダミーの見出し</div><div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div><div class="g"><span>ダミー科目</span><span>ダミー科目</span><span>ダミー科目</span></div></div></div>
+      <div class="row"><div class="y">2年次</div><div class="b"><div class="t">ダミーの見出し</div><div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div><div class="g"><span>ダミー科目</span><span>ダミー科目</span><span>ダミー科目</span></div></div></div>
+      <div class="row"><div class="y">3年次</div><div class="b"><div class="t">ダミーの見出し</div><div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div><div class="g"><span>ダミー科目</span><span>ダミー科目</span><span>ダミー科目</span></div></div></div>
+      <div class="row"><div class="y">4年次</div><div class="b"><div class="t">ダミーの見出し</div><div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div><div class="g"><span>卒業研究</span><span>ダミー科目</span></div></div></div>
+    </div>
+    <div class="ph" style="left:56px;top:800px;width:682px;height:220px">IMAGE</div>
+    <div class="pn" style="left:0;width:794px;text-align:center;top:1060px">18</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/794,innerHeight/1123));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>

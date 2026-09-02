@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>curriculum-016</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .page{position:relative;width:794px;height:1123px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+  .ph{position:absolute;background:#dcdcdc;display:grid;place-items:center;font-size:12px;letter-spacing:.2em;color:#8c8c8c}
+  .pn{position:absolute;font-size:11px;letter-spacing:.1em;color:#8c8c8c}
+  .eye{position:absolute;left:56px;top:76px;font-size:11px;letter-spacing:.3em;color:#8c8c8c}
+  .h1{position:absolute;left:56px;top:100px;font-size:29px;font-weight:800;letter-spacing:.07em;color:#1a1a1a}
+  .l{position:absolute;left:56px;top:180px;width:400px}
+  .l .r{display:flex;gap:14px;padding:11px 0;border-bottom:1px solid #e6e6e6}
+  .l .r .t{flex:none;width:70px;font-size:11.5px;font-weight:800;color:#1a1a1a}
+  .l .r .x{font-size:11.5px;line-height:1.7;color:#4d4d4d}
+  .sd{position:absolute;left:490px;top:180px;width:248px;border:1px solid #d5d5d5;padding:20px}
+  .sd .t{font-size:11px;letter-spacing:.14em;color:#8c8c8c;padding-bottom:9px;border-bottom:1px solid #d5d5d5}
+  .sd li{list-style:none;padding:8px 0;border-bottom:1px solid #ececec;font-size:11px;color:#4d4d4d}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="page">
+    <div class="eye">A DAY IN CAMPUS</div>
+    <div class="h1">ある1日のスケジュール</div>
+    <div class="l">
+      <div class="r"><div class="t">8:30</div><div class="x">ダミーテキストダミーテキストダミーテキスト</div></div>
+      <div class="r"><div class="t">9:00</div><div class="x">ダミーテキストダミーテキストダミーテキスト</div></div>
+      <div class="r"><div class="t">10:40</div><div class="x">ダミーテキストダミーテキストダミーテキスト</div></div>
+      <div class="r"><div class="t">12:10</div><div class="x">ダミーテキストダミーテキストダミーテキスト</div></div>
+      <div class="r"><div class="t">13:00</div><div class="x">ダミーテキストダミーテキストダミーテキスト</div></div>
+      <div class="r"><div class="t">14:40</div><div class="x">ダミーテキストダミーテキストダミーテキスト</div></div>
+      <div class="r"><div class="t">16:30</div><div class="x">ダミーテキストダミーテキストダミーテキスト</div></div>
+      <div class="r"><div class="t">18:00</div><div class="x">ダミーテキストダミーテキストダミーテキスト</div></div>
+    </div>
+    <div class="sd"><div class="t">POINT</div><ul><li>ダミーテキストダミーテキスト</li><li>ダミーテキストダミーテキスト</li><li>ダミーテキストダミーテキスト</li></ul></div>
+    <div class="ph" style="left:490px;top:440px;width:248px;height:200px">IMAGE</div>
+    <div class="ph" style="left:56px;top:600px;width:400px;height:200px">IMAGE</div>
+    <div class="ph" style="left:56px;top:820px;width:682px;height:200px">IMAGE</div>
+    <div class="pn" style="right:56px;top:1060px">20</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/794,innerHeight/1123));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>
