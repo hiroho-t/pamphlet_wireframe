@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>global-004</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .page{position:relative;width:794px;height:1123px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+  .ph{position:absolute;background:#dcdcdc;display:grid;place-items:center;font-size:12px;letter-spacing:.2em;color:#8c8c8c}
+  .pn{position:absolute;font-size:11px;letter-spacing:.1em;color:#8c8c8c}
+  .eye{position:absolute;left:56px;top:76px;font-size:11px;letter-spacing:.3em;color:#8c8c8c}
+  .h1{position:absolute;left:56px;top:100px;font-size:29px;font-weight:800;letter-spacing:.07em;color:#1a1a1a}
+  .st{position:absolute;width:213px;height:140px;border:1px solid #d5d5d5;display:grid;place-items:center;align-content:center;gap:6px}
+  .st .l{font-size:10.5px;color:#8c8c8c}
+  .st .v{font-size:32px;font-weight:800;line-height:1;color:#1a1a1a}
+  .st .v small{font-size:13px}
+  .b{position:absolute;left:56px;width:682px;border:1px solid #d5d5d5;padding:18px 22px}
+  .b .t{font-size:13px;font-weight:800;color:#1a1a1a}
+  .b .x{margin-top:8px;font-size:11px;line-height:1.95;color:#4d4d4d}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="page">
+    <div class="eye">GLOBAL DATA</div>
+    <div class="h1">数字で見る国際交流</div>
+    <div class="st" style="left:56px;top:180px"><div class="l">協定校数</div><div class="v">28<small>校</small></div></div>
+    <div class="st" style="left:290px;top:180px"><div class="l">年間派遣者数</div><div class="v">120<small>名</small></div></div>
+    <div class="st" style="left:524px;top:180px"><div class="l">受入留学生</div><div class="v">86<small>名</small></div></div>
+    <div class="st" style="left:56px;top:340px"><div class="l">対象国・地域</div><div class="v">14<small>か国</small></div></div>
+    <div class="st" style="left:290px;top:340px"><div class="l">奨学金採用率</div><div class="v">62<small>%</small></div></div>
+    <div class="st" style="left:524px;top:340px"><div class="l">語学講座数</div><div class="v">18<small>講座</small></div></div>
+    <div class="b" style="top:510px"><div class="t">留学のための支援制度</div><div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div></div>
+    <div class="b" style="top:650px"><div class="t">語学サポート</div><div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div></div>
+    <div class="ph" style="left:56px;top:790px;width:682px;height:230px">IMAGE</div>
+    <div class="pn" style="right:56px;top:1064px">36</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/794,innerHeight/1123));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>

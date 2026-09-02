@@ -24,13 +24,17 @@ const CATS = [
   ['施設・キャンパス', 'facility'],
   ['進路・就職',       'career'],
   ['卒業生',           'og'],
+  ['作品・成果',       'works'],
+  ['国際交流・留学',   'global'],
   ['資格・免許',       'license'],
   ['学費・奨学金',     'support'],
   ['入試',             'admission'],
   ['オープンキャンパス','opencampus'],
   ['アクセス・学校概要','access'],
+  ['よくある質問',     'faq'],
   ['裏表紙',           'backcover'],
   ['見開き',           'spread'],
+  ['募集要項',         'guidelines'],
 ];
 
 // 1ファイル目の .page の実寸からカテゴリーの縦横比を読む

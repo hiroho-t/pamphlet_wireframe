@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>guidelines-010</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .page{position:relative;width:794px;height:1123px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+  .ph{position:absolute;background:#dcdcdc;display:grid;place-items:center;font-size:12px;letter-spacing:.2em;color:#8c8c8c}
+  .pn{position:absolute;font-size:11px;letter-spacing:.1em;color:#8c8c8c}
+  .eye{position:absolute;left:56px;top:76px;font-size:11px;letter-spacing:.3em;color:#8c8c8c}
+  .h1{position:absolute;left:56px;top:100px;font-size:26px;font-weight:800;letter-spacing:.07em;color:#1a1a1a}
+  .tb{position:absolute;left:56px;width:682px;border-collapse:collapse;font-size:10.5px}
+  .tb th{background:#6b6b6b;color:#fff;padding:9px 8px;font-size:10px;font-weight:700;border:1px solid #6b6b6b}
+  .tb td{padding:11px 8px;border:1px solid #d5d5d5;color:#4d4d4d;text-align:center;line-height:1.6}
+  .tb td.n{text-align:left;font-weight:700;color:#1a1a1a;background:#fafafa}
+  .nt{position:absolute;left:56px;width:682px;font-size:10px;line-height:1.95;color:#8c8c8c}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="page">
+    <div class="eye">TEST VENUES</div>
+    <div class="h1">試験場一覧</div>
+    <table class="tb" style="top:180px"><thead><tr><th style="width:120px">試験場</th><th style="width:200px">所在地</th><th style="width:150px">最寄駅</th><th>実施入試</th></tr></thead><tbody>
+      <tr><td class="n">本学</td><td>ダミー県ダミー市ダミー町0-0-0</td><td>ダミー駅 徒歩00分</td><td>全入試</td></tr>
+      <tr><td class="n">ダミー会場</td><td>ダミー県ダミー市ダミー町0-0-0</td><td>ダミー駅 徒歩00分</td><td>ダミー入試</td></tr>
+      <tr><td class="n">ダミー会場</td><td>ダミー県ダミー市ダミー町0-0-0</td><td>ダミー駅 徒歩00分</td><td>ダミー入試</td></tr>
+      <tr><td class="n">ダミー会場</td><td>ダミー県ダミー市ダミー町0-0-0</td><td>ダミー駅 徒歩00分</td><td>ダミー入試</td></tr>
+      <tr><td class="n">ダミー会場</td><td>ダミー県ダミー市ダミー町0-0-0</td><td>ダミー駅 徒歩00分</td><td>ダミー入試</td></tr>
+    </tbody></table>
+    <div class="nt" style="top:420px">※試験場は出願時に選択してください。出願後の変更はできません。<br>※ダミーテキストダミーテキストダミーテキストダミーテキスト。</div>
+    <div class="ph" style="left:56px;top:490px;width:333px;height:280px;font-size:12px">MAP（本学）</div>
+    <div class="ph" style="left:405px;top:490px;width:333px;height:280px;font-size:12px">MAP（ダミー会場）</div>
+    <div class="nt" style="top:800px">※当日は公共交通機関をご利用ください。自家用車での来場はできません。</div>
+    <div class="ph" style="left:56px;top:850px;width:682px;height:170px">IMAGE</div>
+    <div class="pn" style="right:56px;top:1064px">12</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/794,innerHeight/1123));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>

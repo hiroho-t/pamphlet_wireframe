@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>guidelines-014</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .page{position:relative;width:794px;height:1123px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+  .ph{position:absolute;background:#dcdcdc;display:grid;place-items:center;font-size:12px;letter-spacing:.2em;color:#8c8c8c}
+  .pn{position:absolute;font-size:11px;letter-spacing:.1em;color:#8c8c8c}
+  .eye{position:absolute;left:56px;top:76px;font-size:11px;letter-spacing:.3em;color:#8c8c8c}
+  .h1{position:absolute;left:56px;top:100px;font-size:26px;font-weight:800;letter-spacing:.07em;color:#1a1a1a}
+  .nt{position:absolute;left:56px;width:682px;font-size:10px;line-height:1.95;color:#8c8c8c}
+  .frm{position:absolute;left:56px;top:180px;width:682px;height:700px;border:2px solid #1a1a1a}
+  .frm .hd{height:56px;border-bottom:1px solid #1a1a1a;display:flex;align-items:center;padding:0 20px;justify-content:space-between}
+  .frm .hd .t{font-size:16px;font-weight:800;letter-spacing:.14em;color:#1a1a1a}
+  .frm .hd .n{font-size:10.5px;color:#8c8c8c}
+  .frm .row{display:flex;border-bottom:1px solid #d5d5d5;min-height:52px}
+  .frm .row .lb{flex:none;width:130px;background:#f0f0f0;border-right:1px solid #d5d5d5;display:flex;align-items:center;padding:0 14px;font-size:10.5px;font-weight:700;color:#1a1a1a}
+  .frm .row .in{flex:1;display:flex;align-items:center;padding:0 14px;font-size:10.5px;color:#b5b5b5}
+  .frm .ph2{position:absolute;right:20px;top:76px;width:110px;height:140px;border:1px solid #8c8c8c;display:grid;place-items:center;font-size:9px;color:#8c8c8c}
+  .cal{position:absolute;left:56px;width:682px;font-size:10.5px;line-height:1.9;color:#4d4d4d}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="page">
+    <div class="eye">APPLICATION FORM</div>
+    <div class="h1">入学志願票 記入例</div>
+    <div class="frm">
+      <div class="hd"><div class="t">入 学 志 願 票</div><div class="n">20XX年度 ダミー大学</div></div>
+      <div class="ph2">写真貼付欄</div>
+      <div class="row"><div class="lb">受験番号</div><div class="in">（記入しないでください）</div></div>
+      <div class="row"><div class="lb">志望学科</div><div class="in">ダミー学科　ダミーコース</div></div>
+      <div class="row"><div class="lb">入試区分</div><div class="in">ダミー入試（前期）</div></div>
+      <div class="row"><div class="lb">ふりがな</div><div class="in">だみー　はなこ</div></div>
+      <div class="row"><div class="lb">氏名</div><div class="in">ダミー　花子</div></div>
+      <div class="row"><div class="lb">生年月日</div><div class="in">20XX年 X月 X日</div></div>
+      <div class="row"><div class="lb">現住所</div><div class="in">〒000-0000　ダミー県ダミー市ダミー町0-0-0</div></div>
+      <div class="row"><div class="lb">電話番号</div><div class="in">000-0000-0000</div></div>
+      <div class="row"><div class="lb">出身学校</div><div class="in">ダミー県立ダミー高等学校　20XX年3月卒業見込</div></div>
+      <div class="row"><div class="lb">試験場</div><div class="in">本学</div></div>
+    </div>
+    <div class="cal" style="top:910px">記入上の注意<br>① 黒のボールペンを使用し、楷書で記入してください。<br>② 訂正する場合は二重線を引き、訂正印を押してください。<br>③ 写真は3か月以内に撮影した縦4cm×横3cmのものを貼付してください。</div>
+    <div class="pn" style="right:56px;top:1064px">8</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/794,innerHeight/1123));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>

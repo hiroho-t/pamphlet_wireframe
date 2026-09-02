@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>works-002</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .page{position:relative;width:794px;height:1123px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+  .ph{position:absolute;background:#dcdcdc;display:grid;place-items:center;font-size:12px;letter-spacing:.2em;color:#8c8c8c}
+  .pn{position:absolute;font-size:11px;letter-spacing:.1em;color:#8c8c8c}
+  .h1{position:absolute;left:56px;top:660px;font-size:28px;font-weight:800;letter-spacing:.06em;color:#1a1a1a}
+  .eye{position:absolute;left:56px;top:634px;font-size:11px;letter-spacing:.3em;color:#8c8c8c}
+  .nm{position:absolute;left:56px;top:716px;font-size:11.5px;color:#8c8c8c}
+  .nm b{font-size:14px;color:#1a1a1a}
+  .bd{position:absolute;left:56px;width:400px;top:760px;font-size:12px;line-height:2.15;color:#4d4d4d}
+  .sp{position:absolute;left:490px;top:760px;width:248px;border-top:1px solid #1a1a1a}
+  .sp dt{font-size:10px;color:#8c8c8c;margin-top:12px}
+  .sp dd{margin-top:3px;font-size:11.5px;font-weight:700;color:#1a1a1a}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="page">
+    <div class="ph" style="left:0;top:0;width:794px;height:600px;font-size:13px">MAIN IMAGE（作品）</div>
+    <div class="eye">WORK PICK UP</div>
+    <div class="h1">ダミーの作品タイトル</div>
+    <div class="nm">ダミー学科 4年　<b>ダミー 花子</b></div>
+    <div class="bd">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div>
+    <dl class="sp"><dt>制作年</dt><dd>20XX年</dd><dt>技法・素材</dt><dd>ダミーの技法／ダミーの素材</dd><dt>サイズ</dt><dd>000×000mm</dd><dt>指導教員</dt><dd>ダミー 太郎 教授</dd></dl>
+    <div class="ph" style="left:56px;top:930px;width:222px;height:90px">IMAGE</div>
+    <div class="ph" style="left:286px;top:930px;width:222px;height:90px">IMAGE</div>
+    <div class="ph" style="left:516px;top:930px;width:222px;height:90px">IMAGE</div>
+    <div class="pn" style="right:56px;top:1064px">30</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/794,innerHeight/1123));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>
