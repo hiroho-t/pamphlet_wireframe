@@ -226,7 +226,7 @@
 | curriculum-027 | 学びを支える仕組み<br><small>SUPPORT FOR LEARNING</small> | 図版1点 |
 | curriculum-041 | — | **トレース**・図版3点 |
 
-## 授業・実習・教員 `class/`（30種）
+## 授業・実習・教員 `class/`（32種）
 
 | id | 見出し | 特徴 |
 |---|---|---|
@@ -260,6 +260,8 @@
 | class-028 | アトリエ・工房での学び<br><small>STUDIO WORK</small> | 図版13点 |
 | class-029 | ダミーの授業名<br><small>CLASS FEATURE</small> | 地色パネル・図版4点 |
 | class-030 | 評価の仕組み<br><small>EVALUATION</small> | 表・図版3点 |
+| class-031 | 実社会で活躍する人材になるために 実践体験カリキュラムで身につける | **トレース**・図版2点 |
+| class-032 | — | **トレース**・QR・画面イメージ・図版5点 |
 
 ## 在学生インタビュー `student/`（32種）
 
@@ -357,7 +359,7 @@
 | facility-022 | — | **トレース**・図版20点 |
 | facility-023 | — | **トレース**・ステップ・図版16点 |
 
-## 進路・就職 `career/`（28種）
+## 進路・就職 `career/`（26種）
 
 | id | 見出し | 特徴 |
 |---|---|---|
@@ -385,8 +387,6 @@
 | career-022 | 働く先輩たち<br><small>WORK STORY</small> | 図版8点 |
 | career-023 | 4年間のキャリア教育<br><small>CAREER TIMELINE</small> | 図版1点 |
 | career-024 | 職場を訪ねて<br><small>GRADUATES AT WORK</small> | 図版5点 |
-| career-025 | 就職先の分野<br><small>EMPLOYMENT FIELDS</small> | タグ列・図版1点 |
-| career-026 | 就職支援イベント<br><small>SEMINAR &amp; EVENT</small> | 図版1点 |
 | career-027 | — | **トレース**・図版0点 |
 | career-028 | 学生が主体的に選ぶ | **トレース**・縦組み・図版0点 |
 
