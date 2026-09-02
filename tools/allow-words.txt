@@ -375,3 +375,11 @@ Style
 Wedding
 of
 message
+# 外部サービスのプラットフォーム名。掲載校の固有名詞ではなく、
+# 「SNSの枠が4つ並ぶ」というブロックの種類を示すラベルとして許可する。
+Instagram
+LINE
+TikTok
+YouTube
+IT
+TECHNOLOGY
