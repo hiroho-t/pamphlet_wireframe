@@ -366,3 +366,4 @@ BIOGRAPHY
 HOBBY
 TARO
 Motto
+Curriculum
