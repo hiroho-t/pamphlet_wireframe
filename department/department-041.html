@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- traced: 実誌面から採寸して再現 -->
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
@@ -11,27 +12,45 @@
   .page{position:relative;width:794px;height:1123px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
   .ph{position:absolute;background:#dcdcdc;display:grid;place-items:center;font-size:12px;letter-spacing:.2em;color:#8c8c8c}
   .pn{position:absolute;font-size:11px;letter-spacing:.1em;color:#8c8c8c}
-  .eye{position:absolute;left:56px;top:76px;font-size:11px;letter-spacing:.3em;color:#8c8c8c}
-  .h1{position:absolute;left:56px;top:100px;font-size:29px;font-weight:800;letter-spacing:.07em;color:#1a1a1a}
-  .r{position:absolute;left:56px;width:682px;height:166px;border-bottom:1px solid #e6e6e6}
-  .r .im{position:absolute;left:0;top:16px;width:240px;height:134px;background:#dcdcdc;display:grid;place-items:center;font-size:10px;color:#8c8c8c}
-  .r .n{position:absolute;left:266px;top:22px;font-size:9.5px;letter-spacing:.18em;color:#8c8c8c}
-  .r .t{position:absolute;left:266px;top:40px;font-size:18px;font-weight:800;color:#1a1a1a}
-  .r .x{position:absolute;left:266px;top:72px;width:340px;font-size:11px;line-height:1.9;color:#4d4d4d}
-  .r .p{position:absolute;right:0;top:44px;font-size:12px;font-weight:700;color:#1a1a1a}
+  .band{position:absolute;left:0;top:0;width:794px;height:348px;background:#e6e6e6}
+  .tab{position:absolute;left:70px;top:52px;width:368px;height:26px;background:#d5d5d5;
+    display:flex;align-items:center;padding-left:14px;font-size:11px;letter-spacing:.1em;color:#4d4d4d}
+  .ttl{position:absolute;left:80px;top:112px;font-size:52px;font-weight:700;letter-spacing:.28em;color:#1a1a1a}
+  .sub{position:absolute;left:80px;top:188px;font-size:15px;letter-spacing:.16em;color:#4d4d4d}
+  .rl{position:absolute;left:80px;top:218px;width:664px;height:1px;background:#b9b9b9}
+  .scr{position:absolute;left:470px;top:228px;font-family:"Snell Roundhand","Apple Chancery",cursive;
+    font-style:italic;font-size:36px;letter-spacing:.04em;color:#fff}
+  .chip{position:absolute;left:80px;top:262px;display:flex;align-items:center;gap:6px;font-size:11px;color:#4d4d4d}
+  .chip i{width:16px;height:16px;background:#8c8c8c;display:block}
+  .qr{position:absolute;left:644px;top:112px;width:57px;height:57px;background:#dcdcdc;border:1px solid #c9c9c9;
+    display:grid;place-items:center;font-size:8px;color:#8c8c8c}
+  .ov{position:absolute;left:354px;top:906px;width:390px;background:rgba(255,255,255,.92);padding:12px 14px}
+  .ov h5{font-size:11px;font-weight:700;letter-spacing:.06em;color:#1a1a1a;margin-bottom:3px}
+  .ov p{font-size:8.5px;line-height:1.75;color:#4d4d4d;margin-bottom:8px}
 </style>
 </head>
 <body>
 <div class="stage">
   <div class="page">
-    <div class="eye">DEPARTMENTS</div>
-    <div class="h1">学科紹介</div>
-    <div class="r" style="top:180px"><div class="im">IMAGE</div><div class="n">DEPT 01</div><div class="t">ダミー学科</div><div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div><div class="p">P.12</div></div>
-    <div class="r" style="top:346px"><div class="im">IMAGE</div><div class="n">DEPT 02</div><div class="t">ダミー学科</div><div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div><div class="p">P.16</div></div>
-    <div class="r" style="top:512px"><div class="im">IMAGE</div><div class="n">DEPT 03</div><div class="t">ダミー学科</div><div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div><div class="p">P.20</div></div>
-    <div class="r" style="top:678px"><div class="im">IMAGE</div><div class="n">DEPT 04</div><div class="t">ダミー学科</div><div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div><div class="p">P.24</div></div>
-    <div class="r" style="top:844px"><div class="im">IMAGE</div><div class="n">DEPT 05</div><div class="t">ダミー学科</div><div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div><div class="p">P.28</div></div>
-    <div class="pn" style="right:56px;top:1040px">10</div>
+    <div class="band"></div>
+    <div class="tab">ダミー福祉学部｜ダミー福祉学科</div>
+    <div class="ttl">社会福祉コース</div>
+    <div class="sub">専門性の高いダミーワーカーの養成</div>
+    <div class="rl"></div>
+    <div class="scr">Dummy Welfare</div>
+    <div class="chip"><i></i>ダミーキャンパス</div>
+    <div class="qr">QR</div>
+
+    <div class="ph" style="left:69px;top:316px;width:725px;height:758px">PHOTO（全面）</div>
+
+    <div class="ov">
+      <h5>想定される進路</h5>
+      <p>■ ダミー施設　■ 病院　■ 地方公務員（ダミー職・ダミー職 など）　■ ダミー・ダミー関連企業　など</p>
+      <h5>取得がめざせる免許と資格</h5>
+      <p>■ ダミー福祉士国家試験受験資格　■ ダミー保健福祉士国家試験受験資格<br>■ ダミーソーシャルワーカー　など</p>
+    </div>
+
+    <div class="pn" style="left:30px;top:1088px">16</div>
   </div>
 </div>
 <script>

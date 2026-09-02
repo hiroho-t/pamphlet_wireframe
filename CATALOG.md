@@ -144,7 +144,7 @@
 | about-029 | ダミー学園グループ<br><small>GROUP SCHOOLS</small> | 図版13点 |
 | about-031 | — | **トレース**・QR・ステップ・図版10点 |
 
-## 学科・コース紹介 `department/`（45種）
+## 学科・コース紹介 `department/`（44種）
 
 | id | 見出し | 特徴 |
 |---|---|---|
@@ -188,11 +188,10 @@
 | department-038 | 卒業研究テーマ例<br><small>GRADUATION RESEARCH</small> | 図版3点 |
 | department-039 | ダミー学科の教員から<br><small>FACULTY MESSAGE</small> | 図版8点 |
 | department-040 | ダミー学科のキーワード<br><small>KEYWORDS</small> | 本文2段組み・タグ列・図版4点 |
-| department-041 | 学科紹介<br><small>DEPARTMENTS</small> | 図版10点 |
+| department-041 | 社会福祉コース | **トレース**・QR・図版1点 |
 | department-042 | ダミー学科<br><small>DEPARTMENT OF DUMMY</small> | 本文2段組み・図版5点 |
 | department-043 | 企業との共同プロジェクト<br><small>INDUSTRY COLLABORATION</small> | 図版7点 |
 | department-044 | ダミー学科を 3つの視点で見る<br><small>THREE PERSPECTIVES</small> | 図版6点 |
-| department-045 | 全学科まとめ<br><small>ALL DEPARTMENTS</small> | 表・図版1点 |
 
 ## カリキュラム `curriculum/`（28種）
 
@@ -225,7 +224,7 @@
 | curriculum-025 | 少人数教育<br><small>SMALL CLASS</small> | 図版1点 |
 | curriculum-026 | 3つの学びの領域<br><small>CURRICULUM</small> | 図版2点 |
 | curriculum-027 | 学びを支える仕組み<br><small>SUPPORT FOR LEARNING</small> | 図版1点 |
-| curriculum-028 | 科目と身につく力の対応<br><small>SUBJECT MAP</small> | 表・図版1点 |
+| curriculum-041 | — | **トレース**・図版3点 |
 
 ## 授業・実習・教員 `class/`（30種）
 
@@ -461,7 +460,7 @@
 | license-015 | 資格取得のQ&amp;A<br><small>LICENSE FAQ</small> | Q&A・図版2点 |
 | license-016 | 資格取得の実績データ<br><small>LICENSE DATA</small> | グラフ枠・図版1点 |
 
-## 学費・奨学金 `support/`（19種）
+## 学費・奨学金 `support/`（18種）
 
 | id | 見出し | 特徴 |
 |---|---|---|
@@ -482,7 +481,6 @@
 | support-015 | 納入時期と方法<br><small>PAYMENT SCHEDULE</small> | 表・グラフ枠・図版2点 |
 | support-016 | 教育ローン・その他の制度<br><small>LOAN &amp; OTHERS</small> | 図版2点 |
 | support-017 | 学生生活の支援制度<br><small>CAMPUS SUPPORT</small> | 図版13点 |
-| support-018 | 支援制度を使った場合<br><small>COST SIMULATION</small> | 濃色の帯・図版1点 |
 | support-019 | 充実した奨学金制度（20XX年4月入学生 予定） | **トレース**・表・QR・図版0点 |
 
 ## 入試 `admission/`（20種）
@@ -616,7 +614,7 @@
 | spread-062 | — | **トレース**・見開き・グラフ枠・円グラフ・図版2点 |
 | spread-063 | — | **トレース**・見開き・図版15点 |
 
-## 募集要項 `guidelines/`（19種）
+## 募集要項 `guidelines/`（18種）
 
 | id | 見出し | 特徴 |
 |---|---|---|
@@ -637,9 +635,8 @@
 | guidelines-015 | 出願・受験にあたっての注意<br><small>NOTES</small> | 図版0点 |
 | guidelines-016 | 問い合わせ先<br><small>CONTACT</small> | QR・図版1点 |
 | guidelines-017 | Web出願の流れ<br><small>WEB APPLICATION</small> | 画面イメージ・ステップ・図版16点 |
-| guidelines-018 | 過去の入試結果<br><small>PAST RESULTS</small> | 表・グラフ枠・図版2点 |
 | guidelines-019 | 学費（20XX年4月入学生 予定） | **トレース**・表・図版0点 |
 
 ---
 
-合計 515種。
+合計 512種。
