@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!-- traced: 実誌面から採寸して再現 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>spread-052</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .page{position:relative;width:1588px;height:1123px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+  .ph{position:absolute;background:#dcdcdc;display:grid;place-items:center;font-size:12px;letter-spacing:.2em;color:#8c8c8c}
+  .pn{position:absolute;font-size:11px;letter-spacing:.1em;color:#8c8c8c}
+  .gut{position:absolute;left:793px;top:0;width:2px;height:1123px;background:repeating-linear-gradient(#c9c9c9 0 8px,transparent 8px 16px)}
+  /* 巻頭メッセージ＋教育理念＋目次を1見開きに収める型。左＝地色にポートレートと縦組み特大見出し、右＝本文と円形図解、右端に濃色のINDEX帯 */
+  .mn{font-family:"Hiragino Mincho ProN","Yu Mincho",serif}
+  .tint{position:absolute;left:0;top:0;width:589px;height:1123px;background:#f0f0f0}
+  .lb{position:absolute;left:90px;top:56px;font-size:8.5px;letter-spacing:.06em;color:#4d4d4d}
+  .vh{position:absolute;left:630px;top:120px;height:900px;writing-mode:vertical-rl;font-size:62px;letter-spacing:.2em;line-height:1;color:#1a1a1a}
+  .card{position:absolute;left:343px;top:833px;width:246px;background:#fff;padding:14px 16px}
+  .card .o{font-size:6.5px;color:#4d4d4d}
+  .card .nm{margin-top:5px;font-size:8px;color:#4d4d4d}
+  .card .nm b{font-size:17px;letter-spacing:.1em;color:#1a1a1a;margin-left:6px}
+  .card .rm{margin-top:2px;font-size:5.5px;letter-spacing:.1em;color:#8c8c8c}
+  .card .hr{margin-top:8px;border-top:1px solid #1a1a1a}
+  .card .mt{margin-top:8px;font-size:13px;font-weight:700;letter-spacing:.02em;color:#1a1a1a}
+  .card .rd{margin-top:2px;font-size:5.5px;color:#8c8c8c}
+  .card .jp{margin-top:5px;font-size:9px;font-weight:700;color:#1a1a1a}
+  .card .x{margin-top:6px;font-size:5.5px;line-height:1.85;color:#4d4d4d}
+  .bd{position:absolute;left:866px;top:128px;width:359px;font-size:7px;line-height:2;color:#1a1a1a}
+  .bd p+p{margin-top:14px}
+  .fig{position:absolute;left:999px;top:566px;width:226px;height:287px}
+  .fig .lo{position:absolute;width:104px;height:104px;border-radius:50%;background:#dcdcdc;display:grid;place-items:center;text-align:center;font-size:7px;line-height:1.5;color:#1a1a1a}
+  .fig .c{position:absolute;left:63px;top:92px;width:100px;height:100px;border-radius:50%;background:#6b6b6b;display:grid;place-items:center;text-align:center;font-size:8.5px;font-weight:700;line-height:1.5;color:#fff}
+  .lk{position:absolute;left:887px;top:1008px;width:290px;font-size:8px;line-height:1.8;color:#1a1a1a}
+  .idx{position:absolute;left:1318px;top:0;width:270px;height:1123px;background:#6b6b6b;padding:70px 24px 0}
+  .idx .h{font-size:28px;font-weight:700;letter-spacing:.1em;color:#fff}
+  .idx .s{margin-top:24px;font-size:8px;color:#e0e0e0}
+  .idx .r{display:flex;align-items:baseline;gap:4px;margin-top:14px;font-size:8px;color:#fff}
+  .idx .r .t{flex:none;white-space:nowrap}
+  .idx .r .d{flex:1;border-bottom:1px dotted rgba(255,255,255,.6);transform:translateY(-3px)}
+  .idx .r .p{flex:none}
+  .idx .nt{position:absolute;left:24px;bottom:24px;width:222px;font-size:5.5px;line-height:1.7;color:#d5d5d5}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="page">
+    <div class="tint"></div>
+    <div class="lb">理事長メッセージ・教育理念</div>
+    <div class="ph" style="left:76px;top:135px;width:507px;height:760px">PORTRAIT</div>
+    <div class="vh mn">ダミーのチカラを学びとる。</div>
+    <div class="card">
+      <div class="o">学校法人 ダミー学園</div>
+      <div class="nm">理事長・校長<b>ダミー 太郎</b></div>
+      <div class="rm">DUMMY TARO</div>
+      <div class="hr"></div>
+      <div class="mt mn">Dummy Motto</div>
+      <div class="rd">ダミー・ダミーダミー</div>
+      <div class="jp">ダミーテキストによって学ぶ</div>
+      <div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div>
+    </div>
+
+    <div class="bd">
+      <p>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。<br>ダミーテキストダミーテキストダミーテキスト。<br>ダミーテキストダミーテキストダミーテキストダミーテキスト。<br>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</p>
+      <p>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。<br>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。<br>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</p>
+      <p>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。<br>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</p>
+    </div>
+    <div class="fig">
+      <div class="lo" style="left:61px;top:0">ダミーの<br>ミッション</div>
+      <div class="lo" style="left:122px;top:60px">ダミーの<br>ミッション</div>
+      <div class="lo" style="left:0;top:60px">ダミーの<br>ミッション</div>
+      <div class="lo" style="left:61px;top:180px">ダミーの<br>ミッション</div>
+      <div class="c">4つの<br>教育ミッション</div>
+    </div>
+    <div class="lk">ダミーの精神、ビジョン、ミッションについて<br>詳しくはコチラ ▶▶▶</div>
+    <div class="ph" style="left:1184px;top:987px;width:62px;height:62px;font-size:7px">QR</div>
+
+    <div class="idx">
+      <div class="h">INDEX</div>
+      <div class="s">ダミー専門学校</div>
+      <div class="r"><span class="t">ダミーの項目名</span><span class="d"></span><span class="p">10</span></div>
+      <div class="r"><span class="t">ダミーの項目名</span><span class="d"></span><span class="p">12</span></div>
+      <div class="r"><span class="t">ダミーの項目名</span><span class="d"></span><span class="p">20</span></div>
+      <div class="r"><span class="t">ダミーの項目名</span><span class="d"></span><span class="p">28</span></div>
+      <div class="r"><span class="t">ダミーの項目名</span><span class="d"></span><span class="p">36</span></div>
+      <div class="r"><span class="t">ダミーの項目名</span><span class="d"></span><span class="p">44</span></div>
+      <div class="r"><span class="t">ダミーの項目名</span><span class="d"></span><span class="p">52</span></div>
+      <div class="r"><span class="t">ダミーの項目名</span><span class="d"></span><span class="p">60</span></div>
+      <div class="r"><span class="t">ダミーの項目名</span><span class="d"></span><span class="p">66</span></div>
+      <div class="r"><span class="t">ダミーの項目名</span><span class="d"></span><span class="p">70</span></div>
+      <div class="r"><span class="t">ダミーの項目名</span><span class="d"></span><span class="p">72</span></div>
+      <div class="r"><span class="t">ダミーの項目名</span><span class="d"></span><span class="p">76</span></div>
+      <div class="r"><span class="t">ダミーの項目名</span><span class="d"></span><span class="p">92</span></div>
+      <div class="r"><span class="t">ダミーの項目名</span><span class="d"></span><span class="p">98</span></div>
+      <div class="r"><span class="t">ダミーの項目名</span><span class="d"></span><span class="p">104</span></div>
+      <div class="r"><span class="t">　▶ ダミーの小項目</span><span class="d"></span><span class="p">105</span></div>
+      <div class="r"><span class="t">　▶ ダミーの小項目</span><span class="d"></span><span class="p">106</span></div>
+      <div class="r"><span class="t">ダミーの項目名</span><span class="d"></span><span class="p">108</span></div>
+      <div class="r"><span class="t">ダミーの項目名</span><span class="d"></span><span class="p">112</span></div>
+      <div class="r"><span class="t">　▶ ダミーの小項目</span><span class="d"></span><span class="p">118</span></div>
+      <div class="nt">※ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div>
+    </div>
+    <div class="gut"></div>
+    <div class="pn" style="left:24px;top:1092px">8</div>
+    <div class="pn" style="right:24px;top:1092px;color:#fff">9</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1588,innerHeight/1123));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>

@@ -590,7 +590,6 @@
 | spread-007 | 数字で見るダミー学園<br><small>DUMMY SCHOOL IN NUMBERS</small> | 見開き・図版2点 |
 | spread-008 | 目次<br><small>CONTENTS</small> | 見開き・図版16点 |
 | spread-009 | ダミー学科<br><small>DEPARTMENT OF DUMMY</small> | 見開き・本文2段組み・図版3点 |
-| spread-010 | 3人の先輩に聞きました<br><small>STUDENT INTERVIEW</small> | 見開き・図版7点 |
 | spread-031 | — | **トレース**・見開き・グラフ枠・QR・図版4点 |
 | spread-032 | ダミーコース | **トレース**・見開き・地色パネル・QR・図版8点 |
 | spread-033 | — | **トレース**・見開き・図版4点 |
@@ -612,6 +611,7 @@
 | spread-049 | QR | **トレース**・見開き・QR・図版31点 |
 | spread-050 | 「ダミーテキストダミーテキスト。ここで。」 | **トレース**・見開き・縦組み・図版16点 |
 | spread-051 | ダミー専門学校 校長 | **トレース**・見開き・縦組み・図版4点 |
+| spread-052 | — | **トレース**・見開き・地色パネル・QR・縦組み・図版2点 |
 
 ## 募集要項 `guidelines/`（18種）
 
