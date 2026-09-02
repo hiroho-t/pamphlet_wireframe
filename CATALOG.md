@@ -587,7 +587,6 @@
 | spread-004 | 4年間の学びの流れ<br><small>CURRICULUM</small> | 見開き・図版8点 |
 | spread-005 | キャンパスの風景<br><small>CAMPUS SNAPSHOTS</small> | 見開き・図版14点 |
 | spread-006 | キャンパスマップ<br><small>CAMPUS MAP</small> | 見開き・地図・図版6点 |
-| spread-007 | 数字で見るダミー学園<br><small>DUMMY SCHOOL IN NUMBERS</small> | 見開き・図版2点 |
 | spread-031 | — | **トレース**・見開き・グラフ枠・QR・図版4点 |
 | spread-032 | ダミーコース | **トレース**・見開き・地色パネル・QR・図版8点 |
 | spread-033 | — | **トレース**・見開き・図版4点 |
@@ -611,6 +610,7 @@
 | spread-051 | ダミー専門学校 校長 | **トレース**・見開き・縦組み・図版4点 |
 | spread-052 | — | **トレース**・見開き・地色パネル・QR・縦組み・図版2点 |
 | spread-053 | Curriculum | **トレース**・見開き・表・縦組み・本文3段組み・図版3点 |
+| spread-054 | 5つの特長 | **トレース**・見開き・図版19点 |
 
 ## 募集要項 `guidelines/`（18種）
 
