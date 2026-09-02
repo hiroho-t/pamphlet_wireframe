@@ -505,8 +505,8 @@
 | admission-016 | 受験生の1年<br><small>YEARLY CALENDAR</small> | タイムライン・図版1点 |
 | admission-017 | Web出願について<br><small>WEB APPLICATION</small> | QR・画面イメージ・ステップ・図版10点 |
 | admission-018 | 受験生応援コンテンツ<br><small>FOR APPLICANTS</small> | QR・図版14点 |
-| admission-019 | 検定料と試験場<br><small>FEE &amp; VENUE</small> | 表・地図・図版2点 |
 | admission-021 | 学校推薦書 | **トレース**・表・図版0点 |
+| admission-022 | 20XX年度入学試験 出願資格 | **トレース**・図版0点 |
 
 ## オープンキャンパス `opencampus/`（14種）
 

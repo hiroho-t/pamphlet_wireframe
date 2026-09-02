@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- traced: 実誌面から採寸して再現 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>admission-022</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .page{position:relative;width:794px;height:1123px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+  .ph{position:absolute;background:#dcdcdc;display:grid;place-items:center;font-size:12px;letter-spacing:.2em;color:#8c8c8c}
+  .pn{position:absolute;font-size:11px;letter-spacing:.1em;color:#8c8c8c}
+  .doodle{position:absolute;background:#dcdcdc}
+  .sq{position:absolute;left:74px;top:88px;width:32px;height:30px;background:#c9c9c9}
+  .num{position:absolute;left:74px;top:110px;width:106px;height:72px;border:3px solid #8c8c8c;background:#fff;
+    display:grid;place-items:center;font-size:36px;font-weight:700;font-style:italic;color:#6b6b6b}
+  .ttl{position:absolute;left:207px;top:126px;font-size:29px;font-weight:700;letter-spacing:.04em;color:#1a1a1a}
+  .dl{position:absolute;left:74px;top:192px;width:646px;height:2px;background:#c9c9c9}
+  .dl::before,.dl::after{content:"";position:absolute;top:-4px;width:10px;height:10px;border-radius:50%;background:#8c8c8c}
+  .dl::before{left:-5px}.dl::after{right:-5px}
+  .bar{position:absolute;left:68px;width:652px;height:53px;background:#e6e6e6;
+    display:flex;align-items:center;padding-left:20px;font-size:20px;font-weight:700;letter-spacing:.04em;color:#1a1a1a}
+  .bar::before{content:"";position:absolute;left:0;top:0;bottom:0;width:9px;background:#6b6b6b}
+  .bl{position:absolute;left:80px;width:640px;font-size:10px;line-height:1.95;color:#4d4d4d}
+  .band{position:absolute;left:0;top:1037px;width:794px;height:86px;background:#4d4d4d}
+  .bpn{position:absolute;left:0;right:0;top:1064px;text-align:center;font-size:19px;font-weight:700;color:#fff}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="page">
+    <div class="doodle" style="left:40px;top:30px;width:26px;height:3px"></div>
+    <div class="doodle" style="left:120px;top:22px;width:10px;height:10px;border-radius:50%"></div>
+    <div class="doodle" style="left:300px;top:34px;width:40px;height:3px"></div>
+    <div class="doodle" style="left:520px;top:24px;width:9px;height:9px"></div>
+    <div class="doodle" style="left:640px;top:36px;width:30px;height:3px"></div>
+    <div class="doodle" style="left:720px;top:20px;width:11px;height:11px;border-radius:50%"></div>
+
+    <div class="sq"></div>
+    <div class="num">06</div>
+    <div class="ttl">20XX年度入学試験　出願資格</div>
+    <div class="dl"></div>
+
+    <div class="bar" style="top:230px">総合型選抜</div>
+    <div class="bl" style="top:300px">・本校のアドミッションポリシーに共感し入学を強く希望する方<br>・高校を卒業した方、または令和X年3月卒業見込みの方<br>・高等学校卒業程度認定試験に合格、または令和X年3月31日までに合格見込で入学時に18歳に達している方<br>・合格した場合、入学を確約できる方</div>
+
+    <div class="bar" style="top:436px">学校推薦型選抜（推薦入試）</div>
+    <div class="bl" style="top:506px">・高校を令和X年3月卒業見込の方で、在籍高校の学校長が推薦した方<br>・学習成績の評定平均値3.0以上の方<br>・合格した場合、入学を確約できる方</div>
+
+    <div class="bar" style="top:596px">社会人特別選抜</div>
+    <div class="bl" style="top:666px">・大学、短大を卒業または、令和X年3月卒業見込の方<br>・高校を卒業し、入学時に22歳に達している方<br>・高等学校卒業程度認定試験に合格、または令和X年3月31日までに合格見込で入学時に22歳に達している方<br>・合格した場合、入学を確約できる方</div>
+
+    <div class="bar" style="top:812px">一般選抜（一般入試）</div>
+    <div class="bl" style="top:882px">・高校を卒業した方、または令和X年3月卒業見込みの方<br>・高等学校卒業程度認定試験に合格、または令和X年3月31日までに合格見込で入学時に18歳に達している方</div>
+
+    <div class="band"></div>
+    <div class="bpn">11</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/794,innerHeight/1123));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>
