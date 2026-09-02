@@ -597,12 +597,6 @@
 | spread-014 | 施設・設備<br><small>FACILITIES</small> | 見開き・図版16点 |
 | spread-015 | 教員紹介<br><small>FACULTY</small> | 見開き・図版14点 |
 | spread-016 | ダミー学園の6つの特色<br><small>FEATURES</small> | 見開き・図版13点 |
-| spread-017 | — | 見開き・全面写真・図版1点 |
-| spread-018 | 卒業生の活躍<br><small>GRADUATES</small> | 見開き・図版10点 |
-| spread-019 | 学生作品ギャラリー<br><small>STUDENT WORKS</small> | 見開き・図版11点 |
-| spread-020 | 入試日程一覧<br><small>ADMISSION SCHEDULE</small> | 見開き・表・図版2点 |
-| spread-021 | 学びの体系<br><small>CURRICULUM STRUCTURE</small> | 見開き・タグ列・図版2点 |
-| spread-022 | オープンキャンパス 開催<br><small>OPEN CAMPUS 20XX</small> | 見開き・QR・図版19点 |
 | spread-031 | — | **トレース**・見開き・グラフ枠・QR・図版4点 |
 | spread-032 | ダミーコース | **トレース**・見開き・地色パネル・QR・図版8点 |
 | spread-033 | — | **トレース**・見開き・図版4点 |
@@ -611,6 +605,12 @@
 | spread-036 | — | **トレース**・見開き・縦組み・図版3点 |
 | spread-037 | — | **トレース**・見開き・全面写真・縦組み・図版1点 |
 | spread-038 | — | **トレース**・見開き・地図・図版10点 |
+| spread-039 | — | **トレース**・見開き・表・グラフ枠・円グラフ・図版12点 |
+| spread-040 | — | **トレース**・見開き・図版9点 |
+| spread-041 | — | **トレース**・見開き・本文3段組み・図版12点 |
+| spread-042 | — | **トレース**・見開き・地色パネル・QR・図版21点 |
+| spread-043 | — | **トレース**・見開き・表・QR・図版1点 |
+| spread-044 | — | **トレース**・見開き・グラフ枠・円グラフ・地図・図版12点 |
 
 ## 募集要項 `guidelines/`（18種）
 

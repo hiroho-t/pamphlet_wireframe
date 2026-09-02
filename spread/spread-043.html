@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- traced: 実誌面から採寸して再現 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>spread-043</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .page{position:relative;width:1588px;height:1123px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+  .ph{position:absolute;background:#dcdcdc;display:grid;place-items:center;font-size:12px;letter-spacing:.2em;color:#8c8c8c}
+  .pn{position:absolute;font-size:11px;letter-spacing:.1em;color:#8c8c8c}
+  .gut{position:absolute;left:793px;top:0;width:2px;height:1123px;background:repeating-linear-gradient(#c9c9c9 0 8px,transparent 8px 16px)}
+  /* 学費・奨学金の見開き。左＝奨学金一覧表＋制度の補足、右＝学費表＋3つの方針の長文ブロック */
+  .mn{font-family:"Hiragino Mincho ProN","Yu Mincho",serif}
+  .lp{position:absolute;left:0;top:0;width:791px;height:1123px;background:#f4f4f4}
+  .h1{position:absolute;font-size:19px;letter-spacing:.1em;color:#1a1a1a}
+  .tb{position:absolute;border-collapse:collapse;font-size:6.5px;color:#1a1a1a}
+  .tb th{background:#dcdcdc;padding:5px 4px;font-weight:700;border:1px solid #fff;line-height:1.4}
+  .tb td{padding:5px 4px;border:1px solid #d5d5d5;background:#fff;line-height:1.55;vertical-align:top}
+  .tb td.n{font-weight:700}
+  .nb{position:absolute;border:1px solid #b5b5b5;background:#fff;padding:7px 10px;font-size:6px;line-height:1.7;color:#4d4d4d}
+  .bd{position:absolute;font-size:6.5px;line-height:1.85;color:#4d4d4d}
+  .pol{position:absolute;left:867px;width:330px}
+  .pol .h{height:22px;background:#6b6b6b;color:#fff;display:flex;align-items:center;padding-left:8px;font-size:8px;font-weight:700}
+  .pol .x{margin-top:6px;font-size:5.8px;line-height:1.75;color:#4d4d4d}
+  .polr{position:absolute;left:1216px;top:595px;width:292px;font-size:5.8px;line-height:1.75;color:#4d4d4d}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="page">
+    <div class="lp"></div>
+    <div class="h1 mn" style="left:64px;top:74px">充実した奨学金制度（20XX年4月入学生 予定）</div>
+    <table class="tb" style="left:49px;top:118px;width:676px">
+      <tr><th style="width:150px">奨学金の種類</th><th style="width:150px">金額</th><th style="width:80px">給付期間</th><th style="width:150px">出願要件</th><th>選考基準</th></tr>
+      <tr><td class="n">ダミーの奨学金<br><span style="font-size:5.5px;color:#8c8c8c">（ダミーの区分）</span></td><td>800,000円／年間<br>1,050,000円／年額（ダミー）</td><td>年間4年</td><td>なし</td><td>成績・経済状況・人物</td></tr>
+      <tr><td class="n">ダミーの奨学金</td><td>800,000円／年間<br><span style="font-size:5.5px;color:#8c8c8c">（ダミーテキストダミーテキスト）</span></td><td>4年間</td><td>なし</td><td>成績・経済状況・人物</td></tr>
+      <tr><td class="n">ダミーの奨学金</td><td>学部により異なる</td><td>4年間</td><td>なし</td><td>ダミーテキストダミーテキスト</td></tr>
+      <tr><td class="n">ダミーの奨学金</td><td>期間・地域により異なる</td><td>4年間</td><td>なし</td><td>ダミーテキスト</td></tr>
+      <tr><td class="n">ダミーの奨学金</td><td>100,000円／年間</td><td>年度ごと</td><td>なし</td><td>成績・人物</td></tr>
+      <tr><td class="n">ダミーの奨学金</td><td>800,000円／年間<br><span style="font-size:5.5px;color:#8c8c8c">（ダミーテキスト）</span></td><td>年度ごと</td><td>卒業後、一定の期間で返還<br>（無利子）</td><td>成績・経済状況・人物</td></tr>
+      <tr><td class="n">ダミーの奨学金</td><td>学部により異なる</td><td>年度ごと</td><td>卒業後、X年間で返還<br>（無利子）</td><td>成績・経済状況・人物</td></tr>
+      <tr><td class="n">ダミーの制度</td><td>指導学科の家庭を含めた既存の施設が定める額</td><td colspan="3">ダミーテキストダミーテキストダミーテキストダミーテキスト</td></tr>
+      <tr><td class="n">ダミーの奨学金</td><td>18,000円／月額ほか</td><td colspan="3">ダミーテキストダミーテキストダミーテキストダミーテキスト</td></tr>
+      <tr><td class="n">ダミーの奨学金 第一種</td><td>20,000〜64,000円／月額から選択</td><td>卒業まで</td><td>卒業後、一定の期間で返還（無利子）</td><td>成績・経済状況・人物</td></tr>
+      <tr><td class="n">ダミーの奨学金 第二種</td><td>20,000〜120,000円／月額から選択</td><td>卒業まで</td><td>卒業後、一定の期間で返還（有利子）</td><td>成績・経済状況・人物</td></tr>
+      <tr><td class="n">その他の奨学金</td><td colspan="4">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</td></tr>
+    </table>
+    <div class="nb" style="left:49px;top:713px;width:676px">お問い合わせ先：ダミーキャンパス 学生支援課／TEL 000-000-0000　　ダミーキャンパス 学生支援課／TEL 000-000-0000<br>ダミーキャンパス 学生支援課／TEL 000-000-0000　　ダミーキャンパス 学生支援課／TEL 000-000-0000</div>
+    <div class="h1 mn" style="left:64px;top:800px;font-size:16px">高等教育の修学支援新制度</div>
+    <div class="bd" style="left:64px;top:833px;width:440px">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。<br>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div>
+    <div class="ph" style="left:519px;top:815px;width:66px;height:66px;font-size:7px">QR</div>
+    <div class="bd" style="left:595px;top:815px;width:130px">制度の詳細について<br>ダミーテキストダミーテキスト<br>https://dummy.example.ac.jp/</div>
+    <table class="tb" style="left:49px;top:908px;width:330px"><tr><th>ダミーの区分</th><th>ダミー</th><th>ダミー</th></tr><tr><td>ダミー</td><td>000,000円</td><td>000,000円</td></tr><tr><td>ダミー</td><td>000,000円</td><td>000,000円</td></tr></table>
+    <table class="tb" style="left:400px;top:908px;width:325px"><tr><th>ダミーの区分</th><th>ダミー</th><th>ダミー</th></tr><tr><td>ダミー</td><td>000,000円</td><td>000,000円</td></tr><tr><td>ダミー</td><td>000,000円</td><td>000,000円</td></tr></table>
+    <div class="bd" style="left:49px;top:1042px;width:676px">※ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div>
+
+    <div class="h1 mn" style="left:867px;top:74px">学費（20XX年4月入学生 予定）</div>
+    <table class="tb" style="left:867px;top:118px;width:641px">
+      <tr><th style="width:120px" rowspan="2"></th><th colspan="2">初年度納入金</th><th rowspan="2">2年目・3年目<br>納入金</th><th rowspan="2">4年目納入金</th></tr>
+      <tr><th>入学手続時納入金</th><th>後学期納入金</th></tr>
+      <tr><td class="n" rowspan="4" style="background:#f0f0f0">ダミー学部<br>ダミー学科</td><td>入学金</td><td>200,000円</td><td>—</td><td>—</td></tr>
+      <tr><td>授業料</td><td>400,000円</td><td>400,000円</td><td>800,000円</td><td>800,000円</td></tr>
+      <tr><td>施設設備費</td><td>200,000円</td><td>200,000円</td><td>400,000円</td><td>400,000円</td></tr>
+      <tr><td>合計</td><td>1,441,250円</td><td>644,200円</td><td>600,000円</td><td>1,235,900円</td></tr>
+      <tr><td class="n" rowspan="3" style="background:#f0f0f0">ダミー学部<br>ダミー学科</td><td>入学金</td><td>200,000円</td><td>—</td><td>—</td></tr>
+      <tr><td>授業料</td><td>600,000円</td><td>600,000円</td><td>1,250,000円</td><td>1,650,000円</td></tr>
+      <tr><td>合計</td><td>1,614,301円</td><td>620,000円</td><td>1,674,000円</td><td>1,674,000円</td></tr>
+      <tr><td class="n" rowspan="3" style="background:#f0f0f0">ダミー学部<br>ダミー学科</td><td>入学金</td><td>200,000円</td><td>—</td><td>—</td></tr>
+      <tr><td>授業料</td><td>800,000円</td><td>800,000円</td><td>800,000円</td><td>800,000円</td></tr>
+      <tr><td>合計</td><td>1,441,240円</td><td>644,200円</td><td>675,000円</td><td>1,235,900円</td></tr>
+    </table>
+    <div class="h1 mn" style="left:867px;top:558px;font-size:16px">ダミー大学の三つの方針</div>
+    <div class="pol" style="top:592px"><div class="h">Ⅰ. 卒業認定・学位授与の方針（ディプロマ・ポリシー）</div><div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div></div>
+    <div class="pol" style="top:750px"><div class="h">Ⅱ. 教育課程編成・実施の方針（カリキュラム・ポリシー）</div><div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div></div>
+    <div class="pol" style="top:908px"><div class="h">Ⅲ. 入学者受入れの方針（アドミッション・ポリシー）</div><div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div></div>
+    <div class="polr">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div>
+    <div class="gut"></div>
+    <div class="pn" style="left:24px;top:1092px">98</div>
+    <div class="pn" style="right:24px;top:1092px">99</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1588,innerHeight/1123));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>
