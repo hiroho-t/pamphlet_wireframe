@@ -226,7 +226,7 @@
 | curriculum-027 | 学びを支える仕組み<br><small>SUPPORT FOR LEARNING</small> | 図版1点 |
 | curriculum-041 | — | **トレース**・図版3点 |
 
-## 授業・実習・教員 `class/`（32種）
+## 授業・実習・教員 `class/`（30種）
 
 | id | 見出し | 特徴 |
 |---|---|---|
@@ -258,8 +258,6 @@
 | class-026 | 授業をサポートする体制<br><small>LEARNING SUPPORT</small> | 図版9点 |
 | class-027 | 授業インデックス<br><small>CLASS INDEX</small> | 図版12点 |
 | class-028 | アトリエ・工房での学び<br><small>STUDIO WORK</small> | 図版13点 |
-| class-029 | ダミーの授業名<br><small>CLASS FEATURE</small> | 地色パネル・図版4点 |
-| class-030 | 評価の仕組み<br><small>EVALUATION</small> | 表・図版3点 |
 | class-031 | 実社会で活躍する人材になるために 実践体験カリキュラムで身につける | **トレース**・図版2点 |
 | class-032 | — | **トレース**・QR・画面イメージ・図版5点 |
 
@@ -298,7 +296,7 @@
 | student-029 | 入学前と入学後<br><small>BEFORE &amp; AFTER</small> | 図版1点 |
 | student-030 | 3人の先輩に密着<br><small>THREE STUDENTS</small> | 図版7点 |
 | student-031 | 先輩プロフィール一覧<br><small>STUDENT PROFILE</small> | 表・図版1点 |
-| student-032 | 在学生からのメッセージ<br><small>STUDENT MESSAGE</small> | 本文2段組み・図版2点 |
+| student-033 | 手厚いサポートで | **トレース**・図版4点 |
 
 ## キャンパスライフ `campuslife/`（28種）
 
@@ -460,7 +458,7 @@
 | license-013 | 学科別 取得可能資格（詳細）<br><small>LICENSE MATRIX</small> | 表・図版1点 |
 | license-014 | 学年別 資格取得ステップ<br><small>STEP TO LICENSE</small> | ステップ・図版3点 |
 | license-015 | 資格取得のQ&amp;A<br><small>LICENSE FAQ</small> | Q&A・図版2点 |
-| license-016 | 資格取得の実績データ<br><small>LICENSE DATA</small> | グラフ枠・図版1点 |
+| license-017 | 他校を圧倒する | **トレース**・縦組み・図版0点 |
 
 ## 学費・奨学金 `support/`（18種）
 
@@ -641,4 +639,4 @@
 
 ---
 
-合計 514種。
+合計 512種。
