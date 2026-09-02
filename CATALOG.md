@@ -109,7 +109,7 @@
 | message-015 | 学長メッセージ<br><small>MESSAGE</small> | 本文2段組み・図版3点 |
 | message-017 | — | **トレース**・図版0点 |
 
-## 学校紹介・特色 `about/`（30種）
+## 学校紹介・特色 `about/`（31種）
 
 | id | 見出し | 特徴 |
 |---|---|---|
@@ -143,6 +143,7 @@
 | about-028 | 学びを支える環境<br><small>LEARNING ENVIRONMENT</small> | 濃色の帯・図版12点 |
 | about-029 | ダミー学園グループ<br><small>GROUP SCHOOLS</small> | 図版13点 |
 | about-031 | — | **トレース**・QR・ステップ・図版10点 |
+| about-032 | 進学の先にある“学び” | **トレース**・縦組み・図版0点 |
 
 ## 学科・コース紹介 `department/`（44種）
 
@@ -544,7 +545,7 @@
 | access-011 | キャンパスへのアクセス<br><small>ACCESS</small> | 地図・図版1点 |
 | access-013 | D C T | **トレース**・QR・図版0点 |
 
-## よくある質問 `faq/`（11種）
+## よくある質問 `faq/`（10種）
 
 | id | 見出し | 特徴 |
 |---|---|---|
@@ -557,7 +558,6 @@
 | faq-007 | よくある質問<br><small>FAQ</small> | 地色パネル・Q&A・図版1点 |
 | faq-008 | 先輩が答えるQ&amp;A<br><small>ANSWERED BY STUDENTS</small> | 図版0点 |
 | faq-009 | 保護者の方からの質問<br><small>FAQ FOR PARENTS</small> | Q&A・図版1点 |
-| faq-010 | よく聞かれる質問 ベスト8<br><small>TOP 8 QUESTIONS</small> | タイムライン・図版0点 |
 | faq-011 | CAMPUS LIFE | **トレース**・図版3点 |
 
 ## 裏表紙 `backcover/`（12種）
