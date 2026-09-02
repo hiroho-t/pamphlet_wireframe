@@ -62,10 +62,10 @@
 | toc-014 | 目次<br><small>CONTENTS</small> | 図版17点 |
 | toc-015 | 目次<br><small>CONTENTS</small> | タグ列・図版1点 |
 | toc-016 | 目次<br><small>CONTENTS</small> | 地色パネル・図版2点 |
-| toc-017 | 目次<br><small>CONTENTS</small> | 図版21点 |
 | toc-019 | — | **トレース**・図版0点 |
+| toc-020 | — | **トレース**・図版0点 |
 
-## 中扉 `section/`（19種）
+## 中扉 `section/`（18種）
 
 | id | 見出し | 特徴 |
 |---|---|---|
@@ -86,7 +86,6 @@
 | section-015 | ダミーの章タイトル<br><small>CHAPTER 01</small> | 縦組み・図版0点 |
 | section-016 | ダミーの 章タイトル<br><small>CHAPTER 01</small> | 濃色の帯・図版1点 |
 | section-017 | ダミーの章タイトル<br><small>CHAPTER 01</small> | 図版3点 |
-| section-018 | ダミーの章タイトル<br><small>DUMMY CHAPTER</small> | 図版2点 |
 | section-019 | 各種出願書類 | **トレース**・図版0点 |
 
 ## 学長メッセージ `message/`（16種）
@@ -461,7 +460,7 @@
 | license-015 | 資格取得のQ&amp;A<br><small>LICENSE FAQ</small> | Q&A・図版2点 |
 | license-017 | 他校を圧倒する | **トレース**・縦組み・図版0点 |
 
-## 学費・奨学金 `support/`（19種）
+## 学費・奨学金 `support/`（18種）
 
 | id | 見出し | 特徴 |
 |---|---|---|
@@ -481,11 +480,10 @@
 | support-014 | 学費サポートの ポイント<br><small>TUITION SUPPORT</small> | 地色パネル・図版2点 |
 | support-015 | 納入時期と方法<br><small>PAYMENT SCHEDULE</small> | 表・グラフ枠・図版2点 |
 | support-016 | 教育ローン・その他の制度<br><small>LOAN &amp; OTHERS</small> | 図版2点 |
-| support-017 | 学生生活の支援制度<br><small>CAMPUS SUPPORT</small> | 図版13点 |
 | support-019 | 充実した奨学金制度（20XX年4月入学生 予定） | **トレース**・表・QR・図版0点 |
 | support-020 | 諸制度・特典 | **トレース**・図版0点 |
 
-## 入試 `admission/`（21種）
+## 入試 `admission/`（20種）
 
 | id | 見出し | 特徴 |
 |---|---|---|
@@ -508,7 +506,6 @@
 | admission-017 | Web出願について<br><small>WEB APPLICATION</small> | QR・画面イメージ・ステップ・図版10点 |
 | admission-018 | 受験生応援コンテンツ<br><small>FOR APPLICANTS</small> | QR・図版14点 |
 | admission-019 | 検定料と試験場<br><small>FEE &amp; VENUE</small> | 表・地図・図版2点 |
-| admission-020 | 合格した先輩の受験体験記<br><small>EXAM EXPERIENCE</small> | 図版10点 |
 | admission-021 | 学校推薦書 | **トレース**・表・図版0点 |
 
 ## オープンキャンパス `opencampus/`（14種）
@@ -637,9 +634,9 @@
 | guidelines-014 | 入学志願票 記入例<br><small>APPLICATION FORM</small> | 図版0点 |
 | guidelines-015 | 出願・受験にあたっての注意<br><small>NOTES</small> | 図版0点 |
 | guidelines-016 | 問い合わせ先<br><small>CONTACT</small> | QR・図版1点 |
-| guidelines-017 | Web出願の流れ<br><small>WEB APPLICATION</small> | 画面イメージ・ステップ・図版16点 |
 | guidelines-019 | 学費（20XX年4月入学生 予定） | **トレース**・表・図版0点 |
+| guidelines-020 | 募集学科・募集定員 | **トレース**・表・図版0点 |
 
 ---
 
-合計 515種。
+合計 512種。
