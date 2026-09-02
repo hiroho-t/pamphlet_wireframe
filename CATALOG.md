@@ -461,7 +461,7 @@
 | license-015 | 資格取得のQ&amp;A<br><small>LICENSE FAQ</small> | Q&A・図版2点 |
 | license-016 | 資格取得の実績データ<br><small>LICENSE DATA</small> | グラフ枠・図版1点 |
 
-## 学費・奨学金 `support/`（18種）
+## 学費・奨学金 `support/`（19種）
 
 | id | 見出し | 特徴 |
 |---|---|---|
@@ -483,6 +483,7 @@
 | support-016 | 教育ローン・その他の制度<br><small>LOAN &amp; OTHERS</small> | 図版2点 |
 | support-017 | 学生生活の支援制度<br><small>CAMPUS SUPPORT</small> | 図版13点 |
 | support-018 | 支援制度を使った場合<br><small>COST SIMULATION</small> | 濃色の帯・図版1点 |
+| support-019 | 充実した奨学金制度（20XX年4月入学生 予定） | **トレース**・表・QR・図版0点 |
 
 ## 入試 `admission/`（20種）
 
@@ -615,7 +616,7 @@
 | spread-062 | — | **トレース**・見開き・グラフ枠・円グラフ・図版2点 |
 | spread-063 | — | **トレース**・見開き・図版15点 |
 
-## 募集要項 `guidelines/`（18種）
+## 募集要項 `guidelines/`（19種）
 
 | id | 見出し | 特徴 |
 |---|---|---|
@@ -637,7 +638,8 @@
 | guidelines-016 | 問い合わせ先<br><small>CONTACT</small> | QR・図版1点 |
 | guidelines-017 | Web出願の流れ<br><small>WEB APPLICATION</small> | 画面イメージ・ステップ・図版16点 |
 | guidelines-018 | 過去の入試結果<br><small>PAST RESULTS</small> | 表・グラフ枠・図版2点 |
+| guidelines-019 | 学費（20XX年4月入学生 予定） | **トレース**・表・図版0点 |
 
 ---
 
-合計 513種。
+合計 515種。
