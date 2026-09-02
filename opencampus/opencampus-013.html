@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>opencampus-013</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .page{position:relative;width:794px;height:1123px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+  .ph{position:absolute;background:#dcdcdc;display:grid;place-items:center;font-size:12px;letter-spacing:.2em;color:#8c8c8c}
+  .pn{position:absolute;font-size:11px;letter-spacing:.1em;color:#8c8c8c}
+  .eye{position:absolute;left:56px;top:76px;font-size:11px;letter-spacing:.3em;color:#8c8c8c}
+  .h1{position:absolute;left:56px;top:100px;font-size:29px;font-weight:800;letter-spacing:.07em;color:#1a1a1a}
+  .tl{position:absolute;left:56px;width:682px}
+  .tl .r{display:flex;gap:20px;align-items:center;padding:14px 0;border-bottom:1px solid #e6e6e6}
+  .tl .r .t{flex:none;width:110px;font-size:13px;font-weight:800;color:#1a1a1a}
+  .tl .r .b{flex:1}
+  .tl .r .b .h{font-size:13.5px;font-weight:700;color:#1a1a1a}
+  .tl .r .b .x{margin-top:4px;font-size:10.5px;color:#8c8c8c}
+  .tl .r .im{flex:none;width:130px;height:80px;background:#dcdcdc;display:grid;place-items:center;font-size:9px;color:#8c8c8c}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="page">
+    <div class="eye">TIME TABLE</div>
+    <div class="h1">当日のタイムテーブル</div>
+    <div class="tl" style="top:180px">
+      <div class="r"><div class="t">9:30</div><div class="b"><div class="h">受付開始</div><div class="x">X号館 1F 総合受付</div></div><div class="im">IMAGE</div></div>
+      <div class="r"><div class="t">10:00</div><div class="b"><div class="h">全体説明会</div><div class="x">X号館 大講義室</div></div><div class="im">IMAGE</div></div>
+      <div class="r"><div class="t">11:00</div><div class="b"><div class="h">学科別説明会</div><div class="x">各学科ブース</div></div><div class="im">IMAGE</div></div>
+      <div class="r"><div class="t">12:00</div><div class="b"><div class="h">学食体験</div><div class="x">学生食堂</div></div><div class="im">IMAGE</div></div>
+      <div class="r"><div class="t">13:00</div><div class="b"><div class="h">体験授業</div><div class="x">各実習室</div></div><div class="im">IMAGE</div></div>
+      <div class="r"><div class="t">14:00</div><div class="b"><div class="h">キャンパスツアー</div><div class="x">受付集合</div></div><div class="im">IMAGE</div></div>
+      <div class="r"><div class="t">15:00</div><div class="b"><div class="h">個別相談・解散</div><div class="x">X号館 1F</div></div><div class="im">IMAGE</div></div>
+    </div>
+    <div class="ph" style="left:56px;top:880px;width:682px;height:140px">IMAGE</div>
+    <div class="pn" style="left:56px;top:1064px">72</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/794,innerHeight/1123));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>
