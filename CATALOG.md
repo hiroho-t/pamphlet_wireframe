@@ -193,7 +193,7 @@
 | department-043 | 企業との共同プロジェクト<br><small>INDUSTRY COLLABORATION</small> | 図版7点 |
 | department-044 | ダミー学科を 3つの視点で見る<br><small>THREE PERSPECTIVES</small> | 図版6点 |
 
-## カリキュラム `curriculum/`（29種）
+## カリキュラム `curriculum/`（28種）
 
 | id | 見出し | 特徴 |
 |---|---|---|
@@ -223,7 +223,6 @@
 | curriculum-024 | 1年間の学びの流れ<br><small>ANNUAL LEARNING</small> | 図版14点 |
 | curriculum-025 | 少人数教育<br><small>SMALL CLASS</small> | 図版1点 |
 | curriculum-026 | 3つの学びの領域<br><small>CURRICULUM</small> | 図版2点 |
-| curriculum-027 | 学びを支える仕組み<br><small>SUPPORT FOR LEARNING</small> | 図版1点 |
 | curriculum-041 | — | **トレース**・図版3点 |
 | curriculum-042 | — | **トレース**・図版3点 |
 
@@ -389,7 +388,7 @@
 | career-027 | — | **トレース**・図版0点 |
 | career-028 | 学生が主体的に選ぶ | **トレース**・縦組み・図版0点 |
 
-## 卒業生 `og/`（14種）
+## 卒業生 `og/`（16種）
 
 | id | 見出し | 特徴 |
 |---|---|---|
@@ -407,6 +406,8 @@
 | og-012 | 卒業生ネットワーク<br><small>ALUMNI DATA</small> | 図版1点 |
 | og-013 | 卒業生から受験生へ<br><small>MESSAGE TO YOU</small> | 図版12点 |
 | og-014 | 卒業生の進路一覧<br><small>ALUMNI LIST</small> | 表・図版1点 |
+| og-015 | — | **トレース**・図版1点 |
+| og-016 | — | **トレース**・図版2点 |
 
 ## 作品・成果 `works/`（12種）
 
@@ -640,4 +641,4 @@
 
 ---
 
-合計 513種。
+合計 514種。
