@@ -109,7 +109,7 @@
 | message-015 | 学長メッセージ<br><small>MESSAGE</small> | 本文2段組み・図版3点 |
 | message-016 | 学部長メッセージ<br><small>MESSAGE</small> | 図版8点 |
 
-## 学校紹介・特色 `about/`（30種）
+## 学校紹介・特色 `about/`（31種）
 
 | id | 見出し | 特徴 |
 |---|---|---|
@@ -143,6 +143,7 @@
 | about-028 | 学びを支える環境<br><small>LEARNING ENVIRONMENT</small> | 濃色の帯・図版12点 |
 | about-029 | ダミー学園グループ<br><small>GROUP SCHOOLS</small> | 図版13点 |
 | about-030 | ダミー学園ダイジェスト<br><small>DIGEST</small> | 図版10点 |
+| about-031 | — | **トレース**・QR・ステップ・図版10点 |
 
 ## 学科・コース紹介 `department/`（45種）
 
@@ -332,7 +333,7 @@
 | campuslife-027 | クラブ・サークルデータ<br><small>CLUB DATA</small> | 表・図版3点 |
 | campuslife-028 | お気に入りの場所<br><small>CAMPUS SPOTS</small> | 図版6点 |
 
-## 施設・キャンパス `facility/`（21種）
+## 施設・キャンパス `facility/`（22種）
 
 | id | 見出し | 特徴 |
 |---|---|---|
@@ -357,6 +358,7 @@
 | facility-019 | 施設・設備 9選<br><small>FACILITIES</small> | 濃色の帯・図版18点 |
 | facility-020 | 3つのキャンパス<br><small>CAMPUSES</small> | 地図・図版4点 |
 | facility-021 | 学食・売店<br><small>CAFETERIA &amp; SHOP</small> | 図版13点 |
+| facility-022 | — | **トレース**・図版20点 |
 
 ## 進路・就職 `career/`（26種）
 
@@ -640,4 +642,4 @@
 
 ---
 
-合計 513種。
+合計 515種。
