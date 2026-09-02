@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- traced: 実誌面から採寸して再現 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>spread-035</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .page{position:relative;width:1588px;height:1123px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+  .ph{position:absolute;background:#dcdcdc;display:grid;place-items:center;font-size:12px;letter-spacing:.2em;color:#8c8c8c}
+  .pn{position:absolute;font-size:11px;letter-spacing:.1em;color:#8c8c8c}
+  .gut{position:absolute;left:793px;top:0;width:2px;height:1123px;background:repeating-linear-gradient(#c9c9c9 0 8px,transparent 8px 16px)}
+  /* 見開き全体を1枚の一覧表にする型：左＝学部/学科/定員/主な進路、右＝免許・資格のマトリクス */
+  .ttl{position:absolute;left:54px;top:74px;font-size:26px;letter-spacing:.06em;color:#1a1a1a;font-family:"Hiragino Mincho ProN","Yu Mincho",serif}
+  .lgd{position:absolute;left:54px;top:130px;width:583px;height:56px;border:1px solid #d5d5d5;padding:8px 12px;font-size:8.5px;line-height:1.75;color:#4d4d4d}
+  .lgd b{color:#1a1a1a}
+  .qrc{position:absolute;left:660px;top:118px;width:86px;text-align:center;font-size:7px;line-height:1.5;color:#8c8c8c}
+  .nt{position:absolute;left:54px;top:196px;width:593px;font-size:7px;line-height:1.75;color:#8c8c8c}
+  .tb{position:absolute;left:54px;top:306px;width:692px;font-size:8px;color:#1a1a1a}
+  .tb .hd{display:flex;height:26px;background:#6b6b6b;color:#fff;font-size:8px;align-items:center}
+  .tb .hd div{border-right:1px solid #fff;height:26px;display:grid;place-items:center}
+  .tb .rw{display:flex;height:45px}
+  .tb .rw>div{border-right:1px solid #e6e6e6;border-bottom:1px solid #e6e6e6;padding:5px 6px;line-height:1.5}
+  .tb .sp{flex:none;width:32px;background:none;border:0!important;padding:0!important}
+  .spine{position:absolute;left:54px;width:32px;display:grid;place-items:center}
+  .spine span{writing-mode:vertical-rl;font-size:7.5px;letter-spacing:.12em;color:#1a1a1a}
+  .tb .nm{flex:none;width:164px;font-weight:700}
+  .tb .cs{flex:none;width:80px;color:#4d4d4d}
+  .tb .cp{flex:none;width:60px;text-align:right;font-weight:700}
+  .tb .ca{flex:none;width:180px;color:#4d4d4d}
+  .tb .cb{flex:1;color:#4d4d4d}
+  .mx{position:absolute;left:812px;top:33px;width:766px}
+  .mx .gh{display:flex;height:31px;font-size:8px;color:#1a1a1a}
+  .mx .gh div{display:grid;place-items:center;border-right:1px solid #fff}
+  .mx .vh{display:flex;height:238px}
+  .mx .vh div{flex:1;border-right:1px solid #e6e6e6;display:flex;align-items:flex-end;justify-content:center;padding-bottom:6px}
+  .mx .vh span{writing-mode:vertical-rl;font-size:6.5px;letter-spacing:.02em;color:#1a1a1a;white-space:nowrap}
+  .mx .bd{position:absolute;left:0;top:299px;width:766px}
+  .mx .rw{display:flex;height:45px;border-bottom:1px solid #e6e6e6}
+  .mx .rw div{flex:1;border-right:1px solid #f0f0f0;display:grid;place-items:center;font-size:8px}
+  .m1{color:#1a1a1a}.m2{color:#6b6b6b}.m3{color:#8c8c8c}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="page">
+    <div class="ttl">卒業後にめざせる進路と免許・資格</div>
+    <div class="lgd"><b>●</b> 資格取得（卒業と同時に取得できる免許・資格）　　<b>■</b> 先修学科・コースで取得がめざせる免許・資格<br><b>▲</b> 所定の科目を履修（あるいは指定校推薦）し、当該資格の試験に合格することにより取得（受験により取得できる場合があります）</div>
+    <div class="qrc">取得がめざせる<br>免許・資格の<br>詳細はこちら<div class="ph" style="position:static;width:58px;height:58px;margin:4px auto 0;font-size:7px">QR</div></div>
+    <div class="nt">※1 教職課程・学科・コースにより取得できるもの、条件により異なります。<br>※2 全課程の所定単位を修得することにより取得できます。学習内容・履修方法は個別に確認が必要です。<br>※3 卒業年次の在籍により、なんらかの資格を取得できます。学部・学科により、指定された条件を満たす必要があります。<br>※4 指定校または認定校としての認定を受けている場合に限ります。<br>※5 所定の科目を修得し、指定機関を修了後、受験により取得可能。<br>※6 詳細は入試広報課までお問い合わせください。</div>
+    <div class="tb">
+      <div class="hd"><div style="width:32px"></div><div style="width:164px">学科名</div><div style="width:80px">コース</div><div style="width:60px">定員</div><div style="width:180px">取得可能な主な進路</div><div style="flex:1">その他の進路</div></div>
+      <div class="rw"><div class="sp"></div><div class="nm">ダミー学科</div><div class="cs">ダミーコース</div><div class="cp">90人</div><div class="ca">● ダミーの進路<br>● ダミーの進路</div><div class="cb">● ダミーの進路<br>● ダミーの進路　など</div></div>
+      <div class="rw"><div class="sp"></div><div class="nm">ダミー学科</div><div class="cs">ダミーコース</div><div class="cp">100人</div><div class="ca">● ダミーの進路<br>● ダミーの進路</div><div class="cb">● ダミーの進路<br>● ダミーの進路　など</div></div>
+      <div class="rw"><div class="sp"></div><div class="nm">ダミー学科</div><div class="cs">ダミーコース</div><div class="cp">80人</div><div class="ca">● ダミーの進路<br>● ダミーの進路</div><div class="cb">● ダミーの進路<br>● ダミーの進路　など</div></div>
+      <div class="rw"><div class="sp"></div><div class="nm">ダミー学科</div><div class="cs">ダミーコース</div><div class="cp">50人</div><div class="ca">● ダミーの進路<br>● ダミーの進路</div><div class="cb">● ダミーの進路<br>● ダミーの進路　など</div></div>
+      <div class="rw"><div class="sp"></div><div class="nm">ダミー学科</div><div class="cs">ダミーコース</div><div class="cp">150人</div><div class="ca">● ダミーの進路<br>● ダミーの進路</div><div class="cb">● ダミーの進路<br>● ダミーの進路　など</div></div>
+      <div class="rw"><div class="sp"></div><div class="nm">ダミー学科</div><div class="cs">ダミーコース</div><div class="cp">150人</div><div class="ca">● ダミーの進路<br>● ダミーの進路</div><div class="cb">● ダミーの進路<br>● ダミーの進路　など</div></div>
+      <div class="rw"><div class="sp"></div><div class="nm">ダミー学科</div><div class="cs">ダミーコース</div><div class="cp">35人</div><div class="ca">● ダミーの進路<br>● ダミーの進路</div><div class="cb">● ダミーの進路<br>● ダミーの進路　など</div></div>
+      <div class="rw"><div class="sp"></div><div class="nm">ダミー学科</div><div class="cs">ダミーコース</div><div class="cp">60人</div><div class="ca">● ダミーの進路<br>● ダミーの進路</div><div class="cb">● ダミーの進路<br>● ダミーの進路　など</div></div>
+      <div class="rw"><div class="sp"></div><div class="nm">ダミー学科</div><div class="cs">ダミーコース</div><div class="cp">150人</div><div class="ca">● ダミーの進路<br>● ダミーの進路</div><div class="cb">● ダミーの進路<br>● ダミーの進路　など</div></div>
+      <div class="rw"><div class="sp"></div><div class="nm">ダミー学科</div><div class="cs">ダミーコース</div><div class="cp">90人</div><div class="ca">● ダミーの進路<br>● ダミーの進路</div><div class="cb">● ダミーの進路<br>● ダミーの進路　など</div></div>
+      <div class="rw"><div class="sp"></div><div class="nm">ダミー学科</div><div class="cs">ダミーコース</div><div class="cp">60人</div><div class="ca">● ダミーの進路<br>● ダミーの進路</div><div class="cb">● ダミーの進路<br>● ダミーの進路　など</div></div>
+      <div class="rw"><div class="sp"></div><div class="nm">ダミー学科</div><div class="cs">ダミーコース</div><div class="cp">150人</div><div class="ca">● ダミーの進路<br>● ダミーの進路</div><div class="cb">● ダミーの進路<br>● ダミーの進路　など</div></div>
+      <div class="rw"><div class="sp"></div><div class="nm">ダミー学科</div><div class="cs">ダミーコース</div><div class="cp">60人</div><div class="ca">● ダミーの進路<br>● ダミーの進路</div><div class="cb">● ダミーの進路<br>● ダミーの進路　など</div></div>
+      <div class="rw"><div class="sp"></div><div class="nm">ダミー学科</div><div class="cs">ダミーコース</div><div class="cp">100人</div><div class="ca">● ダミーの進路<br>● ダミーの進路</div><div class="cb">● ダミーの進路<br>● ダミーの進路　など</div></div>
+      <div class="rw"><div class="sp"></div><div class="nm">ダミー学科</div><div class="cs">ダミーコース</div><div class="cp">150人</div><div class="ca">● ダミーの進路<br>● ダミーの進路</div><div class="cb">● ダミーの進路<br>● ダミーの進路　など</div></div>
+      <div class="rw"><div class="sp"></div><div class="nm">ダミー学科</div><div class="cs">ダミーコース</div><div class="cp">150人</div><div class="ca">● ダミーの進路<br>● ダミーの進路</div><div class="cb">● ダミーの進路<br>● ダミーの進路　など</div></div>
+    </div>
+    <div class="mx">
+      <div class="gh"><div style="flex:5;background:#e0e0e0">国家試験受験資格</div><div style="flex:4;background:#ececec">任用資格</div><div style="flex:19;background:#f4f4f4">その他の免許・資格</div></div>
+      <div class="vh"><div><span>ダミーの免許・資格名</span></div><div><span>ダミーの免許・資格名</span></div><div><span>ダミーの免許・資格名</span></div><div><span>ダミーの免許・資格名</span></div><div><span>ダミーの免許・資格名</span></div><div><span>ダミーの免許・資格名</span></div><div><span>ダミーの免許・資格名</span></div><div><span>ダミーの免許・資格名</span></div><div><span>ダミーの免許・資格名</span></div><div><span>ダミーの免許・資格名</span></div><div><span>ダミーの免許・資格名</span></div><div><span>ダミーの免許・資格名</span></div><div><span>ダミーの免許・資格名</span></div><div><span>ダミーの免許・資格名</span></div><div><span>ダミーの免許・資格名</span></div><div><span>ダミーの免許・資格名</span></div><div><span>ダミーの免許・資格名</span></div><div><span>ダミーの免許・資格名</span></div><div><span>ダミーの免許・資格名</span></div><div><span>ダミーの免許・資格名</span></div><div><span>ダミーの免許・資格名</span></div><div><span>ダミーの免許・資格名</span></div><div><span>ダミーの免許・資格名</span></div><div><span>ダミーの免許・資格名</span></div><div><span>ダミーの免許・資格名</span></div><div><span>ダミーの免許・資格名</span></div><div><span>ダミーの免許・資格名</span></div><div><span>ダミーの免許・資格名</span></div></div>
+      <div class="bd">
+        <div class="rw"><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m1">●</div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m1">●</div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m1">●</div><div class="m3"></div><div class="m3"></div><div class="m2">■</div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m2">■</div><div class="m3"></div><div class="m3"></div><div class="m1">●</div><div class="m3">▲</div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m1">●</div></div>
+        <div class="rw"><div class="m3"></div><div class="m3"></div><div class="m3">▲</div><div class="m3"></div><div class="m3"></div><div class="m3">▲</div><div class="m2">■</div><div class="m1">●</div><div class="m3"></div><div class="m1">●</div><div class="m3"></div><div class="m2">■</div><div class="m3"></div><div class="m3">▲</div><div class="m3"></div><div class="m2">■</div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3">▲</div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3">▲</div><div class="m3">▲</div></div>
+        <div class="rw"><div class="m3">▲</div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m2">■</div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m2">■</div><div class="m3"></div><div class="m2">■</div><div class="m3"></div><div class="m3">▲</div><div class="m3"></div><div class="m3"></div><div class="m3">▲</div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m1">●</div><div class="m2">■</div><div class="m3"></div><div class="m1">●</div><div class="m3"></div><div class="m3"></div><div class="m3"></div></div>
+        <div class="rw"><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m2">■</div><div class="m3"></div><div class="m3"></div><div class="m2">■</div><div class="m3"></div><div class="m3">▲</div><div class="m3"></div><div class="m1">●</div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m1">●</div><div class="m1">●</div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m2">■</div><div class="m2">■</div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3">▲</div><div class="m3">▲</div></div>
+        <div class="rw"><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m1">●</div><div class="m3"></div><div class="m1">●</div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3">▲</div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3">▲</div><div class="m3"></div><div class="m3"></div><div class="m1">●</div><div class="m3"></div></div>
+        <div class="rw"><div class="m3"></div><div class="m2">■</div><div class="m3">▲</div><div class="m3">▲</div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m2">■</div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3">▲</div><div class="m2">■</div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m1">●</div><div class="m3">▲</div><div class="m3"></div><div class="m3"></div><div class="m2">■</div><div class="m3"></div><div class="m2">■</div><div class="m3">▲</div></div>
+        <div class="rw"><div class="m3"></div><div class="m3">▲</div><div class="m1">●</div><div class="m3">▲</div><div class="m1">●</div><div class="m1">●</div><div class="m1">●</div><div class="m3"></div><div class="m1">●</div><div class="m1">●</div><div class="m3"></div><div class="m3">▲</div><div class="m3"></div><div class="m3"></div><div class="m2">■</div><div class="m3"></div><div class="m2">■</div><div class="m1">●</div><div class="m3">▲</div><div class="m3"></div><div class="m3">▲</div><div class="m3">▲</div><div class="m3"></div><div class="m1">●</div><div class="m3"></div><div class="m1">●</div><div class="m3"></div><div class="m1">●</div></div>
+        <div class="rw"><div class="m3">▲</div><div class="m1">●</div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3">▲</div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m1">●</div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3">▲</div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3">▲</div></div>
+        <div class="rw"><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m1">●</div><div class="m1">●</div><div class="m3"></div><div class="m2">■</div><div class="m1">●</div><div class="m2">■</div><div class="m1">●</div><div class="m3">▲</div><div class="m2">■</div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3">▲</div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div></div>
+        <div class="rw"><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3">▲</div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m1">●</div><div class="m1">●</div><div class="m2">■</div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3">▲</div><div class="m1">●</div><div class="m2">■</div><div class="m3"></div><div class="m3"></div><div class="m1">●</div><div class="m2">■</div><div class="m1">●</div><div class="m3"></div></div>
+        <div class="rw"><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3">▲</div><div class="m3"></div><div class="m1">●</div><div class="m3"></div><div class="m3"></div><div class="m1">●</div><div class="m2">■</div><div class="m3"></div><div class="m3"></div><div class="m3">▲</div><div class="m3"></div><div class="m2">■</div><div class="m3"></div><div class="m3"></div><div class="m1">●</div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m1">●</div><div class="m3"></div><div class="m3"></div><div class="m3"></div></div>
+        <div class="rw"><div class="m3">▲</div><div class="m3"></div><div class="m1">●</div><div class="m3">▲</div><div class="m3">▲</div><div class="m3"></div><div class="m3">▲</div><div class="m3"></div><div class="m3">▲</div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3">▲</div><div class="m2">■</div><div class="m3"></div><div class="m3"></div><div class="m1">●</div><div class="m3"></div><div class="m3"></div><div class="m2">■</div><div class="m2">■</div><div class="m3"></div><div class="m3"></div><div class="m2">■</div><div class="m3"></div><div class="m3"></div><div class="m2">■</div></div>
+        <div class="rw"><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3">▲</div><div class="m3"></div><div class="m2">■</div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m2">■</div><div class="m3"></div><div class="m3"></div><div class="m2">■</div><div class="m3"></div><div class="m1">●</div><div class="m3"></div><div class="m2">■</div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3">▲</div><div class="m3"></div><div class="m2">■</div><div class="m3"></div><div class="m3"></div><div class="m1">●</div><div class="m3"></div></div>
+        <div class="rw"><div class="m3"></div><div class="m2">■</div><div class="m3"></div><div class="m3"></div><div class="m1">●</div><div class="m2">■</div><div class="m2">■</div><div class="m1">●</div><div class="m2">■</div><div class="m3"></div><div class="m3"></div><div class="m2">■</div><div class="m3">▲</div><div class="m3"></div><div class="m2">■</div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m1">●</div><div class="m3"></div><div class="m1">●</div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m2">■</div><div class="m1">●</div></div>
+        <div class="rw"><div class="m1">●</div><div class="m3">▲</div><div class="m1">●</div><div class="m3"></div><div class="m3"></div><div class="m3">▲</div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m2">■</div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m2">■</div><div class="m1">●</div><div class="m2">■</div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m2">■</div><div class="m3"></div><div class="m3"></div><div class="m2">■</div><div class="m3">▲</div></div>
+        <div class="rw"><div class="m3">▲</div><div class="m3">▲</div><div class="m1">●</div><div class="m3"></div><div class="m2">■</div><div class="m1">●</div><div class="m3">▲</div><div class="m3"></div><div class="m3"></div><div class="m3">▲</div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m2">■</div><div class="m1">●</div><div class="m1">●</div><div class="m3"></div><div class="m3"></div><div class="m2">■</div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m3"></div><div class="m2">■</div><div class="m2">■</div><div class="m1">●</div></div>
+      </div>
+    </div>
+
+    <div class="spine" style="top:332px;height:180px;background:#dcdcdc"><span>ダミー学部</span></div>
+    <div class="spine" style="top:512px;height:90px;background:#e6e6e6"><span>ダミー学部</span></div>
+    <div class="spine" style="top:602px;height:90px;background:#dcdcdc"><span>ダミー学部</span></div>
+    <div class="spine" style="top:692px;height:135px;background:#e6e6e6"><span>ダミー学部</span></div>
+    <div class="spine" style="top:827px;height:135px;background:#dcdcdc"><span>ダミー学部</span></div>
+    <div class="spine" style="top:962px;height:90px;background:#e6e6e6"><span>ダミー学部</span></div>
+    <div class="gut"></div>
+    <div class="pn" style="left:24px;top:1092px">10</div>
+    <div class="pn" style="right:24px;top:1092px">11</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1588,innerHeight/1123));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>

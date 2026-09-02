@@ -19,6 +19,7 @@ const pick = (src, cls) => {
 
 function features(src) {
   const f = [];
+  if (/<!-- traced:/.test(src)) f.push('**トレース**');
   const size = src.match(/\.page\{[^}]*?width:(\d+)px;height:(\d+)px/);
   const wide = size && +size[1] > 1000;
   if (wide) f.push('見開き');

@@ -6,8 +6,11 @@ mk() {
   input="$(cat)"
   style="${input%%$'\n'@@@*}"
   body="${input#*$'\n'@@@$'\n'}"
+  local mark=""
+  [ -n "$TRACE" ] && mark="<!-- traced: 実誌面から採寸して再現 -->"
   cat > "${out}.html" <<EOF
 <!DOCTYPE html>
+${mark}
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
