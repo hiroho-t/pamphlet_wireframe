@@ -63,7 +63,7 @@
 | toc-015 | 目次<br><small>CONTENTS</small> | タグ列・図版1点 |
 | toc-016 | 目次<br><small>CONTENTS</small> | 地色パネル・図版2点 |
 | toc-017 | 目次<br><small>CONTENTS</small> | 図版21点 |
-| toc-018 | 目次<br><small>CONTENTS</small> | 図版1点 |
+| toc-019 | — | **トレース**・図版0点 |
 
 ## 中扉 `section/`（18種）
 
@@ -107,7 +107,7 @@
 | message-013 | ダミーの見出しテキストが ここに入ります<br><small>MESSAGE</small> | 本文2段組み・図版1点 |
 | message-014 | ダミーの見出しテキスト<br><small>MESSAGE</small> | 図版1点 |
 | message-015 | 学長メッセージ<br><small>MESSAGE</small> | 本文2段組み・図版3点 |
-| message-016 | 学部長メッセージ<br><small>MESSAGE</small> | 図版8点 |
+| message-017 | — | **トレース**・図版0点 |
 
 ## 学校紹介・特色 `about/`（30種）
 

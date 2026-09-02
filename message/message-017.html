@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- traced: 実誌面から採寸して再現 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>message-017</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .page{position:relative;width:794px;height:1123px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+  .ph{position:absolute;background:#dcdcdc;display:grid;place-items:center;font-size:12px;letter-spacing:.2em;color:#8c8c8c}
+  .pn{position:absolute;font-size:11px;letter-spacing:.1em;color:#8c8c8c}
+  .bg{position:absolute;left:0;top:0;width:794px;height:1032px;background:#dcdcdc;
+    display:grid;place-items:end;padding:0 24px 20px 0;font-size:13px;letter-spacing:.3em;color:#c2c2c2}
+  .hl{position:absolute;left:69px;top:145px;font-family:"Hiragino Mincho ProN","Yu Mincho",serif;
+    font-size:40px;line-height:1.75;letter-spacing:.3em;color:#1a1a1a}
+  .bd{position:absolute;left:69px;font-family:"Hiragino Mincho ProN","Yu Mincho",serif;
+    font-size:12px;line-height:2.4;letter-spacing:.12em;color:#4d4d4d}
+  .cl{position:absolute;left:69px;top:898px;font-family:"Hiragino Mincho ProN","Yu Mincho",serif;
+    font-size:20px;letter-spacing:.5em;color:#1a1a1a}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="page">
+    <div class="bg">IMAGE（見開きにまたがる全面写真）</div>
+    <div class="hl">あなたの想いを<br>未来に社会に<br>つなげる大学</div>
+    <div class="bd" style="top:418px">他者の気持ちに寄り添えること。<br>自分の未来を描いていけること。<br>誰かを想うひと、誰かを想う力を育むために。<br>私たちはこれまで、多くの学生たちと共に歩んできました。</div>
+    <div class="bd" style="top:582px">大切にしているのは、他者の想いや汲み取る力。<br>やさしさや思いやりを支えていく確かな力を<br>私たちは「ダミーマインド」と呼んでいます。</div>
+    <div class="bd" style="top:712px">あなたの想いが、未来を切り拓く力に。<br>あなたの想いが、社会を支えていく確かな力に。<br>他にはない「ダミーマインド」を育みながら。<br>ダミー大学は、あなたの未来を共に見つけます。</div>
+    <div class="cl">共に歩む　これまでも　これからも</div>
+    <div class="pn" style="left:23px;top:1088px">2</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/794,innerHeight/1123));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>
