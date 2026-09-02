@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- traced: 実誌面から採寸して再現 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>spread-062</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .page{position:relative;width:1588px;height:1123px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+  .ph{position:absolute;background:#dcdcdc;display:grid;place-items:center;font-size:12px;letter-spacing:.2em;color:#8c8c8c}
+  .pn{position:absolute;font-size:11px;letter-spacing:.1em;color:#8c8c8c}
+  .gut{position:absolute;left:793px;top:0;width:2px;height:1123px;background:repeating-linear-gradient(#c9c9c9 0 8px,transparent 8px 16px)}
+  /* 番号バッジ＋見出し＋点付き罫線を各ページの頭に置き、下に数値パネル・円グラフ・吹き出し・施設リストを積む。下端は色帯のフッター */
+  .pat{position:absolute;left:0;top:6px;width:1588px;height:78px;background:#f0f0f0}
+  .num{position:absolute;width:87px;height:72px;border:2px solid #6b6b6b;display:grid;place-items:center;font-size:30px;font-weight:800;color:#1a1a1a}
+  .num i{position:absolute;left:-6px;top:-6px;width:16px;height:16px;background:#dcdcdc;font-style:normal}
+  .hd{position:absolute;font-size:22px;font-weight:800;letter-spacing:.06em;color:#1a1a1a}
+  .rule{position:absolute;height:2px;background:#6b6b6b}
+  .rule i{position:absolute;top:-3px;width:8px;height:8px;border-radius:50%;background:#6b6b6b;font-style:normal}
+  .sh{position:absolute;font-size:18px;font-weight:800;color:#1a1a1a}
+  .bd{position:absolute;font-size:8px;line-height:2;color:#4d4d4d}
+  .pn2{position:absolute;left:74px;top:418px;width:445px;height:206px;background:#f0f0f0;display:grid;place-items:center;align-content:center;gap:8px}
+  .pn2 .l{font-size:12px;font-weight:700;color:#1a1a1a}
+  .pn2 .v{font-size:72px;font-weight:800;line-height:1;color:#1a1a1a}
+  .gt{position:absolute;left:91px;top:671px;width:278px;text-align:center;font-size:9px;font-weight:700;color:#1a1a1a}
+  .bub{position:absolute;left:416px;top:713px;width:283px;height:154px;border-radius:50%;background:#e6e6e6;display:grid;place-items:center;text-align:center;font-size:11px;font-weight:700;line-height:1.7;color:#1a1a1a}
+  .mk{position:absolute;text-align:center;font-size:13px;font-weight:800;color:#1a1a1a}
+  .mk:after{content:"";display:block;margin:6px auto 0;width:100%;height:1px;background:#d5d5d5}
+  .lst{position:absolute;border:1px solid #6b6b6b;padding:10px 12px}
+  .lst .r{display:flex;align-items:center;gap:8px;padding:6px 0;font-size:8px;color:#1a1a1a}
+  .lst .r i{flex:none;width:22px;height:22px;background:#dcdcdc;font-style:normal}
+  .ft{position:absolute;left:0;top:1032px;width:1588px;height:91px;background:#6b6b6b}
+  .ft .p{position:absolute;top:34px;font-size:14px;color:#fff}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="page">
+    <div class="pat"></div>
+    <div class="num" style="left:86px;top:105px"><i></i>02</div>
+    <div class="hd" style="left:194px;top:128px">本校で学ぶ価値</div>
+    <div class="rule" style="left:74px;top:215px;width:645px"><i style="left:-4px"></i><i style="right:-4px"></i></div>
+    <div class="sh" style="left:74px;top:246px">ダミーテキストへの最短距離</div>
+    <div class="bd" style="left:74px;top:298px;width:573px">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト、<br>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト、<br>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストです</div>
+    <div class="pn2"><div class="l">「ダミーグループ」への就職率</div><div class="v">98.6%</div></div>
+    <div class="gt">令和X年度卒業生の就職先</div>
+    <div class="ph" style="left:122px;top:700px;width:206px;height:206px;border-radius:50%;font-size:9px">GRAPH</div>
+    <div class="bd" style="left:74px;top:920px;width:320px">■ ダミーの就職先 51.4%　■ ダミーの就職先 47.2%　■ その他 1.4%</div>
+    <div class="bub">卒業生のほぼ全員が<br>ダミーグループに就職！</div>
+
+    <div class="num" style="left:878px;top:105px"><i></i>03</div>
+    <div class="hd" style="left:986px;top:128px">実習環境の充実</div>
+    <div class="rule" style="left:867px;top:215px;width:641px"><i style="left:-4px"></i><i style="right:-4px"></i></div>
+    <div class="bd" style="left:867px;top:239px;width:641px">ダミーテキストダミーテキストダミーテキストダミーテキストです<br>ダミーテキストダミーテキストダミーテキストダミーテキスト、<br>ダミーテキストダミーテキストダミーテキストダミーテキストしています<br>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストできます</div>
+    <div class="mk" style="left:917px;top:392px;width:541px">▶ 充実した実習施設</div>
+    <div class="ph" style="left:853px;top:455px;width:278px;height:247px">IMAGE</div>
+    <div class="lst" style="left:1141px;top:455px;width:375px">
+      <div class="r"><i></i>ダミーの実習施設名</div>
+      <div class="r"><i></i>ダミーの実習施設名</div>
+      <div class="r"><i></i>ダミーの実習施設名</div>
+      <div class="r"><i></i>ダミーの実習施設名</div>
+      <div class="r"><i></i>ダミーの実習施設名</div>
+    </div>
+    <div class="mk" style="left:917px;top:740px;width:541px">▶ 経験豊富な実習指導者</div>
+    <div class="bd" style="left:867px;top:790px;width:641px;text-align:center">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストによる、<br>ダミーテキストダミーテキストダミーテキストダミーテキストが受けられます</div>
+    <div class="mk" style="left:917px;top:880px;width:541px">▶ 最先端のダミー現場</div>
+    <div class="bd" style="left:867px;top:930px;width:641px;text-align:center">ダミーテキストダミーテキストダミーテキストダミーテキストことで、<br>ダミーテキストダミーテキストダミーテキストダミーテキストができます</div>
+    <div class="ft"><div class="p" style="left:397px">4</div><div class="p" style="left:1187px">5</div></div>
+    <div class="gut"></div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1588,innerHeight/1123));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>

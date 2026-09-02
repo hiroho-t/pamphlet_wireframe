@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- traced: 実誌面から採寸して再現 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>spread-063</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .page{position:relative;width:1588px;height:1123px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+  .ph{position:absolute;background:#dcdcdc;display:grid;place-items:center;font-size:12px;letter-spacing:.2em;color:#8c8c8c}
+  .pn{position:absolute;font-size:11px;letter-spacing:.1em;color:#8c8c8c}
+  .gut{position:absolute;left:793px;top:0;width:2px;height:1123px;background:repeating-linear-gradient(rgba(0,0,0,.12) 0 8px,transparent 8px 16px)}
+  /* 左右で色を変えた学科紹介の対。ヘッダー帯→写真帯（白チップ＋本文を重ねる）→Topicパネル（見出し＋本文＋写真＋小カード）→下段ストリップ */
+  .hb{position:absolute;top:6px;height:161px}
+  .hb .rb{position:absolute;left:49px;top:12px;width:103px;height:128px;background:#8c8c8c;color:#fff;display:grid;place-items:center;align-content:center;gap:2px;text-align:center;font-size:9px;line-height:1.4}
+  .hb .rb b{font-size:15px}
+  .hb .s{position:absolute;left:173px;top:32px;font-size:9px;letter-spacing:.06em;color:#fff}
+  .hb .t{position:absolute;left:173px;top:62px;font-size:34px;font-weight:800;letter-spacing:.06em;color:#fff}
+  .hb .c{position:absolute;top:92px;padding:5px 12px;background:#fff;font-size:10px;color:#1a1a1a}
+  .hb .u{position:absolute;left:173px;top:128px;font-size:9px;color:#fff}
+  .chp{position:absolute;padding:5px 12px;background:#fff;font-size:11px;font-weight:700;letter-spacing:.04em;color:#1a1a1a}
+  .bd{position:absolute;font-size:7.5px;line-height:2;color:#1a1a1a}
+  .lk{position:absolute;font-size:7px;color:#1a1a1a}
+  .tp{position:absolute;border-radius:12px;padding:16px 18px}
+  .tp .bg2{position:absolute;left:35px;top:10px;width:92px;height:52px;border-radius:26px;background:#6b6b6b;display:grid;place-items:center;font-size:11px;font-style:italic;color:#fff}
+  .tp .h{margin-left:120px;font-size:15px;font-weight:800;line-height:1.5;color:#1a1a1a}
+  .tp .x{margin-top:12px;width:474px;font-size:7px;line-height:1.95;color:#4d4d4d}
+  .sc{position:absolute}
+  .sc .t{height:26px;background:#6b6b6b;display:grid;place-items:center;font-size:8.5px;font-weight:700;color:#fff}
+  .sc .x{margin-top:6px;font-size:6px;line-height:1.8;color:#4d4d4d}
+  .sc .im{margin-top:6px;height:88px;background:#dcdcdc;display:grid;place-items:center;font-size:7px;color:#8c8c8c}
+  .st{position:absolute;border-radius:10px;background:#f0f0f0;padding:12px 16px;display:flex;align-items:center;gap:16px}
+  .st .h{flex:none;font-size:12px;font-weight:800;color:#1a1a1a}
+  .st .n{display:flex;gap:14px;font-size:7px;line-height:1.6;color:#4d4d4d}
+  .st .n b{font-size:12px;font-style:italic;color:#8c8c8c;margin-right:4px}
+  .vo{position:absolute;border-radius:10px;background:#f0f0f0;padding:12px 16px}
+  .vo .b{position:absolute;left:16px;top:14px;width:92px;height:44px;border-radius:22px;background:#6b6b6b;display:grid;place-items:center;font-size:11px;font-style:italic;color:#fff}
+  .vo .h{margin-left:120px;font-size:12px;font-weight:700;color:#1a1a1a}
+  .vo .x{margin-left:120px;margin-top:8px;width:380px;font-size:6.5px;line-height:1.85;color:#4d4d4d}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="page">
+    <div class="hb" style="left:0;width:791px;background:#6b6b6b">
+      <div class="rb">New<b>20XX年</b>新設</div>
+      <div class="s">ダミー・ダミー・国際線ダミーをめざす</div>
+      <div class="t">国際ダミー科</div>
+      <div class="c" style="left:564px">2年制＋長期留学</div>
+      <div class="u">ダミー校 留学専攻</div>
+    </div>
+    <div class="ph" style="left:0;top:167px;width:791px;height:288px;font-size:12px">IMAGE</div>
+    <div class="chp" style="left:60px;top:228px">“ダミーの学校”だからできる、</div>
+    <div class="chp" style="left:60px;top:262px">ダミーにつながるダミー教育</div>
+    <div class="bd" style="left:60px;top:305px;width:432px">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div>
+    <div class="lk" style="left:420px;top:448px">詳細はコチラ ▶</div>
+    <div class="tp" style="left:25px;top:476px;width:745px;height:454px;background:#f0f0f0">
+      <div class="bg2">Topic</div>
+      <div class="h">ダミーを身につけ、ダミーを養う　ダミー校 長期留学（10カ月）</div>
+      <div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div>
+      <div class="ph" style="left:508px;top:78px;width:155px;height:118px;font-size:7px">IMAGE</div>
+      <div class="sc" style="left:24px;top:181px;width:217px"><div class="t">ダミーのプログラム</div><div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div><div class="im">IMAGE</div></div>
+      <div class="sc" style="left:251px;top:181px;width:216px"><div class="t">ダミーのプログラム</div><div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div><div class="im">IMAGE</div></div>
+      <div class="sc" style="left:477px;top:181px;width:227px"><div class="t">ダミーのプログラム</div><div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div><div class="im">IMAGE</div></div>
+    </div>
+    <div class="st" style="left:25px;top:946px;width:745px;height:107px">
+      <div class="h">在学中の留学／手が届く<b>本格留学</b></div>
+      <div class="n"><span><b>01</b>留学まで<br>全員40万円減額</span><span><b>02</b>留学中の生活で<br>最大50万円減額</span><span><b>03</b>第二種奨学金と併せて<br>最大144万円準備可</span></div>
+      <div class="ph" style="position:absolute;right:16px;top:12px;width:96px;height:80px;font-size:7px">IMAGE</div>
+    </div>
+
+    <div class="hb" style="left:793px;width:795px;background:#8c8c8c">
+      <div class="s" style="left:173px">国内線ダミーをめざす</div>
+      <div class="t" style="left:160px;border-left:3px solid #fff;padding-left:16px">ダミー科</div>
+      <div class="c" style="left:600px">2年制</div>
+    </div>
+    <div class="ph" style="left:793px;top:167px;width:795px;height:288px;font-size:12px">IMAGE</div>
+    <div class="chp" style="left:853px;top:228px">“ダミー業界へ最短内定”</div>
+    <div class="chp" style="left:853px;top:262px">少人数授業と手厚い個別指導</div>
+    <div class="bd" style="left:853px;top:305px;width:432px">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div>
+    <div class="lk" style="left:1213px;top:448px">詳細はコチラ ▶</div>
+    <div class="tp" style="left:818px;top:476px;width:745px;height:400px;background:#f0f0f0">
+      <div class="bg2">Topic</div>
+      <div class="h">「ダミーが苦手」を払拭できる　国内留学（両科共通・1カ月）</div>
+      <div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div>
+      <div class="sc" style="left:24px;top:181px;width:340px"><div class="t">Daily English</div><div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div><div class="im">IMAGE</div></div>
+      <div class="sc" style="left:380px;top:181px;width:324px"><div class="t">English for traveling</div><div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div><div class="im">IMAGE</div></div>
+    </div>
+    <div class="vo" style="left:818px;top:892px;width:745px;height:120px">
+      <div class="b">VOICE</div>
+      <div class="h">ダミーテキストな環境で安心して学べる</div>
+      <div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div>
+      <div class="ph" style="position:absolute;right:16px;top:-24px;width:96px;height:130px;font-size:7px">PORTRAIT</div>
+    </div>
+    <div class="gut"></div>
+    <div class="pn" style="left:24px;top:1080px">6</div>
+    <div class="pn" style="right:24px;top:1080px">7</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1588,innerHeight/1123));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- traced: 実誌面から採寸して再現 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>backcover-013</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .page{position:relative;width:794px;height:1123px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+  .ph{position:absolute;background:#dcdcdc;display:grid;place-items:center;font-size:12px;letter-spacing:.2em;color:#8c8c8c}
+  .pn{position:absolute;font-size:11px;letter-spacing:.1em;color:#8c8c8c}
+  /* 裏表紙：路線図を大きく置き、罫線の下にロゴ・認定表記・学科一覧・TEL・SNSのQRを積む */
+  .bdg{position:absolute;left:74px;top:70px;width:169px;height:169px;border-radius:50%;background:#e6e6e6;display:grid;place-items:center;align-content:center;gap:6px;text-align:center}
+  .bdg .e{font-size:13px;font-weight:700;letter-spacing:.14em;color:#1a1a1a}
+  .bdg .j{font-size:7px;line-height:1.6;color:#4d4d4d}
+  .hr{position:absolute;left:60px;top:595px;width:673px;height:1px;background:#8c8c8c}
+  .lock{position:absolute;left:80px;top:648px;display:flex;align-items:flex-end;gap:14px}
+  .lock .lg{font-size:30px;font-weight:800;letter-spacing:.02em;color:#1a1a1a}
+  .lock .r .o{font-size:6.5px;color:#4d4d4d}
+  .lock .r .n{margin-top:3px;font-size:19px;font-weight:700;letter-spacing:.04em;color:#1a1a1a}
+  .cert{position:absolute;left:80px;top:712px;width:464px;font-size:5.5px;line-height:1.75;color:#4d4d4d}
+  .bd{position:absolute;left:80px;top:735px;padding:3px 8px;border:1px solid #1a1a1a;font-size:7px;letter-spacing:.02em;color:#1a1a1a}
+  .cl{position:absolute;left:80px;top:772px;width:330px;font-size:6px;line-height:1.95;color:#1a1a1a}
+  .tel{position:absolute;left:80px;top:948px;font-size:26px;font-weight:800;letter-spacing:.02em;color:#1a1a1a}
+  .ad{position:absolute;left:80px;top:992px;width:300px;font-size:6px;line-height:1.8;color:#4d4d4d}
+  .qs{position:absolute;left:407px;top:944px;display:flex;gap:14px}
+  .qs .q{width:54px;text-align:center}
+  .qs .q .b{width:54px;height:54px;background:#dcdcdc;display:grid;place-items:center;font-size:7px;color:#8c8c8c}
+  .qs .q .l{margin-top:4px;font-size:5.5px;color:#4d4d4d}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="page">
+    <div class="ph" style="left:60px;top:84px;width:673px;height:474px;font-size:11px">ROUTE MAP（路線図）</div>
+    <div class="bdg"><div class="e">ACCESS MAP</div><div class="j">主要駅から<br>ダミー駅までの<br>電車乗車時間</div></div>
+    <div class="hr"></div>
+    <div class="lock"><div class="lg">DUMI×dibi</div><div class="r"><div class="o">学校法人ダミー学園</div><div class="n">ダミー理容美容専門学校</div></div></div>
+    <div class="cert">ダミー法人ダミー協会 認定校／ダミー法人ダミー協会 認定校／ダミー法人ダミー協会 認定校／ダミー協会 認定校</div>
+    <div class="bd">職業実践専門課程 認定校／高等教育の修学支援制度 認定校</div>
+    <div class="cl">ダミー学科（昼間2年制）<br>［ダミー専攻］［ダミー専攻］<br>ダミー学科（昼間2年制）<br>［ダミーコース］［ダミー専門コース］<br>ダミーコース（通信2年）<br>ダミー学科 ダミーコース［通信1年］<br>通信ダミー学科（3年）通信ダミー学科（3年）<br>通信ダミー学科（1年6か月）<br>通信ダミー学科（1年6か月）</div>
+    <div class="tel">Tel：00-0000-0000</div>
+    <div class="ad">〒000-0000 ダミー県ダミー市ダミー町0-0-0<br>https://dummy.example.ac.jp/</div>
+    <div class="qs">
+      <div class="q"><div class="b">QR</div><div class="l">HP</div></div>
+      <div class="q"><div class="b">QR</div><div class="l">Instagram</div></div>
+      <div class="q"><div class="b">QR</div><div class="l">LINE</div></div>
+      <div class="q"><div class="b">QR</div><div class="l">YouTube</div></div>
+    </div>
+    <div class="pn" style="left:24px;top:1092px">52</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/794,innerHeight/1123));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>
