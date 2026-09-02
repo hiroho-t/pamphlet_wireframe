@@ -298,7 +298,7 @@
 | student-031 | 先輩プロフィール一覧<br><small>STUDENT PROFILE</small> | 表・図版1点 |
 | student-033 | 手厚いサポートで | **トレース**・図版4点 |
 
-## キャンパスライフ `campuslife/`（29種）
+## キャンパスライフ `campuslife/`（28種）
 
 | id | 見出し | 特徴 |
 |---|---|---|
@@ -329,7 +329,6 @@
 | campuslife-025 | 入学からの1年<br><small>FRESHMAN GUIDE</small> | 図版12点 |
 | campuslife-026 | キャンパスライフ 6つの魅力<br><small>CAMPUS LIFE POINTS</small> | 濃色の帯・図版1点 |
 | campuslife-027 | クラブ・サークルデータ<br><small>CLUB DATA</small> | 表・図版3点 |
-| campuslife-028 | お気に入りの場所<br><small>CAMPUS SPOTS</small> | 図版6点 |
 | campuslife-029 | CAMPUS LIFE | **トレース**・地色パネル・QR・縦組み・図版0点 |
 
 ## 施設・キャンパス `facility/`（21種）
@@ -545,7 +544,7 @@
 | access-011 | キャンパスへのアクセス<br><small>ACCESS</small> | 地図・図版1点 |
 | access-013 | D C T | **トレース**・QR・図版0点 |
 
-## よくある質問 `faq/`（10種）
+## よくある質問 `faq/`（11種）
 
 | id | 見出し | 特徴 |
 |---|---|---|
@@ -559,6 +558,7 @@
 | faq-008 | 先輩が答えるQ&amp;A<br><small>ANSWERED BY STUDENTS</small> | 図版0点 |
 | faq-009 | 保護者の方からの質問<br><small>FAQ FOR PARENTS</small> | Q&A・図版1点 |
 | faq-010 | よく聞かれる質問 ベスト8<br><small>TOP 8 QUESTIONS</small> | タイムライン・図版0点 |
+| faq-011 | CAMPUS LIFE | **トレース**・図版3点 |
 
 ## 裏表紙 `backcover/`（12種）
 
