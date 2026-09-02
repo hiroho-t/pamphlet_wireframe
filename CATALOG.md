@@ -357,7 +357,7 @@
 | facility-022 | — | **トレース**・図版20点 |
 | facility-023 | — | **トレース**・ステップ・図版16点 |
 
-## 進路・就職 `career/`（26種）
+## 進路・就職 `career/`（28種）
 
 | id | 見出し | 特徴 |
 |---|---|---|
@@ -387,6 +387,8 @@
 | career-024 | 職場を訪ねて<br><small>GRADUATES AT WORK</small> | 図版5点 |
 | career-025 | 就職先の分野<br><small>EMPLOYMENT FIELDS</small> | タグ列・図版1点 |
 | career-026 | 就職支援イベント<br><small>SEMINAR &amp; EVENT</small> | 図版1点 |
+| career-027 | — | **トレース**・図版0点 |
+| career-028 | 学生が主体的に選ぶ | **トレース**・縦組み・図版0点 |
 
 ## 卒業生 `og/`（14種）
 
@@ -424,7 +426,7 @@
 | works-011 | プロジェクト 作品<br><small>PROJECT WORK</small> | 地色パネル・図版5点 |
 | works-012 | 卒業制作テーマ一覧<br><small>WORKS LIST</small> | 表・図版4点 |
 
-## 国際交流・留学 `global/`（12種）
+## 国際交流・留学 `global/`（10種）
 
 | id | 見出し | 特徴 |
 |---|---|---|
@@ -436,8 +438,6 @@
 | global-006 | 留学した先輩の声<br><small>VOICE FROM ABROAD</small> | 図版10点 |
 | global-007 | 留学生の受け入れ<br><small>INTERNATIONAL STUDENTS</small> | 図版13点 |
 | global-008 | 留学プログラム一覧<br><small>PROGRAM LIST</small> | 表・図版3点 |
-| global-009 | ダミーの留学体験記 見出しが入ります<br><small>STUDY ABROAD</small> | 図版2点 |
-| global-010 | グローバル教育<br><small>GLOBAL EDUCATION</small> | 図版4点 |
 | global-011 | — | **トレース**・図版1点 |
 | global-012 | DUMMY 4つの実績 | **トレース**・縦組み・図版0点 |
 
