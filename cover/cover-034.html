@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- traced: 実誌面から採寸して再現 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>cover-034</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .page{position:relative;width:794px;height:1123px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+  .ph{position:absolute;background:#dcdcdc;display:grid;place-items:center;font-size:12px;letter-spacing:.2em;color:#8c8c8c}
+  .pn{position:absolute;font-size:11px;letter-spacing:.1em;color:#8c8c8c}
+  /* 専門学校の表紙：ベタ地＋白の線画イラスト＋特大タイポ3行（校名は最下部に小さく置く） */
+  .bg{position:absolute;inset:0;background:#e6e6e6}
+  .il{position:absolute;border:1px solid #fff;display:grid;place-items:center;font-size:7px;letter-spacing:.1em;color:#fff}
+  .ty{position:absolute;left:115px;font-size:140px;font-weight:700;line-height:1;letter-spacing:.02em;color:#a8a8a8}
+  .sc{position:absolute;left:84px;top:392px;font-size:36px;font-style:italic;letter-spacing:.06em;color:#fff}
+  .hl{position:absolute;left:94px;top:540px;font-size:18px;font-style:italic;color:#fff}
+  .tx{position:absolute;left:463px;top:474px;width:300px;font-size:7.5px;line-height:2;letter-spacing:.02em;color:#1a1a1a}
+  .co{position:absolute;left:84px;top:942px;font-size:6.5px;line-height:1.75;color:#1a1a1a}
+  .nm{position:absolute;left:84px;top:980px;font-size:22px;font-weight:700;letter-spacing:.04em;color:#1a1a1a}
+  .bd{position:absolute;left:84px;top:1018px;padding:3px 8px;border:1px solid #1a1a1a;font-size:7px;letter-spacing:.04em;color:#1a1a1a}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="page">
+    <div class="bg"></div>
+    <div class="il" style="left:36px;top:60px;width:110px;height:80px">ILLUST</div>
+    <div class="il" style="left:600px;top:52px;width:150px;height:70px">ILLUST</div>
+    <div class="il" style="left:512px;top:150px;width:120px;height:110px">ILLUST</div>
+    <div class="il" style="left:690px;top:210px;width:80px;height:110px">ILLUST</div>
+    <div class="il" style="left:44px;top:600px;width:90px;height:120px">ILLUST</div>
+    <div class="il" style="left:260px;top:640px;width:70px;height:120px">ILLUST</div>
+    <div class="il" style="left:660px;top:600px;width:90px;height:130px">ILLUST</div>
+    <div class="il" style="left:560px;top:760px;width:190px;height:150px">ILLUST</div>
+    <div class="ty" style="top:232px">KUBO</div>
+    <div class="ty" style="top:488px">RiBi</div>
+    <div class="ty" style="top:744px">2027</div>
+    <div class="sc">School Guide</div>
+    <div class="hl">Hello!</div>
+    <div class="tx">美容・理容・メイク・ネイル・エステ<br>まつ毛エクステンション　ブライダルが学べる学校</div>
+    <div class="co">学校法人ダミー学園 ダミー学校法人<br>厚生労働省指定 ダミー法人ダミー指定 認定校 ダミー協会指定校<br>ダミー法人 認定校</div>
+    <div class="nm">ダミー理容美容専門学校</div>
+    <div class="bd">ダミー専門課程 認定校／ダミー制度 認定校</div>
+    <div class="pn" style="right:20px;top:1092px">1</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/794,innerHeight/1123));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>
