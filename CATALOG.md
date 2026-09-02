@@ -583,8 +583,6 @@
 |---|---|---|
 | spread-001 | ダミー学科<br><small>DEPARTMENT OF DUMMY</small> | 見開き・全面写真・図版8点 |
 | spread-002 | ダミーの特集 タイトルが入ります<br><small>FEATURE</small> | 見開き・全面写真・図版1点 |
-| spread-003 | ダミーのインタビュー見出しが ここに入ります<br><small>STUDENT INTERVIEW 01</small> | 見開き・Q&A・図版4点 |
-| spread-004 | 4年間の学びの流れ<br><small>CURRICULUM</small> | 見開き・図版8点 |
 | spread-031 | — | **トレース**・見開き・グラフ枠・QR・図版4点 |
 | spread-032 | ダミーコース | **トレース**・見開き・地色パネル・QR・図版8点 |
 | spread-033 | — | **トレース**・見開き・図版4点 |
@@ -611,6 +609,8 @@
 | spread-054 | 5つの特長 | **トレース**・見開き・図版19点 |
 | spread-055 | — | **トレース**・見開き・図版14点 |
 | spread-056 | Presentation of Results | **トレース**・見開き・QR・縦組み・図版4点 |
+| spread-057 | PHOTO | **トレース**・見開き・グラフ枠・円グラフ・地図・QR・本文2段組み・図版14点 |
+| spread-058 | 未来につながる確かな「技術力」を磨く | **トレース**・見開き・図版9点 |
 
 ## 募集要項 `guidelines/`（18種）
 

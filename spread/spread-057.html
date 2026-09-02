@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- traced: 実誌面から採寸して再現 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>spread-057</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .page{position:relative;width:1588px;height:1123px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+  .ph{position:absolute;background:#dcdcdc;display:grid;place-items:center;font-size:12px;letter-spacing:.2em;color:#8c8c8c}
+  .pn{position:absolute;font-size:11px;letter-spacing:.1em;color:#8c8c8c}
+  .gut{position:absolute;left:793px;top:0;width:2px;height:1123px;background:repeating-linear-gradient(#c9c9c9 0 8px,transparent 8px 16px)}
+  /* 就職実績の見開き。左＝見出し帯＋特大数値＋日本地図のエリア別内訳＋メッセージ枠、右＝分野別の実績パネル3段 */
+  .bar{position:absolute;left:33px;width:692px;background:#6b6b6b;color:#fff;text-align:center}
+  .bar .t{padding:10px 0 6px;font-size:20px;font-weight:800;letter-spacing:.5em}
+  .bar .s{padding-bottom:8px;font-size:8px;letter-spacing:.04em;color:#e0e0e0}
+  .lb{position:absolute;left:33px;top:136px;width:692px;display:flex;gap:120px;padding-left:120px;font-size:9px;color:#1a1a1a}
+  .big{position:absolute;left:80px;top:162px;width:645px;display:flex;gap:60px;font-size:52px;font-weight:800;letter-spacing:.02em;color:#1a1a1a}
+  .big small{font-size:22px}
+  .ar{position:absolute;background:#f0f0f0;border:1px solid #d5d5d5;padding:5px 7px;font-size:5.5px;line-height:1.6;color:#1a1a1a}
+  .ar b{display:block;font-size:7px}
+  .sb{position:absolute;left:33px;width:692px;height:29px;background:#6b6b6b;display:grid;place-items:center;font-size:11px;font-weight:700;letter-spacing:.14em;color:#fff}
+  .msg{position:absolute;display:flex;gap:10px}
+  .msg .im{flex:none;width:88px;height:88px;background:#dcdcdc;display:grid;place-items:center;font-size:7px;color:#8c8c8c}
+  .msg .h{font-size:9.5px;font-weight:700;line-height:1.6;color:#1a1a1a}
+  .msg .x{margin-top:5px;font-size:6px;line-height:1.75;color:#4d4d4d}
+  .msg .n{margin-top:5px;font-size:5.5px;color:#8c8c8c}
+  .bx{position:absolute;border:1px solid #d5d5d5}
+  .bx .h{height:22px;background:#f0f0f0;display:grid;place-items:center;font-size:9px;font-weight:700;color:#1a1a1a}
+  .bx .b{padding:8px 10px;font-size:6px;line-height:1.8;color:#4d4d4d}
+  .fld{position:absolute;left:867px;width:641px}
+  .fld .t{text-align:center;font-size:22px;font-weight:800;letter-spacing:.08em;color:#1a1a1a}
+  .fld .s{margin-top:6px;text-align:center;font-size:6.5px;color:#4d4d4d}
+  .fld .p{margin-top:8px;position:relative;background:#f0f0f0;padding:12px;display:flex;gap:10px}
+  .fld .p .l{flex:1}
+  .fld .p .l .c{font-size:8.5px;font-weight:700;color:#1a1a1a}
+  .fld .p .l .x{margin-top:5px;font-size:5.5px;line-height:1.75;color:#4d4d4d}
+  .fld .p .im{flex:none;width:92px;height:92px;background:#dcdcdc;display:grid;place-items:center;font-size:7px;color:#8c8c8c}
+  .fld .p .g{flex:none;width:190px}
+  .fld .p .g .pie{width:86px;height:86px;border-radius:50%;background:#dcdcdc;display:grid;place-items:center;font-size:7px;color:#8c8c8c}
+  .fld .p .g .lg{margin-top:5px;font-size:5px;line-height:1.6;color:#4d4d4d;column-count:2}
+  .fld .bd{margin-top:8px;font-size:5px;line-height:1.7;color:#4d4d4d}
+  .bdg{position:absolute;right:0;top:-14px;width:88px;height:88px;border-radius:50%;background:#6b6b6b;color:#fff;display:grid;place-items:center;align-content:center;gap:1px;font-size:6px;line-height:1.3;text-align:center}
+  .bdg b{font-size:20px}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="page">
+    <div class="bar" style="top:43px"><div class="t">就職指導</div><div class="s">全国各地の優良企業からの求人が多く寄せられています。</div></div>
+    <div class="ph" style="left:626px;top:49px;width:86px;height:77px;font-size:7px">QR</div>
+    <div class="lb"><span>20XX年度</span><span>求人総数</span><span>求人社数</span></div>
+    <div class="big"><span>16,743<small>人！</small></span><span>9,774<small>社！</small></span></div>
+    <div class="ph" style="left:120px;top:262px;width:400px;height:368px;font-size:11px">MAP（日本地図）</div>
+    <div class="ar" style="left:33px;top:262px;width:150px"><b>ダミーエリア</b>求人数 1,603人　求人社数 1,003社</div>
+    <div class="ar" style="left:33px;top:320px;width:150px">ダミー県 532人／354社<br>ダミー県 333人／121社<br>ダミー県 738人／528社</div>
+    <div class="ar" style="left:33px;top:430px;width:150px"><b>ダミーエリア</b>求人数 749人　求人社数 419社</div>
+    <div class="ar" style="left:33px;top:500px;width:190px"><b>ダミーエリア</b>求人数 404人　求人社数 249社</div>
+    <div class="ar" style="left:545px;top:262px;width:180px"><b>ダミーエリア</b>求人数 573人　求人社数 297社</div>
+    <div class="ar" style="left:545px;top:330px;width:180px"><b>ダミーエリア</b>求人数 13,043人　求人社数 7,224社</div>
+    <div class="ar" style="left:545px;top:378px;width:180px">ダミー県 512人／271社<br>ダミー県 224人／124社<br>ダミー県 441人／198社<br>ダミー県 2,095人／1,135社</div>
+    <div class="ar" style="left:545px;top:500px;width:180px"><b>ダミーエリア</b>求人数 1,910人　求人社数 582社</div>
+    <div class="sb" style="top:671px">就職指導課からのメッセージ</div>
+    <div class="msg" style="left:33px;top:712px;width:336px"><div class="im">PHOTO</div><div><div class="h">ダミーテキストから就職指導。<br>ダミーテキストがあなたを応援。</div><div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div><div class="n">ダミー課 課長　ダミー 太郎</div></div></div>
+    <div class="msg" style="left:379px;top:712px;width:346px"><div class="im">PHOTO</div><div><div class="h">ダミーテキストと面接時の<br>ダミーテキストで差がつく。</div><div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div><div class="n">ダミー課　ダミー 花子</div></div></div>
+    <div class="bx" style="left:33px;top:846px;width:336px;height:247px"><div class="h">合同企業説明会</div><div class="b">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div><div class="ph" style="left:10px;top:110px;width:140px;height:120px;font-size:7px">IMAGE</div><div class="ph" style="left:160px;top:110px;width:160px;height:120px;font-size:7px">IMAGE</div></div>
+    <div class="bx" style="left:379px;top:846px;width:346px;height:118px"><div class="h">就職対策特別講座</div><div class="b">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div></div>
+    <div class="bx" style="left:379px;top:975px;width:346px;height:118px"><div class="h">就職できる学生の特徴</div><div class="b">● ダミーテキスト　● ダミーテキスト　● ダミーテキスト<br>● ダミーテキスト　● ダミーテキスト</div></div>
+
+    <div class="fld" style="top:33px"><div class="t">ダミー・ダミー・ダミー・ダミー</div><div class="s">対応校の求職登録 229人（就業・進学など除く）　求人総数 12,162人　求人社数 6,988社</div>
+      <div class="p"><div class="bdg">求人倍率<b>53.1</b>倍</div><div class="l"><div class="c">ダミー株式会社</div><div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div></div><div class="im">PHOTO</div><div class="g"><div class="pie">GRAPH</div><div class="lg">■ ダミーの業種<br>■ ダミーの業種<br>■ ダミーの業種<br>■ ダミーの業種<br>■ ダミーの業種<br>■ ダミーの業種</div></div></div>
+      <div class="bd">主な企業就職実績／ダミー株式会社・ダミー株式会社・ダミー株式会社・ダミー株式会社・ダミー株式会社・ダミー株式会社・ダミー株式会社・ダミー株式会社・ダミー株式会社・ダミー株式会社・ダミー株式会社・ダミー株式会社・ダミー株式会社・ダミー株式会社・ダミー株式会社・ダミー株式会社</div>
+    </div>
+    <div class="fld" style="top:414px"><div class="t">ダミー・ダミー・ダミー</div><div class="s">学校紹介求職登録 48人（就業・進学など除く）　求人総数 4,253人　求人社数 2,575社</div>
+      <div class="p"><div class="bdg">求人倍率<b>88.6</b>倍</div><div class="l"><div class="c">ダミー株式会社</div><div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div></div><div class="im">PHOTO</div><div class="g"><div class="pie">GRAPH</div><div class="lg">■ ダミーの業種<br>■ ダミーの業種<br>■ ダミーの業種<br>■ ダミーの業種<br>■ ダミーの業種</div></div></div>
+      <div class="bd">主な企業就職実績／ダミー株式会社・ダミー株式会社・ダミー株式会社・ダミー株式会社・ダミー株式会社・ダミー株式会社・ダミー株式会社・ダミー株式会社・ダミー株式会社・ダミー株式会社</div>
+    </div>
+    <div class="fld" style="top:733px"><div class="t">ダミー・ダミー</div><div class="s">学校紹介求職登録 12人（就業・進学など除く）　求人総数 328人　求人社数 211社</div>
+      <div class="p"><div class="bdg">求人倍率<b>27.3</b>倍</div><div class="l"><div class="c">ダミー株式会社</div><div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div></div><div class="im">PHOTO</div><div class="g"><div class="pie">GRAPH</div><div class="lg">■ ダミーの業種<br>■ ダミーの業種<br>■ ダミーの業種<br>■ ダミーの業種</div></div></div>
+      <div class="bd">主な企業就職実績／ダミー株式会社・ダミー株式会社・ダミー株式会社・ダミー株式会社・ダミー株式会社・ダミー株式会社・ダミー株式会社・ダミー株式会社</div>
+    </div>
+    <div class="gut"></div>
+    <div class="pn" style="left:24px;top:1092px">06</div>
+    <div class="pn" style="right:24px;top:1092px">07</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1588,innerHeight/1123));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>
