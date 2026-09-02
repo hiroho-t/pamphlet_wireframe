@@ -422,7 +422,7 @@
 | works-009 | 学内展示・発表会<br><small>EXHIBITION</small> | 図版7点 |
 | works-010 | 学年別の作品<br><small>WORKS BY YEAR</small> | 図版13点 |
 | works-011 | プロジェクト 作品<br><small>PROJECT WORK</small> | 地色パネル・図版5点 |
-| works-012 | 卒業制作テーマ一覧<br><small>WORKS LIST</small> | 表・図版4点 |
+| works-013 | ゼミ形式で自らのテーマを研究し、 新たな料理レシピを創造。 | **トレース**・縦組み・図版4点 |
 
 ## 国際交流・留学 `global/`（10種）
 
