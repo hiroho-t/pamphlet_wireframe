@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- traced: 実誌面から採寸して再現 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>admission-021</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .page{position:relative;width:794px;height:1123px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+  .ph{position:absolute;background:#dcdcdc;display:grid;place-items:center;font-size:12px;letter-spacing:.2em;color:#8c8c8c}
+  .pn{position:absolute;font-size:11px;letter-spacing:.1em;color:#8c8c8c}
+  .ttl{position:absolute;left:0;right:0;top:80px;text-align:center;
+    font-family:"Hiragino Mincho ProN","Yu Mincho",serif;font-size:34px;letter-spacing:.5em;text-indent:.5em;color:#1a1a1a}
+  .dt{position:absolute;right:130px;top:182px;font-size:11px;letter-spacing:.6em;color:#4d4d4d}
+  .lock{position:absolute;left:91px;top:236px;display:flex;align-items:center;gap:10px}
+  .lock i{width:34px;height:34px;background:#8c8c8c;display:block}
+  .lock b{font-size:19px;font-weight:700;letter-spacing:.02em;color:#1a1a1a}
+  .lock small{display:block;font-size:6.5px;font-weight:400;letter-spacing:.06em;color:#6b6b6b}
+  .dono{position:absolute;left:260px;top:278px;font-size:14px;letter-spacing:.5em;color:#1a1a1a}
+  .fl{position:absolute;display:flex;align-items:flex-end;gap:10px;font-size:11px;color:#1a1a1a}
+  .fl u{flex:1;border-bottom:1px dotted #8c8c8c;text-decoration:none;height:14px}
+  .in{position:absolute;left:567px;top:339px;width:95px;height:116px;border:1px dashed #8c8c8c;
+    display:grid;place-items:center;font-size:15px;color:#6b6b6b}
+  .sn{position:absolute;left:0;right:0;top:540px;text-align:center;font-size:11px;letter-spacing:.06em;color:#1a1a1a}
+  .tb{position:absolute;left:119px;top:576px;width:550px;border-collapse:collapse;table-layout:fixed}
+  .tb td{border:1px solid #6b6b6b;padding:4px 6px;font-size:8px;color:#4d4d4d;vertical-align:top}
+  .tb td.l{background:#f0f0f0;text-align:center;font-size:7px;color:#1a1a1a}
+  .sg{position:absolute;left:207px;top:1010px;display:flex;align-items:flex-end;gap:14px;width:430px;font-size:12px;color:#1a1a1a}
+  .sg u{flex:1;border-bottom:1px dashed #8c8c8c;text-decoration:none;height:16px}
+  .sgn{position:absolute;left:207px;top:1036px;font-size:6.5px;color:#6b6b6b}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="page">
+    <div class="ttl">学校推薦書</div>
+    <div class="dt">西暦　　年　　月　　日</div>
+    <div class="lock"><i></i><b>ダミー・アカデミー<small>ダミーガクエン</small></b></div>
+    <div class="dono">学 校 長 殿</div>
+
+    <div class="fl" style="left:133px;top:338px;width:420px">学校名<u></u></div>
+    <div class="fl" style="left:133px;top:380px;width:420px">校長名<u></u></div>
+    <div class="fl" style="left:133px;top:416px;width:420px">所在地<u>〒</u></div>
+    <div class="fl" style="left:133px;top:444px;width:420px"><span style="visibility:hidden">所在地</span><u></u></div>
+    <div class="fl" style="left:133px;top:474px;width:420px">電話<u>（　　　　）</u></div>
+    <div class="in">印</div>
+
+    <div class="sn">下記の生徒は貴校への入学を適格と認め推薦します。</div>
+    <table class="tb">
+      <colgroup><col style="width:74px"><col style="width:266px"><col style="width:210px"></colgroup>
+      <tr><td class="l">ふりがな<br>氏　名</td><td style="height:52px"></td><td>西暦　　年　　月　　日生<br>（満　　歳）</td></tr>
+      <tr><td class="l">西暦</td><td>　　　年　　　月</td><td>科（課程）　卒業・卒業見込</td></tr>
+      <tr><td colspan="3" style="height:250px">推薦理由（性格、適性、行動などダミー校への入学を適当とする参考所見）</td></tr>
+    </table>
+
+    <div class="sg">推 薦 者<u></u>㊞</div>
+    <div class="sgn">（担任・進路指導・校長）</div>
+
+    <div class="pn" style="left:748px;top:1092px">131</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/794,innerHeight/1123));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>

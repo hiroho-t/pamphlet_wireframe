@@ -65,7 +65,7 @@
 | toc-017 | 目次<br><small>CONTENTS</small> | 図版21点 |
 | toc-019 | — | **トレース**・図版0点 |
 
-## 中扉 `section/`（18種）
+## 中扉 `section/`（19種）
 
 | id | 見出し | 特徴 |
 |---|---|---|
@@ -87,6 +87,7 @@
 | section-016 | ダミーの 章タイトル<br><small>CHAPTER 01</small> | 濃色の帯・図版1点 |
 | section-017 | ダミーの章タイトル<br><small>CHAPTER 01</small> | 図版3点 |
 | section-018 | ダミーの章タイトル<br><small>DUMMY CHAPTER</small> | 図版2点 |
+| section-019 | 各種出願書類 | **トレース**・図版0点 |
 
 ## 学長メッセージ `message/`（16種）
 
@@ -388,7 +389,7 @@
 | career-027 | — | **トレース**・図版0点 |
 | career-028 | 学生が主体的に選ぶ | **トレース**・縦組み・図版0点 |
 
-## 卒業生 `og/`（16種）
+## 卒業生 `og/`（14種）
 
 | id | 見出し | 特徴 |
 |---|---|---|
@@ -404,8 +405,6 @@
 | og-010 | 卒業生インタビュー 4<br><small>GRADUATE INTERVIEW</small> | 図版8点 |
 | og-011 | ダミーのインタビュー 見出しが入ります<br><small>GRADUATE INTERVIEW</small> | Q&A・図版1点 |
 | og-012 | 卒業生ネットワーク<br><small>ALUMNI DATA</small> | 図版1点 |
-| og-013 | 卒業生から受験生へ<br><small>MESSAGE TO YOU</small> | 図版12点 |
-| og-014 | 卒業生の進路一覧<br><small>ALUMNI LIST</small> | 表・図版1点 |
 | og-015 | — | **トレース**・図版1点 |
 | og-016 | — | **トレース**・図版2点 |
 
@@ -462,7 +461,7 @@
 | license-015 | 資格取得のQ&amp;A<br><small>LICENSE FAQ</small> | Q&A・図版2点 |
 | license-017 | 他校を圧倒する | **トレース**・縦組み・図版0点 |
 
-## 学費・奨学金 `support/`（18種）
+## 学費・奨学金 `support/`（19種）
 
 | id | 見出し | 特徴 |
 |---|---|---|
@@ -484,8 +483,9 @@
 | support-016 | 教育ローン・その他の制度<br><small>LOAN &amp; OTHERS</small> | 図版2点 |
 | support-017 | 学生生活の支援制度<br><small>CAMPUS SUPPORT</small> | 図版13点 |
 | support-019 | 充実した奨学金制度（20XX年4月入学生 予定） | **トレース**・表・QR・図版0点 |
+| support-020 | 諸制度・特典 | **トレース**・図版0点 |
 
-## 入試 `admission/`（20種）
+## 入試 `admission/`（21種）
 
 | id | 見出し | 特徴 |
 |---|---|---|
@@ -509,6 +509,7 @@
 | admission-018 | 受験生応援コンテンツ<br><small>FOR APPLICANTS</small> | QR・図版14点 |
 | admission-019 | 検定料と試験場<br><small>FEE &amp; VENUE</small> | 表・地図・図版2点 |
 | admission-020 | 合格した先輩の受験体験記<br><small>EXAM EXPERIENCE</small> | 図版10点 |
+| admission-021 | 学校推薦書 | **トレース**・表・図版0点 |
 
 ## オープンキャンパス `opencampus/`（14種）
 
@@ -641,4 +642,4 @@
 
 ---
 
-合計 514種。
+合計 515種。
