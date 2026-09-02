@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- traced: 実誌面から採寸して再現 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>spread-036</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .page{position:relative;width:1588px;height:1123px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+  .ph{position:absolute;background:#dcdcdc;display:grid;place-items:center;font-size:12px;letter-spacing:.2em;color:#8c8c8c}
+  .pn{position:absolute;font-size:11px;letter-spacing:.1em;color:#8c8c8c}
+  .gut{position:absolute;left:793px;top:0;width:2px;height:1123px;background:repeating-linear-gradient(#c9c9c9 0 8px,transparent 8px 16px)}
+  /* 建学の精神の見開き。上段に見開き大判写真、その上に理念テキストと年表・図解、下段に学祖と学長の2ブロック */
+  .mn{font-family:"Hiragino Mincho ProN","Yu Mincho",serif}
+  .hd2{position:absolute;left:80px;top:238px;font-size:21px;line-height:2.2;letter-spacing:.06em;color:#1a1a1a}
+  .lab{position:absolute;left:80px;top:368px;font-size:9px;letter-spacing:.14em;color:#4d4d4d}
+  .kw{position:absolute;left:80px;top:386px;font-size:30px;letter-spacing:.12em;color:#1a1a1a}
+  .sub2{position:absolute;left:80px;top:508px;font-size:11px;line-height:1.9;color:#1a1a1a}
+  .bd2{position:absolute;left:80px;top:566px;width:361px;font-size:8.5px;line-height:2;color:#4d4d4d}
+  .barl{position:absolute;height:22px;background:#4d4d4d;color:#fff;display:flex;align-items:center;padding:0 10px;font-size:9px;letter-spacing:.06em}
+  .fbd{position:absolute;font-size:8px;line-height:1.95;color:#4d4d4d}
+  .nmr{position:absolute;text-align:right;font-size:9px;color:#4d4d4d}
+  .nmr b{display:block;margin-top:3px;font-size:15px;letter-spacing:.1em;color:#1a1a1a}
+  .hist{position:absolute;left:935px;top:80px;height:96px;writing-mode:vertical-rl;font-size:11px;letter-spacing:.3em;color:#4d4d4d}
+  .yr2{position:absolute;font-size:8px;line-height:1.85;color:#1a1a1a}
+  .yr2 .y{font-size:12px;letter-spacing:.04em}
+  .vlab{position:absolute;left:1240px;width:88px;top:424px;text-align:center;font-size:9px;letter-spacing:.14em;color:#4d4d4d}
+  .venn{position:absolute;left:1183px;top:500px;width:206px;height:206px}
+  .venn i{position:absolute;width:120px;height:120px;border-radius:50%;background:rgba(0,0,0,.10);display:grid;place-items:center;font-size:10px;color:#1a1a1a;font-style:normal}
+  .venn .c{position:absolute;left:36px;top:36px;width:134px;height:134px;border-radius:50%;background:#fff;border:1px solid #d5d5d5;display:grid;place-items:center;align-content:center;gap:5px;text-align:center}
+  .venn .c b{font-size:13px;color:#1a1a1a}
+  .venn .c em{font-style:normal;font-size:8.5px;line-height:1.6;color:#4d4d4d}
+  .vcap{position:absolute;left:1130px;width:320px;top:790px;text-align:center;font-size:10px;line-height:1.9;color:#1a1a1a}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="page">
+    <div class="ph" style="left:183px;top:58px;width:1405px;height:809px;background:#dcdcdc;font-size:14px">MAIN IMAGE（見開きにまたがる大判写真）</div>
+    <div class="hd2 mn">ダミーの見出しがここに<br>ダミーテキストで成り立つ。</div>
+    <div class="lab">建学の精神</div>
+    <div class="kw mn">「ダミー四字」</div>
+    <div class="sub2 mn">ダミーテキストダミーテキスト<br>ダミーテキスト　ダミーテキスト</div>
+    <div class="bd2">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。<br>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。<br>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。<br>ダミーテキストダミーテキストダミーテキストダミーテキスト。</div>
+
+    <div class="barl" style="left:80px;top:904px;width:186px">ダミーの見出しテキスト</div>
+    <div class="barl" style="left:80px;top:930px;width:186px">ダミーの見出しテキスト</div>
+    <div class="fbd" style="left:80px;top:962px;width:443px">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div>
+    <div class="nmr mn" style="left:300px;width:223px;top:1056px">学祖<b>ダミー 太郎</b></div>
+    <div class="ph" style="left:538px;top:892px;width:146px;height:165px">PORTRAIT</div>
+
+    <div class="hist mn">HISTORY</div>
+    <div class="yr2" style="left:962px;top:100px;width:262px"><span class="y mn">1965</span>　● ダミーの出来事、ダミーの出来事<br>　　　　● ダミーの出来事／ダミーの出来事<br><span class="y mn">1989</span>　● ダミーの出来事 開設<br><span class="y mn">2001</span>　● ダミーの出来事 開設<br>　　　　（ダミーの出来事・ダミーの出来事）<br><span class="y mn">2007</span>　● ダミーの出来事 開設<br><span class="y mn">2010</span>　● ダミーの出来事<br>　　　　ダミーの出来事 開設<br><span class="y mn">2011</span>　● ダミーの出来事 開設</div>
+    <div class="yr2" style="left:1245px;top:100px;width:267px"><span class="y mn">2012</span>　● ダミーの出来事、ダミーの出来事<br>　　　　● ダミーの出来事 開設<br><span class="y mn">2013</span>　● ダミーの出来事 開設<br><span class="y mn">2014</span>　● ダミーの出来事 開設<br><span class="y mn">2016</span>　● ダミーの出来事 開設<br>　　　　● ダミーの出来事<br>　　　　● ダミーの出来事 開設<br><span class="y mn">2023</span>　● ダミーの出来事<br>　　　　● ダミーの出来事<br><span class="y mn">2025</span>　● ダミーの出来事<br>　　　　● ダミーの出来事 開設</div>
+    <div class="vlab">学びの特徴</div>
+    <div class="venn">
+      <i style="left:43px;top:0">ダミー</i>
+      <i style="left:0;top:86px">ダミー</i>
+      <i style="left:86px;top:86px">ダミー</i>
+      <div class="c"><b class="mn">ダミーマインド</b><em>ダミーテキスト<br>ダミーテキスト</em></div>
+    </div>
+    <div class="vcap mn">ダミーテキストダミーテキストは<br>ダミーテキストを、ダミーテキストに変える。</div>
+
+    <div class="barl" style="left:863px;top:904px;width:546px;justify-content:center">ダミーの見出しテキスト、ダミーテキスト</div>
+    <div class="fbd" style="left:863px;top:940px;width:464px">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div>
+    <div class="nmr mn" style="left:1100px;width:227px;top:1066px">ダミー大学 学長<b>ダミー 次郎</b></div>
+    <div class="ph" style="left:1348px;top:887px;width:160px;height:186px">PORTRAIT</div>
+    <div class="gut"></div>
+    <div class="pn" style="left:24px;top:1092px">06</div>
+    <div class="pn" style="right:24px;top:1092px">07</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1588,innerHeight/1123));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>
