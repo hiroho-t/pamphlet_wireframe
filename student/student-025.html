@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>student-025</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .page{position:relative;width:794px;height:1123px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+  .ph{position:absolute;background:#dcdcdc;display:grid;place-items:center;font-size:12px;letter-spacing:.2em;color:#8c8c8c}
+  .pn{position:absolute;font-size:11px;letter-spacing:.1em;color:#8c8c8c}
+  .eye{position:absolute;left:56px;top:76px;font-size:11px;letter-spacing:.3em;color:#8c8c8c}
+  .h1{position:absolute;left:56px;top:100px;font-size:29px;font-weight:800;letter-spacing:.07em;color:#1a1a1a}
+  .t2{position:absolute;left:56px;top:180px;width:682px;display:flex;gap:24px}
+  .t2 .p{flex:1;display:flex;gap:14px;align-items:center}
+  .t2 .im{flex:none;width:80px;height:80px;border-radius:50%;background:#dcdcdc;display:grid;place-items:center;font-size:9px;color:#8c8c8c}
+  .t2 .nm{font-size:15px;font-weight:800;color:#1a1a1a}
+  .t2 .af{margin-top:4px;font-size:10.5px;color:#8c8c8c}
+  .tk{position:absolute;left:56px;width:682px}
+  .tk .q{font-size:13px;font-weight:800;color:#1a1a1a;padding-bottom:9px;border-bottom:1px solid #1a1a1a}
+  .tk .a{margin-top:10px;font-size:11.5px;line-height:2.05;color:#4d4d4d}
+  .tk .a b{color:#1a1a1a}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="page">
+    <div class="eye">CROSS TALK</div>
+    <div class="h1">先輩たちの座談会</div>
+    <div class="t2"><div class="p"><div class="im">PHOTO</div><div><div class="nm">ダミー 花子</div><div class="af">ダミー学科 3年</div></div></div><div class="p"><div class="im">PHOTO</div><div><div class="nm">ダミー 太郎</div><div class="af">ダミー学科 4年</div></div></div></div>
+    <div class="ph" style="left:56px;top:300px;width:682px;height:220px">IMAGE</div>
+    <div class="tk" style="top:560px"><div class="q">ダミーのテーマ見出しが入ります</div><div class="a"><b>花子：</b>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。<br><b>太郎：</b>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div></div>
+    <div class="tk" style="top:740px"><div class="q">ダミーのテーマ見出しが入ります</div><div class="a"><b>花子：</b>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。<br><b>太郎：</b>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div></div>
+    <div class="tk" style="top:920px"><div class="q">ダミーのテーマ見出しが入ります</div><div class="a"><b>花子：</b>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div></div>
+    <div class="pn" style="left:56px;top:1070px">36</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/794,innerHeight/1123));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>
