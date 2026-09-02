@@ -577,7 +577,7 @@
 | backcover-011 | SCHOOL LOGO | 濃色の帯・QR・図版2点 |
 | backcover-012 | SCHOOL LOGO | 地色パネル・QR・図版1点 |
 
-## 見開き `spread/`（30種）
+## 見開き `spread/`（32種）
 
 | id | 見出し | 特徴 |
 |---|---|---|
@@ -611,6 +611,8 @@
 | spread-028 | よくある質問<br><small>FAQ</small> | 見開き・Q&A・図版2点 |
 | spread-029 | 資格と進路<br><small>LICENSE &amp; CAREER</small> | 見開き・グラフ枠・図版2点 |
 | spread-030 | ダミー学園のあゆみ<br><small>HISTORY</small> | 見開き・タイムライン・図版3点 |
+| spread-031 | — | 見開き・グラフ枠・QR・図版4点 |
+| spread-032 | ダミーコース | 見開き・地色パネル・QR・図版8点 |
 
 ## 募集要項 `guidelines/`（18種）
 
@@ -637,4 +639,4 @@
 
 ---
 
-合計 510種。
+合計 512種。

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>spread-032</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .page{position:relative;width:1588px;height:1123px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+  .ph{position:absolute;background:#dcdcdc;display:grid;place-items:center;font-size:12px;letter-spacing:.2em;color:#8c8c8c}
+  .pn{position:absolute;font-size:11px;letter-spacing:.1em;color:#8c8c8c}
+  .gut{position:absolute;left:793px;top:0;width:2px;height:1123px;background:repeating-linear-gradient(#c9c9c9 0 8px,transparent 8px 16px)}
+  /* 左ページ：コース扉（地色＋大タイトル＋全幅写真＋白ボックス） */
+  .lp{position:absolute;left:0;top:0;width:794px;height:1123px;background:#f0f0f0}
+  .tab{position:absolute;left:0;top:53px;width:427px;height:31px;background:#6b6b6b;display:flex;align-items:center;padding-left:24px;font-size:12px;letter-spacing:.1em;color:#fff}
+  .ttl{position:absolute;left:74px;top:118px;font-size:44px;font-weight:700;letter-spacing:.24em;color:#1a1a1a}
+  .sub{position:absolute;left:74px;top:188px;width:667px;font-size:12px;letter-spacing:.02em;color:#1a1a1a}
+  .strip{position:absolute;left:74px;top:222px;width:667px;height:26px;background:#e2e2e2;display:flex;align-items:center;padding-left:12px;font-size:9.5px;color:#8c8c8c}
+  .script{position:absolute;left:485px;top:236px;width:256px;text-align:right;font-size:22px;font-style:italic;letter-spacing:.06em;color:#8c8c8c}
+  .camp{position:absolute;left:64px;top:266px;display:flex;align-items:center;gap:8px;font-size:12px;color:#1a1a1a}
+  .camp i{display:block;width:18px;height:18px;background:#8c8c8c}
+  .ovl{position:absolute;left:362px;top:885px;width:379px;background:#fff;padding:16px 20px}
+  .ovl .h{font-size:11.5px;font-weight:800;letter-spacing:.04em;color:#4d4d4d;padding-bottom:6px;border-bottom:1px solid #d5d5d5}
+  .ovl .li{margin-top:7px;font-size:9.5px;line-height:1.85;color:#1a1a1a}
+  .ovl .nt{margin-top:5px;font-size:8px;line-height:1.7;color:#8c8c8c}
+
+  /* 右ページ：おすすめ枠＋学びの特色3列＋資格の図解パネル */
+  .rec{position:absolute;left:869px;top:53px;width:639px;height:315px;background:#f0f0f0;border:1px dashed #b5b5b5}
+  .rec .sc{position:absolute;left:0;width:639px;top:14px;text-align:center;font-size:11px;font-style:italic;letter-spacing:.14em;color:#8c8c8c}
+  .rec .h{position:absolute;left:0;width:639px;top:34px;text-align:center;font-size:20px;font-weight:700;letter-spacing:.14em;color:#1a1a1a}
+  .rec .c{position:absolute;width:190px}
+  .rec .c .n{text-align:center;font-size:30px;font-weight:800;line-height:1;color:#c9c9c9}
+  .rec .c .t{margin-top:12px;text-align:center;font-size:13px;font-weight:700;color:#1a1a1a}
+  .rec .c .x{margin-top:10px;font-size:9px;line-height:1.85;color:#4d4d4d}
+  .rec .kw{position:absolute;left:24px;top:266px;width:591px;display:flex;align-items:center;gap:12px}
+  .rec .kw .chip{flex:none;width:74px;height:24px;border:1px solid #8c8c8c;display:grid;place-items:center;font-size:9px;font-style:italic;color:#4d4d4d}
+  .rec .kw .tags{font-size:9.5px;letter-spacing:.02em;color:#4d4d4d}
+  .bar{position:absolute;left:869px;top:413px;width:639px;height:26px;background:#6b6b6b;display:grid;place-items:center;font-size:12px;font-weight:700;letter-spacing:.14em;color:#fff}
+  .col{position:absolute;width:185px}
+  .col .t{font-size:13px;font-weight:700;line-height:1.7;color:#1a1a1a}
+  .col .im{margin-top:14px;width:185px;height:133px;background:#dcdcdc;display:grid;place-items:center;font-size:9px;letter-spacing:.14em;color:#8c8c8c}
+  .col .x{margin-top:14px;font-size:9px;line-height:1.9;color:#4d4d4d}
+  .pnl{position:absolute;left:813px;top:840px;width:775px;height:210px;background:#f0f0f0}
+  .pnl .lbl{position:absolute;left:56px;top:26px;width:304px;background:#fff;border:1px solid #8c8c8c;padding:10px 12px;text-align:center;font-size:11.5px;font-weight:700;line-height:1.6;color:#1a1a1a}
+  .pnl .x{position:absolute;left:56px;top:100px;width:304px;font-size:9px;line-height:1.85;color:#4d4d4d}
+  .pnl .fig{position:absolute;left:370px;top:22px;width:325px;height:150px}
+  .pnl .fig .c{position:absolute;left:120px;top:20px;width:86px;height:110px;background:#dcdcdc;display:grid;place-items:center;font-size:8px;color:#8c8c8c}
+  .pnl .fig .b{position:absolute;width:56px;height:36px;background:#fff;border:1px solid #b5b5b5;display:grid;place-items:center;font-size:8px;line-height:1.3;text-align:center;color:#4d4d4d}
+  .pnl .cap{position:absolute;left:370px;top:172px;width:325px;text-align:center;font-size:8.5px;line-height:1.6;color:#4d4d4d}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="page">
+    <div class="lp"></div>
+    <div class="tab">ダミー学部／ダミー学科</div>
+    <div class="ttl">ダミーコース</div>
+    <div class="ph" style="left:633px;top:105px;width:67px;height:67px;font-size:8px">QR</div>
+    <div class="sub">ダミーのサブコピーが入ります 〜ダミーテキストダミーテキストダミーテキストダミーテキスト〜</div>
+    <div class="strip">ダミーテキストダミーテキストダミーテキストダミーテキスト</div>
+    <div class="script">Dummy Logotype</div>
+    <div class="camp"><i></i>ダミーキャンパス</div>
+    <div class="ph" style="left:0;top:300px;width:794px;height:823px;font-size:14px">MAIN IMAGE（全幅・裁ち落とし）</div>
+    <div class="ovl">
+      <div class="h">想定される進路</div>
+      <div class="li">● ダミーの進路　● ダミーの進路　● ダミーの進路<br>● ダミーの進路（ダミーテキスト、ダミーテキスト）<br>● ダミーの進路　● ダミーの進路　など</div>
+      <div class="h" style="margin-top:12px">取得がめざせる免許と資格</div>
+      <div class="li">● ダミーの免許（ダミー種）　● ダミーの資格 受験資格　など</div>
+      <div class="nt">※ダミーテキストダミーテキストダミーテキストダミーテキスト。<br>※ダミーテキストダミーテキストダミーテキスト。</div>
+    </div>
+
+    <div class="rec">
+      <div class="sc">Recommend !</div>
+      <div class="h">こんなダミーにオススメ！</div>
+      <div class="c" style="left:14px;top:74px"><div class="n">01</div><div class="t">ダミーの見出し</div><div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div></div>
+      <div class="c" style="left:223px;top:74px"><div class="n">02</div><div class="t">ダミーの見出し</div><div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div></div>
+      <div class="c" style="left:432px;top:74px"><div class="n">03</div><div class="t">ダミーの見出し</div><div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div></div>
+      <div class="kw"><div class="chip">Key Words</div><div class="tags">#ダミー　#ダミー　#ダミーテキスト　#ダミーテキスト　#ダミーテキスト</div></div>
+    </div>
+    <div class="bar">学びの特色</div>
+    <div class="col" style="left:869px;top:452px"><div class="t">ダミーの特色見出し<br>ダミーテキスト</div><div class="im">IMAGE</div><div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div></div>
+    <div class="col" style="left:1095px;top:452px"><div class="t">ダミーの特色見出し<br>ダミーテキスト</div><div class="im">IMAGE</div><div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div></div>
+    <div class="col" style="left:1321px;top:452px"><div class="t">ダミーの特色見出し<br>ダミーテキスト</div><div class="im">IMAGE</div><div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div></div>
+
+    <div class="pnl">
+      <div class="lbl">ダミーの免許（二種）＋<br>ダミーの資格 受験資格 取得可能！</div>
+      <div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div>
+      <div class="fig">
+        <div class="c">FIGURE</div>
+        <div class="b" style="left:24px;top:6px">ダミー</div>
+        <div class="b" style="left:24px;top:56px">ダミー</div>
+        <div class="b" style="left:24px;top:106px">ダミー</div>
+        <div class="b" style="left:230px;top:6px">ダミー</div>
+        <div class="b" style="left:230px;top:56px">ダミー</div>
+        <div class="b" style="left:230px;top:106px">ダミー</div>
+      </div>
+      <div class="cap">ダミーテキストダミーテキストダミーテキストダミーテキスト</div>
+    </div>
+    <div class="gut"></div>
+    <div class="pn" style="left:24px;top:1090px;color:#fff">20</div>
+    <div class="pn" style="right:24px;top:1090px">21</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1588,innerHeight/1123));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>
