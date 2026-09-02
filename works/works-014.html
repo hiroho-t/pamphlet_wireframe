@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- traced: 実誌面から採寸して再現 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>works-014</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .page{position:relative;width:794px;height:1123px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+  .ph{position:absolute;background:#dcdcdc;display:grid;place-items:center;font-size:12px;letter-spacing:.2em;color:#8c8c8c}
+  .pn{position:absolute;font-size:11px;letter-spacing:.1em;color:#8c8c8c}
+  .tag{position:absolute;left:34px;top:10px;width:156px;height:42px;background:#1a1a1a;color:#fff;
+    display:grid;place-items:center;font-size:13px;font-weight:700;letter-spacing:.08em}
+  .tag2{position:absolute;left:190px;top:10px;width:604px;height:42px;background:#4d4d4d;color:#fff;
+    display:flex;align-items:center;padding-left:14px;font-size:11px;letter-spacing:.08em}
+  .cap{position:absolute;background:rgba(255,255,255,.94);padding:8px 10px}
+  .cap h5{display:flex;align-items:center;gap:8px;font-size:11px;font-weight:700;color:#1a1a1a;margin-bottom:5px}
+  .cap h5::before,.cap h5::after{content:"";flex:1;height:1px;background:#8c8c8c}
+  .cap .rk{display:flex;align-items:center;gap:10px;margin-bottom:5px}
+  .cap .rk b{font-size:14px;font-weight:700;color:#1a1a1a}
+  .cap .rk i{font-style:normal;background:#6b6b6b;color:#fff;font-size:8px;padding:2px 7px}
+  .cap p{font-size:7px;line-height:1.8;color:#4d4d4d}
+  .sml{position:absolute;left:154px;top:424px;font-size:12px;font-weight:700;letter-spacing:.06em;color:#4d4d4d}
+  .big{position:absolute;left:268px;top:410px;font-size:78px;font-weight:700;letter-spacing:.06em;color:#6b6b6b;line-height:1}
+  .ld{position:absolute;left:42px;top:552px;font-size:11px;letter-spacing:.02em;color:#1a1a1a}
+  .fc{position:absolute;left:0;right:0;top:1080px;text-align:center;font-size:8px;color:#8c8c8c}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="page">
+    <div class="tag">創って学ぶ</div>
+    <div class="tag2">コンテスト実績「挑戦する！」</div>
+
+    <div class="ph" style="left:0;top:57px;width:411px;height:307px">PHOTO</div>
+    <div class="ph" style="left:415px;top:57px;width:190px;height:307px">PHOTO</div>
+    <div class="ph" style="left:609px;top:57px;width:185px;height:307px">PHOTO</div>
+    <div class="cap" style="left:42px;top:263px;width:371px">
+      <h5>第0回ダミードロカワ全国大会</h5>
+      <div class="rk"><b>1位　3位</b><i>ダミー・ダミー分野</i></div>
+      <p>ドローンのダミーのダミーを競うダミー大会で、ダミーのダミーがダミーのダミーを受賞。ダミーのダミーとダミーのダミーが評価されました。</p>
+    </div>
+
+    <div class="ph" style="left:42px;top:414px;width:100px;height:118px">ILLUST</div>
+    <div class="sml">創って学ぶ</div>
+    <div class="big">コンテスト</div>
+    <div class="ld">全国や世界の学生が競うコンテストで、自分の実力を試す。挑戦が自信に</div>
+
+    <div class="ph" style="left:0;top:621px;width:257px;height:442px">PHOTO</div>
+    <div class="ph" style="left:261px;top:621px;width:280px;height:442px">PHOTO</div>
+    <div class="ph" style="left:545px;top:621px;width:249px;height:442px">PHOTO</div>
+    <div class="cap" style="left:42px;top:857px;width:371px">
+      <h5>第00回ダミービジネス創造コンテスト</h5>
+      <div class="rk"><b>未来部門賞</b><i>ダミー・ダミー分野</i></div>
+      <p>ダミーのダミーがダミーのダミーを受賞。ダミーのダミーをダミーし、ダミーのダミーをダミーしたダミーのダミーが評価されました。</p>
+    </div>
+
+    <div class="fc">623</div>
+    <div class="pn" style="left:30px;top:1088px">24</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/794,innerHeight/1123));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>

@@ -109,7 +109,7 @@
 | message-015 | 学長メッセージ<br><small>MESSAGE</small> | 本文2段組み・図版3点 |
 | message-017 | — | **トレース**・図版0点 |
 
-## 学校紹介・特色 `about/`（31種）
+## 学校紹介・特色 `about/`（30種）
 
 | id | 見出し | 特徴 |
 |---|---|---|
@@ -141,7 +141,6 @@
 | about-026 | 評価・認証<br><small>ACCREDITATION</small> | 図版1点 |
 | about-027 | 地域連携・産学連携<br><small>COLLABORATION</small> | 図版8点 |
 | about-028 | 学びを支える環境<br><small>LEARNING ENVIRONMENT</small> | 濃色の帯・図版12点 |
-| about-029 | ダミー学園グループ<br><small>GROUP SCHOOLS</small> | 図版13点 |
 | about-031 | — | **トレース**・QR・ステップ・図版10点 |
 | about-032 | 進学の先にある“学び” | **トレース**・縦組み・図版0点 |
 
@@ -422,8 +421,8 @@
 | works-008 | ダミーの作品 タイトル<br><small>WORK</small> | 地色パネル・図版3点 |
 | works-009 | 学内展示・発表会<br><small>EXHIBITION</small> | 図版7点 |
 | works-010 | 学年別の作品<br><small>WORKS BY YEAR</small> | 図版13点 |
-| works-011 | プロジェクト 作品<br><small>PROJECT WORK</small> | 地色パネル・図版5点 |
 | works-013 | ゼミ形式で自らのテーマを研究し、 新たな料理レシピを創造。 | **トレース**・縦組み・図版4点 |
+| works-014 | — | **トレース**・図版7点 |
 
 ## 国際交流・留学 `global/`（10種）
 
@@ -640,4 +639,4 @@
 
 ---
 
-合計 513種。
+合計 512種。
