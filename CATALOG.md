@@ -298,7 +298,7 @@
 | student-031 | 先輩プロフィール一覧<br><small>STUDENT PROFILE</small> | 表・図版1点 |
 | student-033 | 手厚いサポートで | **トレース**・図版4点 |
 
-## キャンパスライフ `campuslife/`（28種）
+## キャンパスライフ `campuslife/`（29種）
 
 | id | 見出し | 特徴 |
 |---|---|---|
@@ -330,6 +330,7 @@
 | campuslife-026 | キャンパスライフ 6つの魅力<br><small>CAMPUS LIFE POINTS</small> | 濃色の帯・図版1点 |
 | campuslife-027 | クラブ・サークルデータ<br><small>CLUB DATA</small> | 表・図版3点 |
 | campuslife-028 | お気に入りの場所<br><small>CAMPUS SPOTS</small> | 図版6点 |
+| campuslife-029 | CAMPUS LIFE | **トレース**・地色パネル・QR・縦組み・図版0点 |
 
 ## 施設・キャンパス `facility/`（21種）
 
@@ -639,4 +640,4 @@
 
 ---
 
-合計 512種。
+合計 513種。
