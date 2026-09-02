@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- traced: 実誌面から採寸して再現 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>cover-035</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .page{position:relative;width:794px;height:1123px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+  .ph{position:absolute;background:#dcdcdc;display:grid;place-items:center;font-size:12px;letter-spacing:.2em;color:#8c8c8c}
+  .pn{position:absolute;font-size:11px;letter-spacing:.1em;color:#8c8c8c}
+  /* 表紙：濃色地に細いグリッド罫を敷き、各セルに写真と特大の校名を割り付ける */
+  .bg{position:absolute;inset:0;background:#4d4d4d}
+  .ln{position:absolute;background:rgba(255,255,255,.28)}
+  .ln.v{top:0;width:1px;height:1123px}
+  .ln.h{left:0;height:1px;width:794px}
+  .nm{position:absolute;left:105px;font-size:118px;font-weight:800;line-height:1;letter-spacing:.26em;color:#fff;white-space:nowrap}
+  .sub{position:absolute;left:264px;top:498px;font-size:13px;letter-spacing:.16em;color:#e0e0e0}
+  .lg2{position:absolute;left:115px;font-size:8.5px;line-height:2.05;color:#fff}
+  .lg2 i{display:inline-block;width:9px;height:9px;background:#b5b5b5;margin-right:7px;font-style:normal}
+  .ft{position:absolute;left:105px;top:960px;font-size:38px;font-weight:700;line-height:1.35;letter-spacing:.02em;color:#fff}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="page">
+    <div class="bg"></div>
+    <div class="ln v" style="left:100px"></div>
+    <div class="ln v" style="left:250px"></div>
+    <div class="ln v" style="left:400px"></div>
+    <div class="ln v" style="left:549px"></div>
+    <div class="ln v" style="left:699px"></div>
+    <div class="ln h" style="top:160px"></div>
+    <div class="ln h" style="top:316px"></div>
+    <div class="ln h" style="top:474px"></div>
+    <div class="ln h" style="top:638px"></div>
+    <div class="ln h" style="top:798px"></div>
+    <div class="ln h" style="top:956px"></div>
+    <div class="ph" style="left:6px;top:6px;width:242px;height:150px;background:#6b6b6b;color:#c9c9c9;font-size:8px">IMAGE</div>
+    <div class="ph" style="left:545px;top:6px;width:249px;height:150px;background:#6b6b6b;color:#c9c9c9;font-size:8px">IMAGE</div>
+    <div class="ph" style="left:617px;top:494px;width:177px;height:144px;background:#6b6b6b;color:#c9c9c9;font-size:8px">IMAGE</div>
+    <div class="ph" style="left:504px;top:679px;width:154px;height:143px;background:#6b6b6b;color:#c9c9c9;font-size:8px">IMAGE</div>
+    <div class="ph" style="left:699px;top:700px;width:95px;height:163px;background:#6b6b6b;color:#c9c9c9;font-size:8px">IMAGE</div>
+    <div class="ph" style="left:576px;top:884px;width:123px;height:82px;background:#6b6b6b;color:#c9c9c9;font-size:8px">IMAGE</div>
+    <div class="ph" style="left:596px;top:966px;width:198px;height:143px;background:#6b6b6b;color:#c9c9c9;font-size:8px">IMAGE</div>
+    <div class="nm" style="top:166px">ダミー</div>
+    <div class="nm" style="top:330px">専門学校</div>
+    <div class="sub">ダミー情報大学院大学 併設</div>
+    <div class="lg2" style="top:548px"><i></i>ダミーの分野<br><i></i>ダミーの分野<br><i></i>ダミーの分野</div>
+    <div class="lg2" style="top:640px"><i></i>ダミーの分野<br><i></i>ダミーの分野<br><i></i>ダミーの分野<br><i></i>ダミーの分野<br><i></i>ダミーの分野<br><i></i>ダミーの分野</div>
+    <div class="lg2" style="top:820px"><i></i>ダミーの分野<br><i></i>ダミーの分野<br><i></i>ダミーの分野</div>
+    <div class="ft">DUMMY SCHOOL<br>入学案内 20XX</div>
+    <div class="pn" style="right:20px;top:1092px;color:#e0e0e0">1</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/794,innerHeight/1123));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>
