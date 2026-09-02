@@ -415,3 +415,4 @@ TEL.
 XXX
 intl
 mobile
+st

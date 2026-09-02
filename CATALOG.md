@@ -109,7 +109,7 @@
 | message-015 | 学長メッセージ<br><small>MESSAGE</small> | 本文2段組み・図版3点 |
 | message-016 | 学部長メッセージ<br><small>MESSAGE</small> | 図版8点 |
 
-## 学校紹介・特色 `about/`（31種）
+## 学校紹介・特色 `about/`（30種）
 
 | id | 見出し | 特徴 |
 |---|---|---|
@@ -142,7 +142,6 @@
 | about-027 | 地域連携・産学連携<br><small>COLLABORATION</small> | 図版8点 |
 | about-028 | 学びを支える環境<br><small>LEARNING ENVIRONMENT</small> | 濃色の帯・図版12点 |
 | about-029 | ダミー学園グループ<br><small>GROUP SCHOOLS</small> | 図版13点 |
-| about-030 | ダミー学園ダイジェスト<br><small>DIGEST</small> | 図版10点 |
 | about-031 | — | **トレース**・QR・ステップ・図版10点 |
 
 ## 学科・コース紹介 `department/`（45種）
@@ -333,7 +332,7 @@
 | campuslife-027 | クラブ・サークルデータ<br><small>CLUB DATA</small> | 表・図版3点 |
 | campuslife-028 | お気に入りの場所<br><small>CAMPUS SPOTS</small> | 図版6点 |
 
-## 施設・キャンパス `facility/`（22種）
+## 施設・キャンパス `facility/`（21種）
 
 | id | 見出し | 特徴 |
 |---|---|---|
@@ -356,9 +355,8 @@
 | facility-017 | 学生寮のご案内<br><small>DORMITORY</small> | 図版8点 |
 | facility-018 | 数字で見る施設<br><small>FACILITY DATA</small> | 図版1点 |
 | facility-019 | 施設・設備 9選<br><small>FACILITIES</small> | 濃色の帯・図版18点 |
-| facility-020 | 3つのキャンパス<br><small>CAMPUSES</small> | 地図・図版4点 |
-| facility-021 | 学食・売店<br><small>CAFETERIA &amp; SHOP</small> | 図版13点 |
 | facility-022 | — | **トレース**・図版20点 |
+| facility-023 | — | **トレース**・ステップ・図版16点 |
 
 ## 進路・就職 `career/`（26種）
 
@@ -527,8 +525,8 @@
 | opencampus-010 | 当日の会場案内<br><small>VENUE MAP</small> | 地図・図版1点 |
 | opencampus-011 | オープンキャンパス 開催のお知らせ<br><small>OPEN CAMPUS 20XX</small> | 濃色ベタ・QR・図版1点 |
 | opencampus-012 | 参加前のよくある質問<br><small>OPEN CAMPUS FAQ</small> | QR・Q&A・図版2点 |
-| opencampus-013 | 当日のタイムテーブル<br><small>TIME TABLE</small> | 図版15点 |
-| opencampus-014 | 受験生向けイベント一覧<br><small>EVENTS FOR YOU</small> | QR・図版2点 |
+| opencampus-015 | 体験入学 | **トレース**・QR・ステップ・図版2点 |
+| opencampus-016 | オープンキャンパス | **トレース**・QR・画面イメージ・図版5点 |
 
 ## アクセス・学校概要 `access/`（12種）
 
@@ -642,4 +640,4 @@
 
 ---
 
-合計 515種。
+合計 513種。
