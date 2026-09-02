@@ -603,7 +603,6 @@
 | spread-020 | 入試日程一覧<br><small>ADMISSION SCHEDULE</small> | 見開き・表・図版2点 |
 | spread-021 | 学びの体系<br><small>CURRICULUM STRUCTURE</small> | 見開き・タグ列・図版2点 |
 | spread-022 | オープンキャンパス 開催<br><small>OPEN CAMPUS 20XX</small> | 見開き・QR・図版19点 |
-| spread-023 | 授業ピックアップ<br><small>CLASS PICK UP</small> | 見開き・図版16点 |
 | spread-031 | — | **トレース**・見開き・グラフ枠・QR・図版4点 |
 | spread-032 | ダミーコース | **トレース**・見開き・地色パネル・QR・図版8点 |
 | spread-033 | — | **トレース**・見開き・図版4点 |
@@ -611,6 +610,7 @@
 | spread-035 | 卒業後にめざせる進路と免許・資格 | **トレース**・見開き・QR・縦組み・図版1点 |
 | spread-036 | — | **トレース**・見開き・縦組み・図版3点 |
 | spread-037 | — | **トレース**・見開き・全面写真・縦組み・図版1点 |
+| spread-038 | — | **トレース**・見開き・地図・図版10点 |
 
 ## 募集要項 `guidelines/`（18種）
 
