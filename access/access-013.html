@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!-- traced: 実誌面から採寸して再現 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>access-013</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .page{position:relative;width:794px;height:1123px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+  .ph{position:absolute;background:#dcdcdc;display:grid;place-items:center;font-size:12px;letter-spacing:.2em;color:#8c8c8c}
+  .pn{position:absolute;font-size:11px;letter-spacing:.1em;color:#8c8c8c}
+  .logo{position:absolute;left:78px;top:105px;font-size:26px;font-weight:700;font-style:italic;letter-spacing:.34em;color:#1a1a1a}
+  .logo-sub{position:absolute;left:101px;top:150px;font-size:8px;letter-spacing:.22em;color:#8c8c8c}
+  .emblem{position:absolute;left:344px;top:95px;width:88px;height:84px;background:#6b6b6b;border-radius:6px;
+    display:grid;place-items:center;font-size:8px;letter-spacing:.14em;color:#fff}
+  .anniv{position:absolute;left:445px;top:114px;font-size:15px;font-weight:700;letter-spacing:.04em;color:#1a1a1a}
+  .anniv2{position:absolute;left:479px;top:145px;font-size:12px;letter-spacing:.08em;color:#4d4d4d}
+  .rule{position:absolute;background:#d5d5d5;height:1px}
+
+  .maplabel{position:absolute;z-index:2;left:101px;top:309px;width:88px;height:55px;border:1px solid #b9b9b9;background:#fff;
+    display:grid;place-items:center;text-align:center;font-size:11px;font-weight:700;line-height:1.4;letter-spacing:.06em;color:#1a1a1a}
+  .map{position:absolute;left:118px;top:315px;width:277px;height:410px;background:#dcdcdc;
+    display:grid;place-items:center;font-size:12px;letter-spacing:.24em;color:#8c8c8c}
+
+  .thead{position:absolute;left:420px;top:317px;width:286px;height:29px;background:#6b6b6b;color:#fff;
+    display:flex;align-items:center;font-size:11px;font-weight:700;letter-spacing:.1em}
+  .thead b{width:58px;text-align:center;font-size:12px}
+  .thead span{font-size:8px;font-weight:400;letter-spacing:.06em;opacity:.85;margin-left:10px}
+  .tcol{position:absolute;top:351px}
+  .tcol .sec{background:#e6e6e6;font-size:9px;font-weight:700;letter-spacing:.08em;color:#1a1a1a;padding:3px 6px;margin-top:6px}
+  .tcol .r{display:flex;justify-content:space-between;font-size:8px;line-height:1.9;color:#4d4d4d;
+    border-bottom:1px solid #ededed;padding:0 6px}
+  .tnote{position:absolute;left:420px;top:594px;font-size:7px;letter-spacing:.02em;color:#8c8c8c}
+  .tqr{position:absolute;left:420px;top:620px;width:50px;height:59px;background:#dcdcdc;border:1px solid #c9c9c9;
+    display:grid;place-items:center;font-size:8px;color:#8c8c8c}
+  .tqrcap{position:absolute;left:420px;top:683px;width:100px;font-size:7px;line-height:1.7;color:#6b6b6b}
+
+  .since{position:absolute;left:59px;top:828px;font-size:8px;font-weight:700;letter-spacing:.14em;color:#6b6b6b}
+  .sname{position:absolute;left:59px;top:845px;font-size:44px;font-weight:700;letter-spacing:.02em;color:#1a1a1a;white-space:nowrap}
+  .fl{position:absolute;left:59px;font-size:9px;line-height:1.6;letter-spacing:.02em;color:#4d4d4d}
+  .fl b{color:#1a1a1a}
+  .free{position:absolute;left:59px;top:996px;font-size:26px;font-weight:700;letter-spacing:.02em;color:#1a1a1a}
+
+  .sns{position:absolute;top:840px;width:118px}
+  .sns i{width:34px;height:34px;border-radius:50%;background:#8c8c8c;display:block}
+  .sns .qr{position:absolute;left:42px;top:0;width:56px;height:56px;background:#dcdcdc;border:1px solid #c9c9c9;
+    display:grid;place-items:center;font-size:7px;color:#8c8c8c}
+  .sns p{position:absolute;top:66px;left:0;width:118px;font-size:7px;line-height:1.7;color:#6b6b6b}
+
+  .conso{position:absolute;left:328px;top:975px;width:235px;height:38px;border:1px solid #d5d5d5;
+    display:grid;place-items:center;font-size:9px;letter-spacing:.06em;color:#4d4d4d}
+  .intl{position:absolute;left:328px;font-size:9px;line-height:1.6;color:#4d4d4d}
+  .intl b{color:#1a1a1a}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="page">
+    <div class="logo">D C T</div>
+    <div class="logo-sub">Dummy College of Technology</div>
+    <div class="emblem">EMBLEM</div>
+    <div class="anniv">ダミー工学校は20XX年X月X日</div>
+    <div class="anniv2">— 創立XXX周年 —</div>
+    <div class="rule" style="left:59px;top:195px;width:676px"></div>
+
+    <div class="maplabel">近郊沿線<br>M A P</div>
+    <div class="map">ROUTE MAP</div>
+
+    <div class="thead"><b>乗車時間</b><span>最寄までの主要駅を案内します</span></div>
+    <div class="tcol" style="left:420px;width:122px">
+      <div class="sec">ダミー線</div>
+      <div class="r"><span>ダミー駅</span><span>00分</span></div>
+      <div class="r"><span>ダミー駅</span><span>00分</span></div>
+      <div class="r"><span>ダミー駅</span><span>00分</span></div>
+      <div class="r"><span>ダミー駅</span><span>00分</span></div>
+      <div class="r"><span>ダミー駅</span><span>00分</span></div>
+      <div class="sec">ダミー線</div>
+      <div class="r"><span>ダミー駅</span><span>00分</span></div>
+      <div class="r"><span>ダミー駅</span><span>00分</span></div>
+      <div class="r"><span>ダミー駅</span><span>00分</span></div>
+      <div class="r"><span>ダミー駅</span><span>00分</span></div>
+      <div class="sec">ダミー線</div>
+      <div class="r"><span>ダミー駅</span><span>00分</span></div>
+      <div class="r"><span>ダミー駅</span><span>00分</span></div>
+    </div>
+    <div class="tcol" style="left:559px;width:147px">
+      <div class="sec">ダミー線</div>
+      <div class="r"><span>ダミー駅</span><span>00分</span></div>
+      <div class="r"><span>ダミー駅</span><span>00分</span></div>
+      <div class="r"><span>ダミー駅</span><span>00分</span></div>
+      <div class="r"><span>ダミー駅</span><span>00分</span></div>
+      <div class="r"><span>ダミー駅</span><span>00分</span></div>
+      <div class="r"><span>ダミー駅</span><span>00分</span></div>
+      <div class="r"><span>ダミー駅</span><span>00分</span></div>
+      <div class="sec">ダミー線</div>
+      <div class="r"><span>ダミー駅</span><span>00分</span></div>
+      <div class="r"><span>ダミー駅</span><span>00分</span></div>
+      <div class="r"><span>ダミー駅</span><span>00分</span></div>
+      <div class="r"><span>ダミー駅</span><span>00分</span></div>
+    </div>
+    <div class="tnote">※乗車時間は目安です。乗り換え・待ち時間は含みません。</div>
+    <div class="tqr">QR</div>
+    <div class="tqrcap">スマートフォンから<br>アクセスマップを<br>見る方はこちら</div>
+
+    <div class="rule" style="left:59px;top:812px;width:676px"></div>
+
+    <div class="since">Since 19XX</div>
+    <div class="sname">ダミー工学校</div>
+    <div class="fl" style="top:912px">〒000-0000 ダミー都ダミー区ダミー町0-00-00</div>
+    <div class="fl" style="top:929px"><b>入学相談室</b>　TEL.00-0000-0000（直通）</div>
+    <div class="fl" style="top:946px"><b>PC&amp;mobile</b>　https://dummy.example.ac.jp</div>
+    <div class="fl" style="top:963px"><b>E-mail</b>　info@dummy.example.ac.jp</div>
+    <div class="fl" style="top:980px">入学相談ネットライン</div>
+    <div class="free">0120-00-0000</div>
+
+    <div class="sns" style="left:338px">
+      <i></i><div class="qr">QR</div>
+      <p>ダミーSNS 公式アカウント。<br>お申し込みはこちら</p>
+    </div>
+    <div class="sns" style="left:458px">
+      <i></i><div class="qr">QR</div>
+      <p>ダミーSNS 公式アカウント。<br>最新情報を配信中</p>
+    </div>
+    <div class="sns" style="left:576px">
+      <i></i><div class="qr">QR</div>
+      <p>学校公式ホームページ。<br>資料請求はこちら</p>
+    </div>
+
+    <div class="conso">一般社団法人 ダミーコンソーシアム 加盟校</div>
+    <div class="intl" style="top:1026px">留学生の方は</div>
+    <div class="intl" style="top:1043px"><b>留学生専用ネットライン</b>　0120-000-00</div>
+    <div class="intl" style="top:1062px"><b>E-mail</b>　intl@dummy.example.ac.jp</div>
+
+    <div class="pn" style="left:29px;top:1088px">50</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/794,innerHeight/1123));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>

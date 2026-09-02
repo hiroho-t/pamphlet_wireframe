@@ -543,7 +543,7 @@
 | access-009 | お問い合わせ窓口<br><small>CONTACT</small> | QR・図版1点 |
 | access-010 | 主要駅からの所要時間<br><small>ACCESS TIME</small> | 地図・図版2点 |
 | access-011 | キャンパスへのアクセス<br><small>ACCESS</small> | 地図・図版1点 |
-| access-012 | 数字で見るダミー大学<br><small>SCHOOL DATA</small> | 図版1点 |
+| access-013 | D C T | **トレース**・QR・図版0点 |
 
 ## よくある質問 `faq/`（10種）
 
@@ -574,8 +574,8 @@
 | backcover-008 | SCHOOL LOGO | QR・図版2点 |
 | backcover-009 | SCHOOL LOGO | 黒ベタ・QR・図版1点 |
 | backcover-010 | SCHOOL LOGO | QR・図版1点 |
-| backcover-011 | SCHOOL LOGO | 濃色の帯・QR・図版2点 |
 | backcover-013 | QR | **トレース**・QR・図版1点 |
+| backcover-014 | — | **トレース**・QR・図版0点 |
 
 ## 見開き `spread/`（33種）
 

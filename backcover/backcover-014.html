@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- traced: 実誌面から採寸して再現 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>backcover-014</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .page{position:relative;width:794px;height:1123px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+  .ph{position:absolute;background:#dcdcdc;display:grid;place-items:center;font-size:12px;letter-spacing:.2em;color:#8c8c8c}
+  .pn{position:absolute;font-size:11px;letter-spacing:.1em;color:#8c8c8c}
+  .page{background:#f0f0f0}
+  .cloud{position:absolute;left:117px;top:126px;width:560px;height:672px;background:#dcdcdc;
+    display:grid;place-items:center;font-size:13px;letter-spacing:.28em;color:#8c8c8c;
+    -webkit-mask:
+      linear-gradient(#000 0 0) center/calc(100% - 112px) calc(100% - 112px) no-repeat,
+      radial-gradient(56px at 56px 56px,#000 98%,#0000) 0 0/112px 112px;
+    mask:
+      linear-gradient(#000 0 0) center/calc(100% - 112px) calc(100% - 112px) no-repeat,
+      radial-gradient(56px at 56px 56px,#000 98%,#0000) 0 0/112px 112px}
+  .mark{position:absolute;left:150px;top:820px;width:36px;height:36px;border-radius:50%;background:#8c8c8c}
+  .corp{position:absolute;left:196px;top:820px;font-size:12px;font-weight:700;letter-spacing:.08em;color:#1a1a1a}
+  .corp-en{position:absolute;left:196px;top:838px;font-size:8px;letter-spacing:.06em;color:#8c8c8c}
+  .sname{position:absolute;left:150px;top:856px;font-size:21px;font-weight:700;letter-spacing:.04em;color:#1a1a1a;white-space:nowrap}
+  .addr{position:absolute;left:150px;top:886px;font-size:9px;letter-spacing:.04em;color:#6b6b6b}
+  .tel{position:absolute;left:440px;top:845px;font-size:19px;font-weight:700;letter-spacing:.04em;color:#1a1a1a}
+  .mail{position:absolute;left:440px;top:872px;font-size:10px;letter-spacing:.04em;color:#4d4d4d}
+  .rule{position:absolute;left:150px;top:896px;width:494px;height:1px;background:#d5d5d5}
+  .card{position:absolute;height:56px;background:#e6e6e6;display:flex;align-items:center;gap:8px;padding:0 8px}
+  .card .qr{width:40px;height:40px;background:#dcdcdc;border:1px solid #c9c9c9;display:grid;place-items:center;font-size:7px;letter-spacing:.08em;color:#8c8c8c}
+  .card .lb{font-size:9px;line-height:1.5;letter-spacing:.04em;color:#4d4d4d}
+  .badge{position:absolute;left:592px;top:902px;width:52px;height:62px;background:#6b6b6b;color:#fff;
+    display:grid;place-items:center;text-align:center;font-size:7px;line-height:1.5;letter-spacing:.06em}
+  .sns{position:absolute;height:26px;background:#e6e6e6;display:flex;align-items:center;gap:6px;padding:0 8px;
+    font-size:9px;letter-spacing:.06em;color:#4d4d4d}
+  .sns i{width:14px;height:14px;background:#8c8c8c;border-radius:3px;display:block}
+  .snsqr{position:absolute;width:44px;height:44px;background:#dcdcdc;border:1px solid #c9c9c9;
+    display:grid;place-items:center;font-size:7px;letter-spacing:.08em;color:#8c8c8c}
+  .note{position:absolute;left:468px;top:976px;width:176px;font-size:8px;line-height:1.75;letter-spacing:.02em;color:#6b6b6b}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="page">
+    <div class="cloud">PHOTO（雲形トリミング）</div>
+
+    <div class="mark"></div>
+    <div class="corp">学校法人 ダミー ダミー学園</div>
+    <div class="corp-en">DUMMY HOSPITALITY GAKUEN</div>
+    <div class="sname">ダミーブライダル専門学校</div>
+    <div class="addr">〒000-0000 ダミー市ダミー区ダミー町0-00-0</div>
+    <div class="tel">0120-000-000</div>
+    <div class="mail">E-MAIL：info@dummy.example.ac.jp</div>
+    <div class="rule"></div>
+
+    <div class="card" style="left:150px;top:902px;width:178px">
+      <div class="qr">QR</div>
+      <div class="lb">オープンキャンパスの<br>お申し込みはこちら</div>
+    </div>
+    <div class="card" style="left:353px;top:902px;width:186px">
+      <div class="qr">QR</div>
+      <div class="lb">イベントの詳細やお知らせは<br>公式サイトでCHECK！</div>
+    </div>
+    <div class="badge">資料<br>請求</div>
+
+    <div class="sns" style="left:150px;top:968px;width:82px"><i></i>ダミーSNS</div>
+    <div class="sns" style="left:150px;top:1000px;width:82px"><i></i>ダミーSNS</div>
+    <div class="snsqr" style="left:244px;top:968px">QR</div>
+    <div class="snsqr" style="left:244px;top:1014px">QR</div>
+    <div class="snsqr" style="left:396px;top:968px">QR</div>
+    <div class="snsqr" style="left:396px;top:1014px">QR</div>
+    <div class="note">記載の内容は掲載時点のものです。最新の情報は公式サイトでご確認ください。掲載内容は予告なく変更になる場合があります。</div>
+
+    <div class="pn" style="left:32px;top:1080px">20</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/794,innerHeight/1123));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>
