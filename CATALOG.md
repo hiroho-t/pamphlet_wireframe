@@ -595,8 +595,6 @@
 | spread-012 | 学費と奨学金<br><small>TUITION &amp; SCHOLARSHIP</small> | 見開き・表・図版2点 |
 | spread-013 | 年間行事カレンダー<br><small>ANNUAL EVENTS</small> | 見開き・図版26点 |
 | spread-014 | 施設・設備<br><small>FACILITIES</small> | 見開き・図版16点 |
-| spread-015 | 教員紹介<br><small>FACULTY</small> | 見開き・図版14点 |
-| spread-016 | ダミー学園の6つの特色<br><small>FEATURES</small> | 見開き・図版13点 |
 | spread-031 | — | **トレース**・見開き・グラフ枠・QR・図版4点 |
 | spread-032 | ダミーコース | **トレース**・見開き・地色パネル・QR・図版8点 |
 | spread-033 | — | **トレース**・見開き・図版4点 |
@@ -611,6 +609,8 @@
 | spread-042 | — | **トレース**・見開き・地色パネル・QR・図版21点 |
 | spread-043 | — | **トレース**・見開き・表・QR・図版1点 |
 | spread-044 | — | **トレース**・見開き・グラフ枠・円グラフ・地図・図版12点 |
+| spread-045 | — | **トレース**・見開き・本文2段組み・図版17点 |
+| spread-046 | — | **トレース**・見開き・表・グラフ枠・円グラフ・図版10点 |
 
 ## 募集要項 `guidelines/`（18種）
 

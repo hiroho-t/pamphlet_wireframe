@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- traced: 実誌面から採寸して再現 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>spread-045</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .page{position:relative;width:1588px;height:1123px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+  .ph{position:absolute;background:#dcdcdc;display:grid;place-items:center;font-size:12px;letter-spacing:.2em;color:#8c8c8c}
+  .pn{position:absolute;font-size:11px;letter-spacing:.1em;color:#8c8c8c}
+  .gut{position:absolute;left:793px;top:0;width:2px;height:1123px;background:repeating-linear-gradient(#c9c9c9 0 8px,transparent 8px 16px)}
+  /* 左＝授業2×2＋教員VOICEパネル／右＝全幅写真に重ねた在学生VOICEカード＋学科長×学生の対談ブロック */
+  .mn{font-family:"Hiragino Mincho ProN","Yu Mincho",serif}
+  .blk{position:absolute;width:299px}
+  .blk .t{height:35px;background:#f0f0f0;border-left:3px solid #6b6b6b;display:flex;align-items:center;padding-left:10px;font-size:10.5px;font-weight:700;color:#1a1a1a}
+  .blk .x{margin-top:10px;font-size:8px;line-height:1.95;color:#4d4d4d}
+  .blk .im{margin-top:14px;width:100%;height:155px;background:#dcdcdc;display:grid;place-items:center;font-size:9px;color:#8c8c8c}
+  .hbar{position:absolute;left:74px;top:76px;width:645px;height:29px;background:#6b6b6b;display:grid;place-items:center;font-size:11px;letter-spacing:.3em;color:#fff}
+  .pnl{position:absolute;left:249px;top:795px;width:470px;height:298px;background:#f0f0f0;padding:14px 16px}
+  .pnl .tab{position:absolute;right:0;top:0;padding:4px 10px;background:#dcdcdc;font-size:8px;color:#4d4d4d}
+  .pnl .chip{display:inline-block;padding:3px 8px;background:#6b6b6b;font-size:8px;letter-spacing:.1em;color:#fff}
+  .pnl .h{margin-top:10px;font-size:14px;letter-spacing:.04em;color:#1a1a1a}
+  .pnl .nm{margin-top:6px;font-size:8px;color:#4d4d4d}
+  .pnl .x{margin-top:10px;column-count:2;column-gap:16px;font-size:7px;line-height:1.9;color:#4d4d4d}
+  .rbg{position:absolute;left:795px;top:0;width:793px;height:1123px;background:#f4f4f4}
+  .vc{position:absolute;left:1183px;top:167px;width:395px;background:rgba(255,255,255,.86);padding:14px 16px}
+  .vc .chip{display:inline-block;padding:3px 8px;background:#6b6b6b;font-size:7.5px;letter-spacing:.1em;color:#fff}
+  .vc .h{margin-top:10px;font-size:16px;line-height:1.85;letter-spacing:.04em;color:#1a1a1a}
+  .vc .nm{margin-top:10px;font-size:7px;color:#4d4d4d}
+  .vc .x{margin-top:8px;font-size:7px;line-height:1.9;color:#4d4d4d}
+  .chip2{position:absolute;padding:4px 10px;background:#6b6b6b;font-size:8px;letter-spacing:.1em;color:#fff}
+  .tk{position:absolute;left:884px;top:700px;width:206px;font-size:17px;line-height:1.9;color:#1a1a1a}
+  .tkx{position:absolute;left:884px;top:815px;width:443px;font-size:7px;line-height:1.95;color:#4d4d4d}
+  .tkx b{color:#1a1a1a}
+  .pp{position:absolute;right:80px;width:150px;text-align:center}
+  .pp .im{width:82px;height:82px;margin:0 auto;border-radius:50%;background:#dcdcdc;display:grid;place-items:center;font-size:7px;color:#8c8c8c}
+  .pp .n{margin-top:5px;font-size:6.5px;line-height:1.6;color:#4d4d4d}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="page">
+    <div class="hbar">PICK UP　授業</div>
+    <div class="blk" style="left:74px;top:122px"><div class="t">1　ダミーの授業名Ⅰ</div><div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div><div class="im">IMAGE</div></div>
+    <div class="blk" style="left:416px;top:122px"><div class="t">2　ダミーの授業名Ⅱ</div><div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div><div class="im">IMAGE</div></div>
+    <div class="blk" style="left:74px;top:445px"><div class="t">3　ダミーの授業名Ⅲ</div><div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div><div class="im">IMAGE</div></div>
+    <div class="blk" style="left:416px;top:445px"><div class="t">4　ダミーの授業名Ⅳ</div><div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div><div class="im">IMAGE</div></div>
+    <div class="ph" style="left:74px;top:795px;width:171px;height:298px">PORTRAIT</div>
+    <div class="pnl">
+      <div class="tab">先生を紹介</div>
+      <div class="chip">教員 VOICE</div>
+      <div class="h mn">誰一人取り残さない小学校教育を</div>
+      <div class="nm">ダミー学科 教授　ダミー 太郎</div>
+      <div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div>
+    </div>
+
+    <div class="rbg"></div>
+    <div class="ph" style="left:795px;top:78px;width:793px;height:546px;font-size:13px">MAIN IMAGE</div>
+    <div class="vc">
+      <div class="chip">在学生 VOICE</div>
+      <div class="h mn">ダミーテキストとして<br>ダミーテキストと学べる環境で<br>ダミーテキストと関わる<br>ダミーの資格取得をめざす</div>
+      <div class="nm">ダミー学科 2年　ダミー県立ダミー高等学校 出身</div>
+      <div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div>
+    </div>
+    <div class="chip2" style="left:867px;top:647px">学科長・学生 座談</div>
+    <div class="tk mn">ダミーとダミーを学び<br>ダミーの未来を<br>支える力へ</div>
+    <div class="ph" style="left:1101px;top:682px;width:237px;height:124px">IMAGE</div>
+    <div class="tkx"><b>ダミー：</b>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。<br><b>ダミー：</b>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。<br><b>ダミー：</b>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。<br><b>ダミー：</b>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。<br><b>ダミー：</b>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div>
+    <div class="pp" style="top:671px"><div class="im">PHOTO</div><div class="n">学科長／ダミー 太郎</div></div>
+    <div class="pp" style="top:794px"><div class="im">PHOTO</div><div class="n">ダミー学科 2年<br>ダミー 花子</div></div>
+    <div class="pp" style="top:917px"><div class="im">PHOTO</div><div class="n">ダミー学科 3年<br>ダミー 次郎</div></div>
+    <div class="gut"></div>
+    <div class="pn" style="left:24px;top:1092px">22</div>
+    <div class="pn" style="right:24px;top:1092px">23</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1588,innerHeight/1123));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>
