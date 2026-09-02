@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>spread-025</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .page{position:relative;width:1588px;height:1123px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+  .ph{position:absolute;background:#dcdcdc;display:grid;place-items:center;font-size:12px;letter-spacing:.2em;color:#8c8c8c}
+  .pn{position:absolute;font-size:11px;letter-spacing:.1em;color:#8c8c8c}
+  .gut{position:absolute;left:793px;top:0;width:2px;height:1123px;background:repeating-linear-gradient(#c9c9c9 0 8px,transparent 8px 16px)}
+  .front{position:absolute;left:794px;top:0;width:794px;height:1123px}
+  .fb{position:absolute;left:794px;bottom:0;width:794px;height:286px;background:#fff}
+  .flogo{position:absolute;left:850px;top:882px;font-size:26px;font-weight:800;letter-spacing:.12em;color:#1a1a1a}
+  .frule{position:absolute;left:850px;top:930px;width:682px;height:1px;background:#d5d5d5}
+  .fcat{position:absolute;left:850px;top:958px;font-size:12px;letter-spacing:.24em;color:#8c8c8c}
+  .fttl{position:absolute;left:850px;top:988px;font-size:38px;font-weight:800;letter-spacing:.04em;color:#1a1a1a}
+  .fyr{position:absolute;right:56px;top:988px;font-size:42px;font-weight:800;color:#1a1a1a}
+  .blogo{position:absolute;left:56px;top:700px;font-size:22px;font-weight:800;letter-spacing:.12em;color:#1a1a1a}
+  .brule{position:absolute;left:56px;top:750px;width:682px;height:1px;background:#d5d5d5}
+  .bad{position:absolute;left:56px;top:782px;font-size:11.5px;line-height:2.05;color:#4d4d4d}
+  .bcp{position:absolute;left:56px;top:1044px;font-size:10px;color:#8c8c8c}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="page">
+    <div class="ph" style="left:0;top:0;width:794px;height:640px;font-size:13px">IMAGE（表4）</div>
+    <div class="blogo">SCHOOL LOGO</div>
+    <div class="brule"></div>
+    <div class="bad">学校法人ダミー学園 ダミー大学 入試広報課<br>〒000-0000 ダミー県ダミー市ダミー町0-0-0<br>TEL 000-000-0000／https://dummy.example.ac.jp/</div>
+    <div class="ph" style="left:628px;top:782px;width:110px;height:110px">QR</div>
+    <div class="bcp">© 20XX Dummy School.</div>
+    <div class="ph" style="left:794px;top:0;width:794px;height:860px;font-size:13px">MAIN IMAGE（表1）</div>
+    <div class="fb"></div>
+    <div class="flogo">SCHOOL LOGO</div>
+    <div class="frule"></div>
+    <div class="fcat">SCHOOL GUIDE</div>
+    <div class="fttl">ダミーのキャッチコピー</div>
+    <div class="fyr">20XX</div>
+    <div class="gut"></div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1588,innerHeight/1123));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>

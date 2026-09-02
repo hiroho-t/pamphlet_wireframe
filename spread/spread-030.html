@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>spread-030</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .page{position:relative;width:1588px;height:1123px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+  .ph{position:absolute;background:#dcdcdc;display:grid;place-items:center;font-size:12px;letter-spacing:.2em;color:#8c8c8c}
+  .pn{position:absolute;font-size:11px;letter-spacing:.1em;color:#8c8c8c}
+  .gut{position:absolute;left:793px;top:0;width:2px;height:1123px;background:repeating-linear-gradient(#c9c9c9 0 8px,transparent 8px 16px)}
+  .eye{position:absolute;left:56px;top:96px;font-size:11px;letter-spacing:.3em;color:#8c8c8c}
+  .h1{position:absolute;left:56px;top:124px;font-size:34px;font-weight:800;letter-spacing:.07em;color:#1a1a1a}
+  .ax{position:absolute;left:56px;top:400px;width:1476px;height:2px;background:#d5d5d5}
+  .p{position:absolute;top:320px;width:170px}
+  .p .y{font-size:14px;font-weight:800;color:#1a1a1a}
+  .p .d{margin:12px 0 0;width:12px;height:12px;border-radius:50%;background:#1a1a1a}
+  .p .t{margin-top:18px;font-size:12.5px;font-weight:700;line-height:1.55;color:#1a1a1a}
+  .p .x{margin-top:8px;font-size:10.5px;line-height:1.85;color:#4d4d4d}
+  .lead{position:absolute;left:56px;width:800px;top:200px;font-size:12.5px;line-height:2.1;color:#4d4d4d}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="page">
+    <div class="eye">HISTORY</div>
+    <div class="h1">ダミー学園のあゆみ</div>
+    <div class="lead">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div>
+    <div class="ax"></div>
+    <div class="p" style="left:56px"><div class="y">19XX</div><div class="d"></div><div class="t">ダミーの出来事</div><div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div></div>
+    <div class="p" style="left:266px"><div class="y">19XX</div><div class="d"></div><div class="t">ダミーの出来事</div><div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div></div>
+    <div class="p" style="left:476px"><div class="y">19XX</div><div class="d"></div><div class="t">ダミーの出来事</div><div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div></div>
+    <div class="p" style="left:686px"><div class="y">19XX</div><div class="d"></div><div class="t">ダミーの出来事</div><div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div></div>
+    <div class="p" style="left:896px"><div class="y">20XX</div><div class="d"></div><div class="t">ダミーの出来事</div><div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div></div>
+    <div class="p" style="left:1106px"><div class="y">20XX</div><div class="d"></div><div class="t">ダミーの出来事</div><div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div></div>
+    <div class="p" style="left:1316px"><div class="y">20XX</div><div class="d"></div><div class="t">ダミーの出来事</div><div class="x">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div></div>
+    <div class="ph" style="left:56px;top:660px;width:682px;height:360px">IMAGE</div>
+    <div class="ph" style="left:850px;top:660px;width:334px;height:360px">IMAGE</div>
+    <div class="ph" style="left:1198px;top:660px;width:334px;height:360px">IMAGE</div>
+    <div class="gut"></div>
+    <div class="pn" style="left:56px;top:1064px">08</div>
+    <div class="pn" style="right:56px;top:1064px">09</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1588,innerHeight/1123));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>
