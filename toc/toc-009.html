@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>toc-009</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .page{position:relative;width:794px;height:1123px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+  .ph{position:absolute;background:#dcdcdc;display:grid;place-items:center;font-size:12px;letter-spacing:.2em;color:#8c8c8c}
+  .pn{position:absolute;font-size:11px;letter-spacing:.1em;color:#8c8c8c}
+  .eye{position:absolute;left:56px;top:76px;font-size:11px;letter-spacing:.3em;color:#8c8c8c}
+  .h1{position:absolute;left:56px;top:104px;font-size:32px;font-weight:800;letter-spacing:.1em;color:#1a1a1a}
+  .bx{position:absolute;width:159px;height:190px;border:1px solid #d5d5d5;padding:18px 14px}
+  .bx .n{font-size:10px;letter-spacing:.2em;color:#8c8c8c}
+  .bx .t{margin-top:8px;font-size:14px;font-weight:800;line-height:1.55;color:#1a1a1a}
+  .bx .x{margin-top:8px;font-size:10.5px;line-height:1.85;color:#4d4d4d}
+  .bx .p{position:absolute;left:14px;bottom:14px;font-size:12px;font-weight:800;color:#1a1a1a}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="page">
+    <div class="eye">CONTENTS</div>
+    <div class="h1">目次</div>
+    <div class="bx" style="left:56px;top:190px"><div class="n">01</div><div class="t">ダミーの<br>見出し</div><div class="x">ダミーテキストダミーテキスト。</div><div class="p">P.04</div></div>
+    <div class="bx" style="left:230px;top:190px"><div class="n">02</div><div class="t">ダミーの<br>見出し</div><div class="x">ダミーテキストダミーテキスト。</div><div class="p">P.08</div></div>
+    <div class="bx" style="left:404px;top:190px"><div class="n">03</div><div class="t">ダミーの<br>見出し</div><div class="x">ダミーテキストダミーテキスト。</div><div class="p">P.14</div></div>
+    <div class="bx" style="left:578px;top:190px"><div class="n">04</div><div class="t">ダミーの<br>見出し</div><div class="x">ダミーテキストダミーテキスト。</div><div class="p">P.20</div></div>
+    <div class="bx" style="left:56px;top:400px"><div class="n">05</div><div class="t">ダミーの<br>見出し</div><div class="x">ダミーテキストダミーテキスト。</div><div class="p">P.26</div></div>
+    <div class="bx" style="left:230px;top:400px"><div class="n">06</div><div class="t">ダミーの<br>見出し</div><div class="x">ダミーテキストダミーテキスト。</div><div class="p">P.32</div></div>
+    <div class="bx" style="left:404px;top:400px"><div class="n">07</div><div class="t">ダミーの<br>見出し</div><div class="x">ダミーテキストダミーテキスト。</div><div class="p">P.38</div></div>
+    <div class="bx" style="left:578px;top:400px"><div class="n">08</div><div class="t">ダミーの<br>見出し</div><div class="x">ダミーテキストダミーテキスト。</div><div class="p">P.44</div></div>
+    <div class="ph" style="left:56px;top:630px;width:682px;height:390px">IMAGE</div>
+    <div class="pn" style="left:56px;top:1060px">02</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/794,innerHeight/1123));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>

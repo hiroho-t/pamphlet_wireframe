@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>cover-032</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .page{position:relative;width:794px;height:1123px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+  .ph{position:absolute;background:#dcdcdc;display:grid;place-items:center;font-size:12px;letter-spacing:.2em;color:#8c8c8c}
+  .pn{position:absolute;font-size:11px;letter-spacing:.1em;color:#8c8c8c}
+  .side{position:absolute;right:0;top:0;width:96px;height:1123px;background:#1a1a1a}
+  .side .v{position:absolute;left:34px;top:80px;writing-mode:vertical-rl;font-size:13px;font-weight:800;letter-spacing:.24em;color:#fff}
+  .side .yr{position:absolute;left:38px;bottom:80px;writing-mode:vertical-rl;font-size:11px;letter-spacing:.2em;color:#d5d5d5}
+  .ttl{position:absolute;left:56px;top:800px;font-size:44px;font-weight:800;line-height:1.4;letter-spacing:.05em;color:#1a1a1a}
+  .lead{position:absolute;left:56px;width:420px;top:1000px;font-size:12px;line-height:2;color:#4d4d4d}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="page">
+    <div class="ph" style="left:0;top:0;width:698px;height:740px">MAIN IMAGE</div>
+    <div class="side"><div class="v">SCHOOL LOGO</div><div class="yr">GUIDE BOOK 20XX</div></div>
+    <div class="ttl">ダミーの<br>キャッチコピー</div>
+    <div class="lead">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/794,innerHeight/1123));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>toc-012</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .page{position:relative;width:794px;height:1123px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+  .ph{position:absolute;background:#dcdcdc;display:grid;place-items:center;font-size:12px;letter-spacing:.2em;color:#8c8c8c}
+  .pn{position:absolute;font-size:11px;letter-spacing:.1em;color:#8c8c8c}
+  .eye{position:absolute;left:56px;top:76px;font-size:11px;letter-spacing:.3em;color:#8c8c8c}
+  .h1{position:absolute;left:56px;top:104px;font-size:32px;font-weight:800;letter-spacing:.1em;color:#1a1a1a}
+  .h1{position:absolute;left:0;width:794px;top:640px;text-align:center;font-size:30px;font-weight:800;letter-spacing:.14em;color:#1a1a1a}
+  .eye{position:absolute;left:0;width:794px;top:612px;text-align:center;font-size:11px;letter-spacing:.3em;color:#8c8c8c}
+  .col{position:absolute;top:730px;width:213px}
+  .col li{list-style:none;display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid #e6e6e6;font-size:11.5px;color:#1a1a1a}
+  .col li span{color:#8c8c8c}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="page">
+    <div class="ph" style="left:0;top:0;width:264px;height:580px">IMAGE 1</div>
+    <div class="ph" style="left:265px;top:0;width:264px;height:580px;background:#d0d0d0">IMAGE 2</div>
+    <div class="ph" style="left:530px;top:0;width:264px;height:580px">IMAGE 3</div>
+    <div class="eye">CONTENTS</div>
+    <div class="h1">目次</div>
+    <div class="col" style="left:56px"><ul><li>ダミーの項目名<span>04</span></li><li>ダミーの項目名<span>06</span></li><li>ダミーの項目名<span>08</span></li><li>ダミーの項目名<span>10</span></li><li>ダミーの項目名<span>12</span></li></ul></div>
+    <div class="col" style="left:290px"><ul><li>ダミーの項目名<span>16</span></li><li>ダミーの項目名<span>20</span></li><li>ダミーの項目名<span>24</span></li><li>ダミーの項目名<span>28</span></li><li>ダミーの項目名<span>32</span></li></ul></div>
+    <div class="col" style="left:524px"><ul><li>ダミーの項目名<span>36</span></li><li>ダミーの項目名<span>40</span></li><li>ダミーの項目名<span>44</span></li><li>ダミーの項目名<span>48</span></li><li>ダミーの項目名<span>52</span></li></ul></div>
+    <div class="pn" style="left:0;width:794px;text-align:center;top:1060px">02</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/794,innerHeight/1123));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>

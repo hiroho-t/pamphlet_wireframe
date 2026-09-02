@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>cover-027</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .page{position:relative;width:794px;height:1123px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+  .ph{position:absolute;background:#dcdcdc;display:grid;place-items:center;font-size:12px;letter-spacing:.2em;color:#8c8c8c}
+  .pn{position:absolute;font-size:11px;letter-spacing:.1em;color:#8c8c8c}
+  .band{position:absolute;left:0;top:420px;width:794px;height:280px;background:#fff;display:grid;place-items:center;align-content:center;gap:14px}
+  .band .lg{font-size:22px;font-weight:800;letter-spacing:.14em;color:#1a1a1a}
+  .band .tt{font-size:32px;font-weight:800;letter-spacing:.06em;color:#1a1a1a}
+  .band .yr{font-size:11px;letter-spacing:.28em;color:#8c8c8c}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="page">
+    <div class="ph" style="left:0;top:0;width:794px;height:420px">IMAGE 1</div>
+    <div class="ph" style="left:0;top:700px;width:794px;height:423px;background:#d0d0d0">IMAGE 2</div>
+    <div class="band"><div class="lg">SCHOOL LOGO</div><div class="tt">ダミーのキャッチコピー</div><div class="yr">SCHOOL GUIDE BOOK 20XX</div></div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/794,innerHeight/1123));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>

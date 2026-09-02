@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>message-015</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .page{position:relative;width:794px;height:1123px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+  .ph{position:absolute;background:#dcdcdc;display:grid;place-items:center;font-size:12px;letter-spacing:.2em;color:#8c8c8c}
+  .pn{position:absolute;font-size:11px;letter-spacing:.1em;color:#8c8c8c}
+  .hd{position:absolute;left:0;top:0;width:794px;height:120px;background:#f0f0f0}
+  .eye{position:absolute;left:56px;top:38px;font-size:11px;letter-spacing:.3em;color:#8c8c8c}
+  .h1{position:absolute;left:56px;top:62px;font-size:26px;font-weight:800;letter-spacing:.08em;color:#1a1a1a}
+  .q{position:absolute;left:56px;width:682px;top:170px;font-size:24px;font-weight:800;line-height:1.9;letter-spacing:.04em;color:#1a1a1a}
+  .bd{position:absolute;left:56px;width:682px;top:340px;column-count:2;column-gap:44px;font-size:12px;line-height:2.25;color:#4d4d4d}
+  .prof{position:absolute;left:56px;top:900px;width:682px;padding-top:20px;border-top:1px solid #1a1a1a;display:flex;gap:22px}
+  .prof .im{flex:none;width:110px;height:110px;background:#dcdcdc;display:grid;place-items:center;font-size:10px;color:#8c8c8c}
+  .prof .rl{font-size:11px;color:#8c8c8c}
+  .prof .nm{margin-top:5px;font-size:19px;font-weight:800;color:#1a1a1a}
+  .prof .tx{margin-top:10px;font-size:11px;line-height:1.95;color:#4d4d4d}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="page">
+    <div class="hd"></div>
+    <div class="eye">MESSAGE</div>
+    <div class="h1">学長メッセージ</div>
+    <div class="q">ダミーの引用見出しがここに入ります。<br>ダミーテキストダミーテキスト。</div>
+    <div class="bd">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div>
+    <div class="ph" style="left:56px;top:600px;width:682px;height:260px">IMAGE</div>
+    <div class="prof"><div class="im">PORTRAIT</div><div><div class="rl">学長</div><div class="nm">ダミー 太郎</div><div class="tx">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</div></div></div>
+    <div class="pn" style="left:56px;top:1080px">04</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/794,innerHeight/1123));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>
